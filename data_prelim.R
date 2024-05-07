@@ -15,7 +15,7 @@
 #=============================================================================
 library(dplyr)
 library(tidyverse)
-
+source("./functions/useful.R")
 #=============================================================================
 # load data sets and do some initial sanity checks. 
 #=============================================================================
@@ -34,5 +34,9 @@ dim(dfa)[2]
 dim(dfa2)[2] + length (colnames(dfa1[!(colnames(dfa1) %in% colnames(dfa2))] ))
 dim(dfa1)[2] + length (colnames(dfa2[!(colnames(dfa2) %in% colnames(dfa1))] ))
 
-
+# Find the coordinates for each site, pull them out, convert all to 
+# degree decimal format, add them as new numerical columns. 
+coords_temp = t(apply(as.matrix(dfa$location), 1, extract_coordinates))
+dfa$lat = coords_temp[,1]
+dfa$lon = coords_temp[,2]
 
