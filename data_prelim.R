@@ -118,8 +118,17 @@ dfa_BB = subset(dfa_con, !is.na(dfa_con$BelowBio) )
 dim(dfa_BB)[1]
 length(unique(dfa_BB$DOI)) 
 
-# 3B. Combine AboveGround and Total:
+# 3B. Combine AboveGround and Total: N = 613, studies = 36
 dfa_B = subset(dfa_con, !is.na(dfa_con$AboveBio) | !is.na(dfa_con$TotBiomass)  )
+dim(dfa_B)[1]
+length(unique(dfa_B$DOI)) 
+
+#Calculate TotBiomass when it hasn't been calculated yet. 
+dfa_B$TotBiomass[ is.na(dfa_B$TotBiomass)] = 
+                  rowSums( dfa_B[is.na(dfa_B$TotBiomass),][,c(27,29)],na.rm=T)
+dfa_B$TotBioError[ is.na(dfa_B$TotBioError)] = 
+                  rowSums( dfa_B[is.na(dfa_B$TotBioError),][,c(28,30)],na.rm=T)
+
 
 # 4. Yield N = 0
 dfa_Y = subset(dfa_con, !is.na(dfa_con$Yield) )
@@ -174,6 +183,8 @@ length(unique(dfa_ngs$DOI))
 #=============================================================================
 # Use the controls and treatments to create response ratios
 #=============================================================================
+####
+#Aboveground Biomass only 
 #Create a new df with "control" columns for no and sterile soil:
 a1 = dfa_AB %>% 
             filter (inocType %in% c("no") ) %>% 
@@ -208,3 +219,72 @@ es_dfa_AB = escalc(measure = "ROM",
                   sd2i = dfa_AB_con$ControlErr, 
                   n1i = matrix(1,dim(dfa_AB_con)[1],1), 
                   n2i = matrix(1,dim(dfa_AB_con)[1],1))      
+################
+#Total Biomass
+a1 = dfa_B %>% 
+            filter (inocType %in% c("no") ) %>% 
+            group_by(studyGroup) %>%
+            mutate(inocType = paste0("con_", inocType)) %>%  # Rename Treatments for clarity
+            pivot_wider(names_from = inocType, values_from =c(TotBiomass, TotBioError),
+                         values_fill = NA) %>%
+            data.frame()
+
+a2 = dfa_B %>% 
+            filter (inocType %in% c("ster") ) %>% 
+            group_by(studyGroup) %>%
+            mutate(inocType = paste0("con_", inocType)) %>%  # Rename Treatments for clarity
+            pivot_wider(names_from = inocType, values_from =c(TotBiomass, TotBioError), 
+              values_fill = NA) %>%
+            data.frame()
+
+#Join these so there is a column for each control version
+dfa_B_con = left_join(dfa_B, a1[,c(71:73)], by = "studyGroup" ) %>%
+            left_join(a2[,c(71:73)],by = "studyGroup")
+
+#Create the final Control and Control SD columns. If a study has both sterile and 
+#no treatments, it takes the average of the two (and the average of the SDs). 
+dfa_B_con$Control = apply(dfa_B_con[,c(75,77)], 1, mean, na.rm=T )   
+dfa_B_con$ControlErr = apply(dfa_B_con[,c(76,78)], 1, function(x) sqrt(sum(x^2,na.rm=T)) )   
+
+#Calculate the effect sizes 
+es_dfa_B = escalc(measure = "ROM", 
+                  m1i = dfa_B_con$TotBiomass, 
+                  m2i = dfa_B_con$Control,
+                  sd1i = dfa_B_con$TotBioError,
+                  sd2i = dfa_B_con$ControlErr, 
+                  n1i = matrix(1,dim(dfa_B_con)[1],1), 
+                  n2i = matrix(1,dim(dfa_B_con)[1],1))  
+
+#Attach this to the main dataframe for the stats: 
+dfa_B_con = cbind(dfa_B_con, es_dfa_B)   
+
+#Now remove the rows that are for the controls: 
+dfa_B_con2 = dfa_B_con[dfa_B_con$yi>0, ]  #create new data frame
+dfa_B_con2 = dfa_B_con2[!(is.na(dfa_B_con2$Study)),]
+#Two studies in dfa_B_con have both no and sterile treatments. How to handle?
+#Remove one of the two for now. 
+dfa_B_con2 = dfa_B_con2[dfa_B_con2$inocType != "no" & dfa_B_con2$inocType != "ster", ] 
+
+#Remove studies without SD/SE? 
+dfa_B_con2 = dfa_B_con2[ dfa_B_con2$vi>0, ]
+
+#=============================================================================
+# Start thinking about the random-effects models we can explore
+#=============================================================================
+
+# Basic (nullish), 2-level, studies independent: AIC = 472.4273
+mod1 = rma(yi,vi, data= dfa_B_con2 )
+
+# Model 1 with random effects of Study: AIC = 1126.5173
+mod1_r1 = rma.mv(yi,vi, random = ~ 1 | Study, data= dfa_B_con2 )
+
+# Model 1, three-level, studyGroup within Study: AIC = 357.7891 
+mod1_r2 = rma.mv(yi,vi, random = ~ 1 | Study/studyGroup, data= dfa_B_con2 )
+
+# Add in some treatment effects. Try a few of the obvious ones before we
+# try an all-out model selection on AIC: 
+# Model 2, three-level, inocType AIC = 351.21 
+mo2_r2 = rma.mv(yi,vi, mods = ~ inocType,  random = ~ 1 | Study/studyGroup, data= dfa_B_con2 )
+
+# Model 2, AIC = 276.0063
+mo2_r3 = rma.mv(yi,vi, mods = ~ inocType+Ecosystem+EcoRegion,  random = ~ 1 | Study/studyGroup, data= dfa_B_con2 )
