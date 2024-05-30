@@ -16,6 +16,7 @@
 library(dplyr)
 library(tidyverse)
 library(metafor)
+library(FactoMineR)
 
 #library(rgee)
 source("./functions/useful.R")
@@ -301,17 +302,39 @@ locations_use = data.frame(id = dfa_B_con2$studyGroup ,lat=(dfa_B_con2$lat), lon
 locations = locations_use[!is.na(locations_use[,2]),]
 
 #Soil charactertistics
-soil_use = get_SoilGrids(locations)
+#soil_use = get_SoilGrids(locations)
 #save(file = "./data/soilgrids1.var", soil_use)
-#load("./data/soilgrids1.var")
+load("./data/soilgrids1.var")
 
 #Append these to the df
 soil_use_key = soil_use[!duplicated(soil_use$studyGroup),]
 dfa_B_con2 = left_join(dfa_B_con2, soil_use_key, by = "studyGroup" )
 
 #Average climate variables
-climate_use = get_climate(locations)
+#climate_use = get_climate(locations)
+#colnames(climate_use)[21] = "studyGroup"
+#save(file = "./data/worldclim_bio.var", climate_use)
+load("./data/worldclim_bio.var")
 
+#Append these to the df
+climate_use_key = climate_use[!duplicated(climate_use$studyGroup),]
+dfa_B_con2 = left_join(dfa_B_con2, climate_use_key, by = "studyGroup" )
+
+
+#=============================================================================
+# PCA on the environmental covariates to assess colinearity
+#=============================================================================
+soil_pc = prcomp(na.omit(soil_use[,-1]),
+             center = TRUE,
+            scale. = TRUE)
+
+summary(soil_pc)
+
+climate_pc = prcomp(na.omit(climate_use[,-c(1,21)]),
+             center = TRUE,
+            scale. = TRUE)
+
+summary(climate_pc)
 #=============================================================================
 #Use Google Earth Engine to streamline getting the different satellie layers. 
 #reticulate::conda_create(envname = "rgee_env", packages = "python=3.8")

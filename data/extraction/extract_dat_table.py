@@ -37,7 +37,7 @@ def filter_relevant_columns(table):
 def process_pdfs(folder_path):
     pdf_files = [f for f in os.listdir(folder_path) if f.endswith('.pdf')]
     all_data = []
-
+    
     for pdf_file in pdf_files:
         pdf_path = os.path.join(folder_path, pdf_file)
         tables = extract_tables(pdf_path)
@@ -46,6 +46,9 @@ def process_pdfs(folder_path):
             filtered_table = filter_relevant_columns(table)
             if not filtered_table.empty:
                 filtered_table['PDF'] = pdf_file  # Add PDF filename for reference
+                # Use .loc to avoid SettingWithCopyWarning
+                filtered_table = filtered_table.copy()
+                filtered_table.loc[:, 'PDF'] = pdf_file
                 all_data.append(filtered_table)
     
     # Combine all DataFrames into a single DataFrame
@@ -55,6 +58,8 @@ def process_pdfs(folder_path):
         combined_data = pd.DataFrame()  # Return an empty DataFrame if no data was found
     
     return combined_data
+
+# Process all PDFs and create DataFrame
 folder_path = './data/extraction/papers/'
 all_data = process_pdfs(folder_path)
 all_data.to_excel('all_extracted_data.xlsx', index=False)
