@@ -16,6 +16,8 @@
 library(dplyr)
 library(tidyverse)
 library(metafor)
+
+#library(rgee)
 source("./functions/useful.R")
 #=============================================================================
 # load data sets, do some initial cleans and sanity checks. 
@@ -288,3 +290,44 @@ mo2_r2 = rma.mv(yi,vi, mods = ~ inocType,  random = ~ 1 | Study/studyGroup, data
 
 # Model 2, AIC = 276.0063
 mo2_r3 = rma.mv(yi,vi, mods = ~ inocType+Ecosystem+EcoRegion,  random = ~ 1 | Study/studyGroup, data= dfa_B_con2 )
+
+#=============================================================================
+# Get spatial environmental covariates for each of the locations. These data 
+# sets are: 
+# 1. Soil data from SoilGrids (via soilDB library)
+# 2. Average climate characteristics from 
+#=============================================================================
+locations_use = data.frame(id = dfa_B_con2$studyGroup ,lat=(dfa_B_con2$lat), lon=(dfa_B_con2$lon),stringsAsFactors = FALSE )
+locations = locations_use[!is.na(locations_use[,2]),]
+
+#Soil charactertistics
+soil_use = get_SoilGrids(locations)
+#save(file = "./data/soilgrids1.var", soil_use)
+#load("./data/soilgrids1.var")
+
+#Append these to the df
+soil_use_key = soil_use[!duplicated(soil_use$studyGroup),]
+dfa_B_con2 = left_join(dfa_B_con2, soil_use_key, by = "studyGroup" )
+
+#Average climate variables
+climate_use = get_climate(locations)
+
+#=============================================================================
+#Use Google Earth Engine to streamline getting the different satellie layers. 
+#reticulate::conda_create(envname = "rgee_env", packages = "python=3.8")
+#reticulate::use_condaenv("rgee_env", required = TRUE)
+#ee_install_upgrade()
+#=============================================================================
+# ee_Initialize()
+
+# #Get the locations
+# locations_use = cbind((dfa_B_con2$lat), (dfa_B_con2$lon) )
+# nlocs = dim(locations_use)[1]
+
+# #Loop over the locations
+# for (l in 1:nlocs){
+
+#   point_ee=ee$Geometry$Point(c(locations_use[l,]))
+
+
+# } 
