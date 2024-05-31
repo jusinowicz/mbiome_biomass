@@ -15,8 +15,13 @@
 #=============================================================================
 library(dplyr)
 library(tidyverse)
+#ME models
 library(metafor)
+#PCA
 library(FactoMineR)
+#Machine learning
+library(keras)
+library(randomForest)
 
 #library(rgee)
 source("./functions/useful.R")
@@ -296,7 +301,7 @@ mo2_r3 = rma.mv(yi,vi, mods = ~ inocType+Ecosystem+EcoRegion,  random = ~ 1 | St
 # Get spatial environmental covariates for each of the locations. These data 
 # sets are: 
 # 1. Soil data from SoilGrids (via soilDB library)
-# 2. Average climate characteristics from 
+# 2. Average climate characteristics from WorldClim
 #=============================================================================
 locations_use = data.frame(id = dfa_B_con2$studyGroup ,lat=(dfa_B_con2$lat), lon=(dfa_B_con2$lon),stringsAsFactors = FALSE )
 locations = locations_use[!is.na(locations_use[,2]),]
@@ -319,7 +324,7 @@ load("./data/worldclim_bio.var")
 #Append these to the df
 climate_use_key = climate_use[!duplicated(climate_use$studyGroup),]
 dfa_B_con2 = left_join(dfa_B_con2, climate_use_key, by = "studyGroup" )
-
+dfa_B_con2 = dfa_B_con2[,-95]
 
 #=============================================================================
 # PCA on the environmental covariates to assess colinearity
@@ -335,6 +340,136 @@ climate_pc = prcomp(na.omit(climate_use[,-c(1,21)]),
             scale. = TRUE)
 
 summary(climate_pc)
+
+
+#=============================================================================
+# Now that we have these environmental covariates, explore some RandomForests 
+# models to see which variables seem to drive patterns.
+# Does it make more sense to do this on response ratio or biomass itself? 
+# 
+# Compare with and without categorical variables like Study and studyGroup to 
+# see which studies are showing results that are worth looking ath more 
+# closely. 
+#=============================================================================
+#Remove NAs
+dfa_ml_use = dfa_B_con2[!is.na(dfa_B_con2$bdodmean), ]
+
+#First grab the numeric values we want, including the response, and 
+#standardize.
+#81 is yi, the response ratio. 25 is TotBiomass. 
+col_ml = c(81,83:113)
+dfa_ml = dfa_ml_use[,col_ml ]
+dfa_ml = as.data.frame(scale(dfa_ml))
+
+#One-hot encoding: Study, studyGroup, inocType, Ecosystem
+col_cat = c(73,74,3,9)
+#Pull out the categoricals
+dfa_cat = dfa_ml_use[,col_cat]
+col_l = length(col_cat)
+dfa_cat_new = NULL #Store them here
+
+for(c in 1:col_l){
+
+  new_cat = dfa_cat[,c]
+  #Use gsub to remove spaces, commas, and slashes otherwise RF
+  #chokes and fails. 
+  new_cat = gsub("[ ,/]", "", new_cat)
+  new_cat = as.factor(new_cat) #Make them factors, then
+  new_cat_tmp = model.matrix(~0+new_cat) #This is really effective
+  #Rename columns
+  colnames(new_cat_tmp) = paste(colnames(dfa_cat)[c],levels(new_cat),sep="")
+  #Add to the data frame
+  dfa_cat_new = cbind(dfa_cat_new, new_cat_tmp)
+
+}
+
+#####Fit two versions of the model: One without, then one with the 
+#####the categoricals.
+# 1. Continuous values only:
+#Split data for training and testing: 
+ind = sample(2, nrow(dfa_ml), replace = TRUE, prob = c(0.8, 0.2))
+train_dfa_ml = dfa_ml [ind==1,]
+test_dfa_ml = dfa_ml [ind==2,]
+
+#Tuning the full RF model: 
+t = tuneRF(train_dfa_ml[,-1], train_dfa_ml[,1],
+   stepFactor = 0.5,
+   plot = TRUE,
+   ntreeTry = 150,
+   trace = TRUE,
+   improve = 0.05)
+
+#Get mtry with the lowest OOB Error
+# t[ as.numeric(t[,2]) < 0 ] = 1
+mtry_use = as.numeric(t[which(t == min(t),arr.ind=T)[1],1])  
+
+#Basic RF fitting
+model_form = "yi ~."
+biomass_rf = randomForest (as.formula(model_form),
+  data=train_dfa_ml, proximity=TRUE, mtry = mtry_use)
+
+#Prediction
+pred_test_rf = predict(biomass_rf, test_dfa_ml)
+
+#RMSE between predictions and actual
+rmse_rf = sqrt( mean((pred_test_rf - test_dfa_ml[,1])^2,na.rm=T) )
+
+#Look at variable importance: 
+#fig.name = paste("varImpPlot3",".pdf",sep="")
+#pdf(file=fig.name, height=8, width=8, onefile=TRUE, family='Helvetica', pointsize=16)
+
+
+
+#####
+#2. With the categorical variables
+#Combine both data sets
+dfa_ml = cbind(dfa_ml,dfa_cat_new)
+
+train_dfa_ml = dfa_ml [ind==1,]
+test_dfa_ml = dfa_ml [ind==2,]
+
+#Tuning the full RF model: 
+t2 = tuneRF(train_dfa_ml[,-1], train_dfa_ml[,1],
+   stepFactor = 0.5,
+   plot = TRUE,
+   ntreeTry = 150,
+   trace = TRUE,
+   improve = 0.05)
+
+#Get mtry with the lowest OOB Error
+# t[ as.numeric(t[,2]) < 0 ] = 1
+mtry_use = as.numeric(t2[which(t == min(t),arr.ind=T)[1],1])  
+
+#Basic RF fitting
+model_form = "yi ~."
+biomass_rf_cat = randomForest (as.formula(model_form),
+  data=train_dfa_ml, proximity=TRUE, mtry = mtry_use)
+
+#Prediction
+pred_test_rf_cat = predict(biomass_rf_cat, test_dfa_ml)
+
+#RMSE between predictions and actual
+rmse_rf_cat = sqrt( mean((pred_test_rf_Cat - test_dfa_ml[,1])^2,na.rm=T) )
+
+#Look at variable importance: 
+#fig.name = paste("varImpPlot3",".pdf",sep="")
+#pdf(file=fig.name, height=8, width=8, onefile=TRUE, family='Helvetica', pointsize=16)
+
+
+par(mfrow = c(1,2))
+
+p1 = varImpPlot(biomass_rf,
+           sort = T,
+           n.var = 40,
+           main = "Variable Importance"
+)
+
+p2 = varImpPlot(biomass_rf_cat,
+           sort = T,
+           n.var = 40,
+           main = "Variable Importance"
+)
+
 #=============================================================================
 #Use Google Earth Engine to streamline getting the different satellie layers. 
 #reticulate::conda_create(envname = "rgee_env", packages = "python=3.8")

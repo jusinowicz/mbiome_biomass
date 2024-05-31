@@ -171,3 +171,22 @@ get_climate = function (locations){
   return(results)
 
 }
+
+#=============================================================================
+#For Machine Learning models
+#=============================================================================
+#=============================================================================
+#Wrap the conversion of categoricals into this function
+#=============================================================================
+to_categ = function (df,col_use){
+
+  tot_vars = length(col_use)
+
+  for (t in 1:tot_vars){
+
+    var1 = df[,col_use[t]]
+    
+
+  }
+
+}
