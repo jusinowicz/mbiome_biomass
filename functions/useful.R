@@ -176,17 +176,60 @@ get_climate = function (locations){
 #For Machine Learning models
 #=============================================================================
 #=============================================================================
-#Wrap the conversion of categoricals into this function
+#Wrap RF models in a loop to generate stats. This just repeatedly runs the 
+#fitting and training process with different training/test sets to investigate
+#the robustness of the results. 
+#
+#Currently assumes that the models are being fit on a data frame with response
+#ratio as the response i.e. "yi" in the model_form
+#
+#Returns 3 objects grouped together as a list: 
+# 1. The fitted RF  biomass_rf 
+# 2. Prediction over the test set pred_test_rf
+# 3. RMSE between the prediction and the test rmse_rf
 #=============================================================================
-to_categ = function (df,col_use){
 
-  tot_vars = length(col_use)
+get_RF_dist = function(df, model_form = "yi ~.", probs = c(0.8,0.2), 
+                                nsamp =100 ){
 
-  for (t in 1:tot_vars){
+  #Size that the subsampled data will be: 
+  nfit = probs[1] * nrow(df)
+  ntest = probs[2] * nrow(df)
 
-    var1 = df[,col_use[t]]
-    
+  #Declare variables for storage: 
+  biomass_rf = vector("list", nsamp)
+  pred_test_rf = matrix(0,ntest,nsamp)
+  rmse_rf = matrix(0,nsamp,1)
 
+  for (s in 1:nsamp){ 
+    ind = sample(2, nrow(df), replace = TRUE, prob = probs)
+    train_df = df[ind==1,]
+    test_df = df[ind==2,]
+
+    #Tuning the full RF model: 
+    t = tuneRF(train_df[,-1], train_df[,1],
+       stepFactor = 0.5,
+       plot = TRUE,
+       ntreeTry = 150,
+       trace = TRUE,
+       improve = 0.05)
+
+    #Get mtry with the lowest OOB Error
+    # t[ as.numeric(t[,2]) < 0 ] = 1
+    mtry_use = as.numeric(t[which(t == min(t),arr.ind=T)[1],1])  
+
+    #Basic RF fitting
+    biomass_rf[s] = randomForest (as.formula(model_form),
+      data=train_df, proximity=TRUE, mtry = mtry_use)
+
+    #Prediction
+    pred_test_rf[,s] = predict(biomass_rf, test_df)
+
+    #RMSE between predictions and actual
+    rmse_rf[s] = sqrt( mean((pred_test_rf - test_df[,1])^2,na.rm=T) )
+  
   }
+
+  return(df_rf = list( biomass_rf, pred_test_rf, rmse_rf))
 
 }

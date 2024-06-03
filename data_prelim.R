@@ -1,4 +1,8 @@
 #=============================================================================
+# This file is the original work flow for cleaning and investigating the data
+# sets. It is not the cleanest, most well-ordered version of the analysis. 
+# Please see 
+#
 # Soil microbiome and above-ground biomass analysis
 #
 # This project combines three different data sets to investigate how
@@ -7,9 +11,10 @@
 #
 # The three datasets are: 
 #	1. Meta analysis data set from Averill et al. 2022 10.1038/s41564-022-01228-3
-# 	2. 
-#	3. 
+# 2. Three experimental innoculations on trees in Wales, Ireland, and Mexico 
+#	3. Data from Funga.
 #
+# Note: As of the latest version of this code, only data set 1 is available
 #=============================================================================
 # load libraries
 #=============================================================================
@@ -17,6 +22,7 @@ library(dplyr)
 library(tidyverse)
 #ME models
 library(metafor)
+library(MuMIn)
 #PCA
 library(FactoMineR)
 #Machine learning
@@ -126,7 +132,7 @@ dfa_BB = subset(dfa_con, !is.na(dfa_con$BelowBio) )
 dim(dfa_BB)[1]
 length(unique(dfa_BB$DOI)) 
 
-# 3B. Combine AboveGround and Total: N = 613, studies = 36
+# 3B. Combine AboveGround and BelowBio: Total: N = 613, studies = 36
 dfa_B = subset(dfa_con, !is.na(dfa_con$AboveBio) | !is.na(dfa_con$TotBiomass)  )
 dim(dfa_B)[1]
 length(unique(dfa_B$DOI)) 
@@ -361,6 +367,10 @@ col_ml = c(81,83:113)
 dfa_ml = dfa_ml_use[,col_ml ]
 dfa_ml = as.data.frame(scale(dfa_ml))
 
+colnames(dfa_ml)[14:32] = c("AMT", "MDR", "Iso","SeaT","MaxT","MinT","ART",
+  "MTempW", "MTempD","MTempH","MTempC","APr","PrW","PrD","SeaPr","PrWQ",
+  "PrDQ", "PrH","PrC") 
+
 #One-hot encoding: Study, studyGroup, inocType, Ecosystem
 col_cat = c(73,74,3,9)
 #Pull out the categoricals
@@ -418,8 +428,6 @@ rmse_rf = sqrt( mean((pred_test_rf - test_dfa_ml[,1])^2,na.rm=T) )
 #fig.name = paste("varImpPlot3",".pdf",sep="")
 #pdf(file=fig.name, height=8, width=8, onefile=TRUE, family='Helvetica', pointsize=16)
 
-
-
 #####
 #2. With the categorical variables
 #Combine both data sets
@@ -470,6 +478,63 @@ p2 = varImpPlot(biomass_rf_cat,
            main = "Variable Importance"
 )
 
+# BIO1 = Annual Mean Temperature
+# BIO2 = Mean Diurnal Range (Mean of monthly (max temp - min temp))
+# BIO3 = Isothermality (BIO2/BIO7) (×100)
+# BIO4 = Temperature Seasonality (standard deviation ×100)
+# BIO5 = Max Temperature of Warmest Month
+# BIO6 = Min Temperature of Coldest Month
+# BIO7 = Temperature Annual Range (BIO5-BIO6)
+# BIO8 = Mean Temperature of Wettest Quarter
+# BIO9 = Mean Temperature of Driest Quarter
+# BIO10 = Mean Temperature of Warmest Quarter
+# BIO11 = Mean Temperature of Coldest Quarter
+# BIO12 = Annual Precipitation
+# BIO13 = Precipitation of Wettest Month
+# BIO14 = Precipitation of Driest Month
+# BIO15 = Precipitation Seasonality (Coefficient of Variation)
+# BIO16 = Precipitation of Wettest Quarter
+# BIO17 = Precipitation of Driest Quarter
+# BIO18 = Precipitation of Warmest Quarter
+# BIO19 = Precipitation of Coldest Quarter
+
+
+#=============================================================================
+# Use dredge to explore the ME model space. 
+#=============================================================================
+#Remove NAs
+dfa_ml_use = dfa_B_con2[!is.na(dfa_B_con2$bdodmean), ]
+dfa_ME = dfa_ml_use 
+
+colnames(dfa_ME)[95:113] = c("AMT", "MDR", "Iso","SeaT","MaxT","MinT","ART",
+  "MTempW", "MTempD","MTempH","MTempC","APr","PrW","PrD","SeaPr","PrWQ",
+  "PrDQ", "PrH","PrC") 
+
+
+#Model with the top 14 covariates from the RandomForest variable importance
+model_full = rma.mv(yi,vi, mods = ~bdodmean+wv0033mean+AMT+PrC+SeaPr+cecmean+
+                                    PrW+Iso+PrWQ+MDR+ocdmean+siltmean+
+                                    nitrogenmean+APr,
+                                    random =   ~ 1 | Study/studyGroup, 
+                                    data= dfa_ME, method = "ML")
+
+options(na.action = "na.fail") #Needed to run dredge
+eval(metafor:::.MuMIn) #Need this to tell MuMIn how to dredge correctly with metafor
+model_dredge = dredge(model_full, trace=2)
+#save(file="./data/dredged_RE_model.var", model_dredge)
+options(na.action = "na.omit") # set back to default
+ 
+#Examine models With AICc value no more than 2 units away from the best model
+best_mods = subset(model_dredge, delta <= 2, recalc.weights=FALSE)
+
+#Multi-model inference
+avg_model = summary(model.avg(best_mods))
+
+#Top model
+top_model = get.models(model_dredge,subset = 1)[[1]]
+
+# train_dfa_ml = dfa_ml [ind==1,]
+# test_dfa_ml = dfa_ml [ind==2,]
 #=============================================================================
 #Use Google Earth Engine to streamline getting the different satellie layers. 
 #reticulate::conda_create(envname = "rgee_env", packages = "python=3.8")
