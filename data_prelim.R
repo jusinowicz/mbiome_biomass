@@ -589,7 +589,6 @@ model_dredge = dredge(model_full, trace=2)
 #load(file="./data/dredged_RE_model.var")
 options(na.action = "na.omit") # set back to default
 
- 
 #Examine models With AICc value no more than 2 units away from the best model
 best_mods = subset(model_dredge, delta <= 2, recalc.weights=FALSE)
 
@@ -604,6 +603,12 @@ top_model = get.models(model_dredge,subset = 1)[[1]]
 # sink(file = fp)                                                                                                              
 # summary(top_model)                                                                                                           
 # sink()    
+
+#Plot the data by Ecosystem. Look at the 3 that are significant: dry perennial grassland,
+#shrubland/forest, tropical dry forest. These all have only one study, one site, and 
+#above-average biomass response ratio.  
+ggplot(data=dfa_B_con2, aes(x = factor(Study), y = yi, col=factor(Ecosystem)))+
+      geom_point()
 
 # train_dfa_ml = dfa_ml [ind==1,]
 # test_dfa_ml = dfa_ml [ind==2,]
