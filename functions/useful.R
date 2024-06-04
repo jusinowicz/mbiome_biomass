@@ -199,6 +199,7 @@ get_RF_dist = function(df, model_form = "yi ~.", probs = c(0.8,0.2),
 
   #Declare variables for storage: 
   biomass_rf = vector("list", nsamp)
+  t = vector("list", nsamp)
   pred_test_rf = matrix(0,ntest,nsamp)
   rmse_rf = matrix(0,nsamp,1)
 
@@ -208,7 +209,7 @@ get_RF_dist = function(df, model_form = "yi ~.", probs = c(0.8,0.2),
     test_df = df[-ind,]
 
     #Tuning the full RF model: 
-    t = tuneRF(train_df[,-1], train_df[,1],
+    t[[s]] = tuneRF(train_df[,-1], train_df[,1],
        stepFactor = 0.5,
        plot = FALSE,
        ntreeTry = 150,
@@ -217,7 +218,7 @@ get_RF_dist = function(df, model_form = "yi ~.", probs = c(0.8,0.2),
 
     #Get mtry with the lowest OOB Error
     # t[ as.numeric(t[,2]) < 0 ] = 1
-    mtry_use = as.numeric(t[which(t == min(t),arr.ind=T)[1],1])  
+    mtry_use = as.numeric(t[[s]][which(t[[s]] == min(t[[s]]),arr.ind=T)[1],1])  
 
     #Basic RF fitting
     biomass_rf[[s]] = randomForest (as.formula(model_form),

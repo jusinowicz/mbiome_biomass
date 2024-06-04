@@ -237,8 +237,11 @@ top_mf1 = get.models(mf1_dredge,subset = 1)[[1]]
 #Plot the data by Ecosystem. Look at the 3 that are significant: dry perennial grassland,
 #shrubland/forest, tropical dry forest. These all have only one study, one site, and 
 #above-average biomass response ratio.  
+#fig.name = paste("./data/biomass_response1",".pdf",sep="")
+#pdf(file=fig.name, height=8, width=8, onefile=TRUE, family='Helvetica', pointsize=16)
 ggplot(data=dfa_B_con2, aes(x = factor(Study), y = yi, col=factor(Ecosystem)))+
       geom_point()
+#dev.off()
 
 #=============================================================================
 # 5.Import geospatial environmental data and join to original data based on lat,lon: 
@@ -355,11 +358,14 @@ import_ranks_cat = get_rank_importance(rf_dist_cat[[1]])
 
 #########
 #Plotting
+# fig.name = paste("./data/variable_importance1",".pdf",sep="")
+# pdf(file=fig.name, height=8, width=8, onefile=TRUE, family='Helvetica', pointsize=16)
+
 p1 = ggplot(import_ranks, aes(x = factor(IncNodePurity), y = IncNodePurity)) +
   geom_point() + 
   geom_errorbar(aes(ymin = IncNodePurity - sd, ymax = IncNodePurity + sd), width = 0.2) +
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))+
-  scale_x_discrete(labels = import_ranks$var)+
+  scale_x_discrete(labels = import_ranks$var[order(import_ranks$IncNodePurity)] )+
   labs(x = 'Variable', y = 'Mean Rank', title = 'Mean Variable Importance ') #+
   #theme_minimal()
 
@@ -368,11 +374,14 @@ p2 = ggplot(irc_use , aes(x = factor(IncNodePurity), y = IncNodePurity)) +
   geom_point() + 
   geom_errorbar(aes(ymin = IncNodePurity - sd, ymax = IncNodePurity + sd), width = 0.2) +
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))+
-  scale_x_discrete(labels = irc_use$var)+
+  scale_x_discrete(labels = irc_use$var[order(irc_use$IncNodePurity)])+
   labs(x = 'Variable', y = 'Mean Rank') #+
   #theme_minimal()
 
 grid.arrange(p1,p2)
+
+# dev.off()
+
 
 ########This is the full list of the bioclimatic variables from WorldClim: 
 # BIO1 = Annual Mean Temperature
