@@ -2,7 +2,7 @@
 Soil microbiome and above-ground biomass analysis. Meta analysis only. See 
 Averil et al. 2022 for motivation and description of the (original) database.<br>  
 <br>
-Workflow implemented here: data_main.R<br>
+Workflow implemented here: **data_main.R<br>**
  1.Import the database files, clean, join, check against Averil papers <br> 
  2.Filter to biomass<br>
  3.Assign controls and calculate response ratios.
@@ -17,6 +17,6 @@ Workflow implemented here: data_main.R<br>
    round of dredge to explore the top environmental covariaties. <br>
 <br>
 Additional files and directory structure:<br> 
-data_prelim.R: Preliminary workflow and investigation before the code was cleaned and organized into data_main.R<br>
-functions/useful.R: custom functions that are useful for doing some of the processing, moved here to make the main files cleaner<br>
-data: This directory contains the core data files for the analysis. It also includes prelimiary figures and other results<br>
+**data_prelim.R**: Preliminary workflow and investigation before the code was cleaned and organized into data_main.R<br>
+**functions/useful.R**: custom functions that are useful for doing some of the processing, moved here to make the main files cleaner<br>
+**data**: This directory contains the core data files for the analysis. It also includes prelimiary figures and other results<br>
