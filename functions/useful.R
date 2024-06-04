@@ -6,6 +6,7 @@ library(soilDB) #soilgrids data
 # library(rnoaa) #average climate data 
 # options(noaakey = "your_noaa_token")
 library(geodata) #average climate data from WorldClim
+#remotes::install_github("cran/geodata")  
 library(sf)
 library(httr)
 library(jsonlite)
@@ -193,8 +194,8 @@ get_RF_dist = function(df, model_form = "yi ~.", probs = c(0.8,0.2),
                                 nsamp =100 ){
 
   #Size that the subsampled data will be: 
-  nfit = probs[1] * nrow(df)
-  ntest = probs[2] * nrow(df)
+  nfit = ceiling(probs[1] * nrow(df))
+  ntest = floor(probs[2] * nrow(df))
 
   #Declare variables for storage: 
   biomass_rf = vector("list", nsamp)
@@ -202,16 +203,16 @@ get_RF_dist = function(df, model_form = "yi ~.", probs = c(0.8,0.2),
   rmse_rf = matrix(0,nsamp,1)
 
   for (s in 1:nsamp){ 
-    ind = sample(2, nrow(df), replace = TRUE, prob = probs)
-    train_df = df[ind==1,]
-    test_df = df[ind==2,]
+    ind = sample(seq_len(nrow(df)), size = nfit)
+    train_df = df[ind,]
+    test_df = df[-ind,]
 
     #Tuning the full RF model: 
     t = tuneRF(train_df[,-1], train_df[,1],
        stepFactor = 0.5,
-       plot = TRUE,
+       plot = FALSE,
        ntreeTry = 150,
-       trace = TRUE,
+       trace = FALSE,
        improve = 0.05)
 
     #Get mtry with the lowest OOB Error
@@ -219,11 +220,11 @@ get_RF_dist = function(df, model_form = "yi ~.", probs = c(0.8,0.2),
     mtry_use = as.numeric(t[which(t == min(t),arr.ind=T)[1],1])  
 
     #Basic RF fitting
-    biomass_rf[s] = randomForest (as.formula(model_form),
+    biomass_rf[[s]] = randomForest (as.formula(model_form),
       data=train_df, proximity=TRUE, mtry = mtry_use)
 
     #Prediction
-    pred_test_rf[,s] = predict(biomass_rf, test_df)
+    pred_test_rf[,s] = predict(biomass_rf[[s]], test_df)
 
     #RMSE between predictions and actual
     rmse_rf[s] = sqrt( mean((pred_test_rf - test_df[,1])^2,na.rm=T) )
@@ -231,5 +232,66 @@ get_RF_dist = function(df, model_form = "yi ~.", probs = c(0.8,0.2),
   }
 
   return(df_rf = list( biomass_rf, pred_test_rf, rmse_rf))
+
+}
+
+#=============================================================================
+# Given a data frame of fitted RF models representing a distribution of models, 
+# get the average and SD of the importance of each variable. 
+#=============================================================================
+
+get_mean_importance = function(model_df){
+
+  #Get dimensions
+  i1 = importance(model_df[[1]]) 
+  nvars = dim(i1)[1]
+  nruns = length(model_df)
+ 
+  #Initialize matrix
+  import_df =matrix(0, nvars, nruns)
+
+  #Get importance from each run
+  for(s in 1:nruns){
+    import_df[,s] = importance(model_df[[s]])
+  }
+
+  #Average and SD
+  import_df_final = cbind(i1, data.frame(sd = matrix(0,nvars,1)))
+  import_df_final[,1] = rowMeans(import_df)
+  import_df_final[,2] = sqrt(apply(import_df,1,var))
+  import_df_final = cbind(data.frame(var = rownames(i1)),import_df_final)
+
+  return(import_df_final)
+
+}
+
+#=============================================================================
+# Given a data frame of fitted RF models representing a distribution of models, 
+# get the average and SD of the importance RANKING of each variable. 
+#=============================================================================
+
+get_rank_importance = function(model_df){
+
+  #Get dimensions
+  i1 = importance(model_df[[1]]) 
+  nvars = dim(i1)[1]
+  nruns = length(model_df)
+ 
+  #Initialize matrix
+  rank_df =matrix(0, nvars, nruns)
+
+  #Get importance from each run
+  for(s in 1:nruns){
+    import_tmp = importance(model_df[[s]])
+    rank_df[,s] = (nvars-rank(import_tmp))+1 #Get its rank in decreasing order
+  }
+
+  #Average and SD
+  rank_df_final = cbind(i1, data.frame(sd = matrix(0,nvars,1)))
+  rank_df_final[,1] = rowMeans(rank_df)
+  rank_df_final[,2] = sqrt(apply(rank_df,1,var))
+  rank_df_final = cbind(data.frame(var = rownames(i1)), rank_df_final)
+
+  return(rank_df_final)
 
 }

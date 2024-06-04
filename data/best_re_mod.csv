@@ -1,0 +1,36 @@
+
+Multivariate Meta-Analysis Model (k = 127; method: ML)
+
+   logLik   Deviance        AIC        BIC       AICc   
+-131.0564   453.5150   288.1128   325.0873   291.3341   
+
+Variance Components:
+
+            estim    sqrt  nlvls  fixed            factor 
+sigma^2.1  0.0000  0.0000     17     no             Study 
+sigma^2.2  0.2543  0.5042     75     no  Study/studyGroup 
+
+Test for Residual Heterogeneity:
+QE(df = 116) = 1230.3148, p-val < .0001
+
+Test of Moderators (coefficients 2:11):
+QM(df = 10) = 59.9366, p-val < .0001
+
+Model Results:
+
+              estimate      se     zval    pval     ci.lb     ci.ub      
+intrcpt        21.9277  6.6228   3.3109  0.0009    8.9473   34.9081  *** 
+bdodmean      -20.5507  4.0882  -5.0268  <.0001  -28.5634  -12.5380  *** 
+Iso            -1.7059  0.2597  -6.5690  <.0001   -2.2149   -1.1969  *** 
+MDR             2.0112  0.4099   4.9066  <.0001    1.2078    2.8147  *** 
+nitrogenmean    0.4291  0.1800   2.3839  0.0171    0.0763    0.7819    * 
+PrC            -0.1726  0.0462  -3.7371  0.0002   -0.2631   -0.0821  *** 
+PrW             0.6227  0.1052   5.9210  <.0001    0.4166    0.8288  *** 
+PrWQ            1.1431  0.1770   6.4588  <.0001    0.7962    1.4899  *** 
+SeaPr          -1.0179  0.2752  -3.6993  0.0002   -1.5572   -0.4786  *** 
+siltmean       -0.0969  0.0238  -4.0811  <.0001   -0.1435   -0.0504  *** 
+wv0033mean     -0.6890  0.1303  -5.2892  <.0001   -0.9443   -0.4337  *** 
+
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+

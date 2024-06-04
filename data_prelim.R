@@ -20,6 +20,7 @@
 #=============================================================================
 library(dplyr)
 library(tidyverse)
+library(gridExtra)
 #ME models
 library(metafor)
 library(MuMIn)
@@ -303,6 +304,35 @@ mo2_r2 = rma.mv(yi,vi, mods = ~ inocType,  random = ~ 1 | Study/studyGroup, data
 # Model 2, AIC = 276.0063
 mo2_r3 = rma.mv(yi,vi, mods = ~ inocType+Ecosystem+EcoRegion,  random = ~ 1 | Study/studyGroup, data= dfa_B_con2 )
 
+#Do some dredging across multiple variables: 
+#Model with the top 14 covariates from the RandomForest variable importance
+#Note: dropped FungalType: not significant, NAs reduce data 
+mf1 = rma.mv(yi,vi, mods = ~ inocType+Ecosystem+EcoRegion+FieldGreenhouse,
+                                    random =   ~ 1 | Study/studyGroup, 
+                                    data= dfa_B_con2, method = "ML")
+
+options(na.action = "na.fail") #Needed to run dredge
+eval(metafor:::.MuMIn) #Need this to tell MuMIn how to dredge correctly with metafor
+#mf1_dredge = dredge(mf1, trace=2)
+#save(file="./data/dredged_RE_mf1.var", mf1_dredge)
+load(file="./data/dredged_RE_mf1.var")
+options(na.action = "na.omit") # set back to default
+
+#Examine models With AICc value no more than 2 units away from the best model
+best_mf1 = subset(mf1_dredge, delta <= 2, recalc.weights=FALSE)
+
+#Multi-model inference
+avg_mf1 = summary(model.avg(best_mf1))
+
+#Top model
+top_mf1 = get.models(mf1_dredge,subset = 1)[[1]]
+
+#####To export summaries into csv: 
+# fp = "./data/best_re_mf1.csv"                                                                                                
+# sink(file = fp)                                                                                                              
+# summary(top_mf1)                                                                                                           
+# sink()    
+
 #=============================================================================
 # Get spatial environmental covariates for each of the locations. These data 
 # sets are: 
@@ -396,6 +426,14 @@ for(c in 1:col_l){
 #####Fit two versions of the model: One without, then one with the 
 #####the categoricals.
 # 1. Continuous values only:
+#Get a distriubtion of RF model fits
+rf_dist = get_RF_dist(dfa_ml)
+#Get the average and sd of each variable's ranked position to see how stable
+#the importance of each variable is. 
+import_ranks = get_rank_importance(rf_dist[[1]])
+
+
+# 1. Continuous values only:
 #Split data for training and testing: 
 ind = sample(2, nrow(dfa_ml), replace = TRUE, prob = c(0.8, 0.2))
 train_dfa_ml = dfa_ml [ind==1,]
@@ -432,6 +470,12 @@ rmse_rf = sqrt( mean((pred_test_rf - test_dfa_ml[,1])^2,na.rm=T) )
 #2. With the categorical variables
 #Combine both data sets
 dfa_ml = cbind(dfa_ml,dfa_cat_new)
+
+#Get a distriubtion of RF model fits
+rf_dist_cat = get_RF_dist(dfa_ml)
+#Get the average and sd of each variable's ranked position to see how stable
+#the importance of each variable is. 
+import_ranks_cat = get_rank_importance(rf_dist_cat[[1]])
 
 train_dfa_ml = dfa_ml [ind==1,]
 test_dfa_ml = dfa_ml [ind==2,]
@@ -478,6 +522,26 @@ p2 = varImpPlot(biomass_rf_cat,
            main = "Variable Importance"
 )
 
+
+p1 = ggplot(import_ranks, aes(x = factor(IncNodePurity), y = IncNodePurity)) +
+  geom_point() + 
+  geom_errorbar(aes(ymin = IncNodePurity - sd, ymax = IncNodePurity + sd), width = 0.2) +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))+
+  scale_x_discrete(labels = import_ranks$var)+
+  labs(x = 'Variable', y = 'Mean Rank', title = 'Mean Variable Importance ') #+
+  #theme_minimal()
+
+irc_use = import_ranks_cat[1:40,]
+p2 = ggplot(irc_use , aes(x = factor(IncNodePurity), y = IncNodePurity)) +
+  geom_point() + 
+  geom_errorbar(aes(ymin = IncNodePurity - sd, ymax = IncNodePurity + sd), width = 0.2) +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))+
+  scale_x_discrete(labels = irc_use$var)+
+  labs(x = 'Variable', y = 'Mean Rank') #+
+  #theme_minimal()
+
+grid.arrange(p1,p2)
+
 # BIO1 = Annual Mean Temperature
 # BIO2 = Mean Diurnal Range (Mean of monthly (max temp - min temp))
 # BIO3 = Isothermality (BIO2/BIO7) (×100)
@@ -522,7 +586,9 @@ options(na.action = "na.fail") #Needed to run dredge
 eval(metafor:::.MuMIn) #Need this to tell MuMIn how to dredge correctly with metafor
 model_dredge = dredge(model_full, trace=2)
 #save(file="./data/dredged_RE_model.var", model_dredge)
+#load(file="./data/dredged_RE_model.var")
 options(na.action = "na.omit") # set back to default
+
  
 #Examine models With AICc value no more than 2 units away from the best model
 best_mods = subset(model_dredge, delta <= 2, recalc.weights=FALSE)
@@ -532,6 +598,12 @@ avg_model = summary(model.avg(best_mods))
 
 #Top model
 top_model = get.models(model_dredge,subset = 1)[[1]]
+
+#####To export summaries into csv: 
+# fp = "./data/best_re_mod.csv"                                                                                                
+# sink(file = fp)                                                                                                              
+# summary(top_model)                                                                                                           
+# sink()    
 
 # train_dfa_ml = dfa_ml [ind==1,]
 # test_dfa_ml = dfa_ml [ind==2,]
