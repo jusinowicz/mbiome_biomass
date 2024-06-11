@@ -1,5 +1,5 @@
 #Install libraries
-py -m pip install PyPDF2 pdfplumber tabula-py spaCy jpype1
+py -m pip install PyPDF2 pdfplumber tabula-py spaCy jpype1 PyMuPDF Pillow
 py -m spacy download en_core_web_sm
 
 #Load libraries 
@@ -9,6 +9,9 @@ import spacy
 import os
 import tabula
 import pandas as pd
+import fitz  # PyMuPDF
+import io
+from PIL import Image
 
 def extract_tables(pdf_path):
     # Extract all tables from the PDF and return as a list of DataFrames
