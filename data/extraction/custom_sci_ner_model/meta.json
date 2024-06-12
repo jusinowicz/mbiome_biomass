@@ -128,10 +128,15 @@
       "xcomp"
     ],
     "ner":[
+      "ECOREGION",
       "ECOTYPE",
       "ENTITY",
+      "FIELDGREENHOUSE",
+      "INOCTYPE",
+      "LANDUSE",
       "LOCATION",
       "RESPONSE",
+      "SOILTYPE",
       "TREATMENT"
     ]
   },
