@@ -12,6 +12,10 @@ import pandas as pd
 from metapub import PubMedFetcher 
 import os
 os.environ['NCBI_API_KEY'] = NCBI_API_KEY
+
+#For label studio
+import requests
+from label_studio_sdk import Client
 #==============================================================================
 #Fetch records from PubMed
 #==============================================================================
@@ -55,8 +59,10 @@ label_config_xml = """
     <Label value="RESPONSE" background="#00ff00"/>
     <Label value="ECOTYPE" background="#0000ff"/>
     <Label value="ECOREGION" background="#ffff00"/>
-    <Label value="LOCATION" background="#ff00ff"/>
-  </Labels>
+    <Label value="LOCATION" background="#A133FF"/>
+    <Label value="CARDINAL" background="#FF5733"/>
+    <Label value="PERCENTAGE" background="#D4380D"/>
+    <Label value="UNITS" background="#33FFA1"/></Labels>
   <Text name="text" value="$text"/>
 </View>
 """
@@ -114,6 +120,13 @@ for a in articles:
 #Link a custom NER model to Label Studio and generate suggested labels. 
 #Turn this into a loop to get better predictions as more annotations are added. 
 #==============================================================================
+#For label studio
+import requests
+from label_studio_sdk import Client
+
+LABEL_STUDIO_URL = 'http://localhost:8080'
+API_KEY = '45d69e3e9c859f4583dd42e5246f346e509a0a8e'
+PROJECT_ID = '2' #This links to the abstract-specific trainer
 
 # Initialize the Label Studio client
 ls = Client(url=LABEL_STUDIO_URL, api_key=API_KEY)
@@ -161,3 +174,13 @@ for task in incomplete_tasks[:20]:
 
 # Create predictions in bulk
 project.create_predictions(predictions)
+
+#saving
+with open('predictions_v2','wb') as f:
+    pickle.dump(predictions_v2,f)
+
+# # Loading a variable
+# with open('predictions_v2', 'rb') as f:
+#     loaded_variable = pickle.load(f)
+
+# print(loaded_variable)

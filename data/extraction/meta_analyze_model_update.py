@@ -15,7 +15,7 @@ from spacy.training.example import Example
 #==============================================================================
 #Load and clean data
 #==============================================================================
-latest_labels = 'project-2-at-2024-06-13-10-25-2c35c7e5.json'
+latest_labels = 'project-2-at-2024-06-15-21-33-e7ba0663train.json'
 
 # Load the exported data from Label Studio
 with open(latest_labels, 'r', encoding='utf-8') as file:
@@ -61,11 +61,15 @@ cleaned_data = clean_annotations(labeled_data)
 
 #LOAD nlp the FIRST time or to retrain from scratch
 #Load the spaCy model
-nlp = spacy.load("en_core_sci_md")
+#nlp = spacy.load("en_core_sci_md")
+#nlp = spacy.load("en_core_web_sm")
+#nlp =spacy.load("en_core_sci_scibert")
 
 #OR retrain a model on new data
-# output_dir = "custom_sci_ner_abs"
-# nlp = spacy.load(output_dir)
+output_dir = "custom_web_ner_abs_v381"
+nlp = spacy.load(output_dir)
+# nlp_1 = spacy.load("custom_web_ner_abs_v1")
+# print(nlp.get_pipe("ner").labels)
 
 # Prepare the data for spaCy
 examples = []
@@ -84,7 +88,7 @@ for label in labels:
 unaffected_pipes = [pipe for pipe in nlp.pipe_names if pipe != "ner"]
 with nlp.disable_pipes(*unaffected_pipes):
     optimizer = nlp.resume_training()
-    for i in range(150):  # Number of iterations
+    for i in range(50):  # Number of iterations
         print(f"Iteration {i+1}")
         losses = {}
         nlp.update(
@@ -95,6 +99,6 @@ with nlp.disable_pipes(*unaffected_pipes):
         print(losses) 
 
 # Save the model
-output_dir = "custom_sci_ner_abs_v2"
+output_dir = "custom_web_ner_abs_v381"
 nlp.to_disk(output_dir)
 print(f"Model saved to {output_dir}")

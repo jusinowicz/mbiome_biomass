@@ -7,7 +7,8 @@ from flask import Flask, request, jsonify
 import spacy
 
 # Load your custom model
-nlp = spacy.load("custom_sci_ner_abs_v2")
+#nlp = spacy.load("custom_sci_ner_abs_v2")
+nlp = spacy.load("custom_web_ner_abs_v381")
 
 app = Flask(__name__)
 

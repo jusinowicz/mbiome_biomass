@@ -4,17 +4,18 @@
 #
 # Install libraries
 # One note on installation. This package, which needs to be installed for NLP: 
-# py -3.10 -m pip install https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.0/en_core_sci_md-0.5.0.tar.gz
-## py -3.10 -m pip install https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.0/en_core_sci_scibert-0.5.0.tar.gz
+# py -3.8-m pip install https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.4/en_core_sci_md-0.5.4.tar.gz
+## py -3.8 -m pip install https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.4/en_core_sci_scibert-0.5.4.tar.gz
 #
 # was very finicky. I could only get both it and spacy to install and run 
-# on python 3.10, not the current 3.12. It seemed possible maybe with 3.11 but 
-# very finicky to set up. 
+# on python 3.8, not the current 3.12. It seemed possible maybe with 3.11,3.10.3.9
+# but very finicky to set up. 
+# 
 # My recommendation is to install this first and let it install its own 
 # version of spacy and dependencies (something with pydantic versions seems
 # to be the problem).
 # 
-# The package en_core_sci_md-0.4.0 also requires that C++ is installed on your system, so visual studio build
+# The package en_core_sci_md also requires that C++ is installed on your system, so visual studio build
 # tools on Windows.
 #
 # py -m pip install PyPDF2 pdfplumber tabula-py jpype1 PyMuPDF Pillow nltk
@@ -22,11 +23,13 @@
 # py -m spacy download en_core_web_sm
 # For NER: 
 #
-# py -3.10 -m pip install https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.0/en_ner_bc5cdr_md-0.5.0.tar.gz
-# py -3.10 -m pip install https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.0/en_ner_craft_md-0.5.0.tar.gz
+# py -3.8 -m pip install https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.0/en_ner_bc5cdr_md-0.5.0.tar.gz
+# py -3.8 -m pip install https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.0/en_ner_craft_md-0.5.0.tar.gz
 
 #==============================================================================
-py -3.10
+py -3.8
+
+import pandas as pd
 
 #PDF extraction
 import fitz  # PyMuPDF
@@ -36,11 +39,7 @@ import nltk
 from nltk.tokenize import sent_tokenize
 #NER and NLP
 import spacy
-# Load pre-trained SciBERT model from spaCy
-nlp = spacy.load("en_core_sci_md")
-#nlp = spacy.load("en_core_sci_scibert")
-#nlp_bc = spacy.load("en_ner_bc5cdr_md")
-nlp_bc = spacy.load("en_ner_craft_md")
+
 #Step 1: Extract Text from PDF
 
 def extract_text_from_pdf(pdf_path):
@@ -108,15 +107,286 @@ sections = identify_sections(sentences)
 
 #Step 4: Named Entity Recognition (NER)
 
+# Load pre-trained model from spaCy
+#nlp = spacy.load("en_core_sci_md")
+
+#Load custom NER 
+nlp = spacy.load("custom_web_ner_abs_v381")
+
 def extract_entities(text):
 	doc = nlp(text)
-	entities = [(ent.text, ent.label_) for ent in doc.ents]
-	return entities
+	#This line is for extracting entities only
+	#entities = [(ent.text, ent.label_) for ent in doc.ents]
+	#This line is for extracting entities with dependencies. 
+	entities = [(ent.text, ent.label_, ent.start, ent.end) for ent in doc.ents]
+	return doc,entities
 
 # Apply NER to the Methods section to identify treatments and covariates
-methods_text = " ".join(sections.get('methods', []))
-entities = extract_entities(methods_text)
+abstract_text = " ".join(sections.get('abstract', []))
+doc, entities = extract_entities(abstract_text)
 print(entities)
+
+methods_text = " ".join(sections.get('methods', []))
+doc, entities = extract_entities(methods_text)
+print(entities)
+
+#Group and refine the treatment groups
+def find_treatment_groups(doc, entities):
+	# Create a dictionary mapping token indices to entities
+	entity_dict = {ent[2]: (ent[0], ent[1]) for ent in entities}
+	treatment_groups = []
+	for sent in doc.sents:
+		sent_treatments = []
+		sent_entities = {token.i: entity_dict[token.i] for token in sent if token.i in entity_dict}
+		for token in sent:
+			if token.i in sent_entities and sent_entities[token.i][1] == 'TREATMENT':
+				treatment = [sent_entities[token.i][0]]
+				# Find modifiers or compound parts of the treatment entity using dependency parsing
+				for child in token.children:
+					if child.dep_ in ['amod', 'compound', 'appos', 'conj', 'advmod', 'acl', 'prep', 'pobj', 'det']:
+						if child.i in sent_entities:
+							treatment.append(sent_entities[child.i][0])
+						else:
+							treatment.append(child.text)
+				# Also check if the token itself has a head that is a treatment (e.g., 'home' as in 'home soil biota')
+				if token.head.i in sent_entities and sent_entities[token.head.i][1] == 'TREATMENT' and token.head != token:
+					treatment.append(token.head.text)
+				# Sort and join treatment parts to maintain a consistent order
+				treatment = sorted(treatment, key=lambda x: doc.text.find(x))
+				sent_treatments.append(" ".join(treatment))
+		if sent_treatments:
+			treatment_groups.extend(sent_treatments)
+	# Removing duplicates and returning the result
+	return list(set(treatment_groups))
+
+# Find treatment groups
+treat_matches = find_treatment_groups(doc, entities)
+print(treat_matches)
+
+#Group and refine the treatment groups
+def find_inoc_groups(doc, entities):
+	# Create a dictionary mapping token indices to entities
+	entity_dict = {ent[2]: (ent[0], ent[1]) for ent in entities}
+	inoc_groups = []
+	for sent in doc.sents:
+		sent_inocs = []
+		sent_entities = {token.i: entity_dict[token.i] for token in sent if token.i in entity_dict}
+		for token in sent:
+			if token.i in sent_entities and sent_entities[token.i][1] == 'INOCTYPE':
+				inoc = [sent_entities[token.i][0]]
+				# Find modifiers or compound parts of the inoc entity using dependency parsing
+				for child in token.children:
+					if child.dep_ in ['amod', 'compound', 'appos', 'conj', 'advmod', 'acl', 'prep', 'pobj', 'det']:
+						if child.i in sent_entities:
+							inoc.append(sent_entities[child.i][0])
+						else:
+							inoc.append(child.text)
+				# Also check if the token itself has a head that is a inoc (e.g., 'home' as in 'home soil biota')
+				if token.head.i in sent_entities and sent_entities[token.head.i][1] == 'INOCTYPE' and token.head != token:
+					inoc.append(token.head.text)
+				# Sort and join inoc parts to maintain a consistent order
+				inoc = sorted(inoc, key=lambda x: doc.text.find(x))
+				sent_inocs.append(" ".join(inoc))
+		if sent_inocs:
+			inoc_groups.extend(sent_inocs)
+	# Removing duplicates and returning the result
+	return list(set(inoc_groups))
+
+# Find inoc groups
+inoc_matches = find_inoc_groups(doc, entities)
+print(inoc_matches)
+
+# def find_treatment_groups(doc, entities):
+# 	# Create a dictionary mapping token indices to entities
+# 	entity_dict = {ent[2]: (ent[0], ent[1]) for ent in entities}
+# 	treatment_groups = []
+# 	for sent in doc.sents:
+# 		sent_treatments = []
+# 		sent_entities = {token.i: entity_dict[token.i] for token in sent if token.i in entity_dict}
+# 		for token in sent:
+# 			if token.i in sent_entities and sent_entities[token.i][1] == 'TREATMENT':
+# 				treatment = [sent_entities[token.i][0]]
+# 				# Find modifiers or compound parts of the treatment entity using dependency parsing
+# 				for child in token.children:
+# 					if child.dep_ in ['amod', 'compound', 'appos', 'conj', 'advmod', 'acl', 'prep', 'pobj', 'det']:
+# 						if child.i in sent_entities:
+# 							treatment.append(sent_entities[child.i][0])
+# 						else:
+# 							treatment.append(child.text)
+# 				# Sort and join treatment parts to maintain a consistent order
+# 				treatment = sorted(treatment, key=lambda x: token.i)
+# 				sent_treatments.append(" ".join(treatment))
+# 		if sent_treatments:
+# 			treatment_groups.extend(sent_treatments)
+# 	return treatment_groups
+
+
+# def find_treatment_groups(doc, entities):
+# 	# Dictionary mapping entity start indices to entities
+# 	entity_dict = {ent[2]: (ent[0], ent[1]) for ent in entities}  
+# 	treatment_groups = []
+# 	for sent in doc.sents:
+# 		sent_entities = [entity_dict[token.i] for token in sent if token.i in entity_dict]
+# 		sent_treatments = []
+# 		for token in sent:
+# 			if token.i in entity_dict and entity_dict[token.i][1] == 'TREATMENT':
+# 				treatment = [entity_dict[token.i][0]]
+# 				# Find tokens related to the treatment using dependency parsing
+# 				for child in token.children:
+# 					if child.i in entity_dict and entity_dict[token.i][1] in ['INOCTYPE', 'TREATMENT']:
+# 						treatment.append(entity_dict[child.i][0])
+# 				sent_treatments.append(" ".join(treatment))
+# 		if sent_treatments:
+# 			treatment_groups.extend(sent_treatments)
+# 	return treatment_groups
+
+# def find_treatment_groups(doc, entities):
+# 	entity_dict = {ent[2]: (ent[0], ent[1], ent) for ent in entities}  # Dictionary mapping start indices to entities
+# 	treatment_groups = []
+# 	for sent in doc.sents:
+# 		sent_entities = [entity_dict[token.i] for token in sent if token.i in entity_dict]
+# 		sent_treatments = []
+# 		for entity_text, entity_label, entity_obj in sent_entities:
+# 			if entity_label == 'TREATMENT':
+# 				treatment = [entity_text]
+#                 # Use spaCy's dependency parsing to find related entities
+# 				if isinstance(entity_obj, spacy.tokens.Token):  # Check if entity_obj is a single token
+# 					subtree = [entity_obj]  # Handle single token case
+# 				else:
+# 					# Check if entity_obj has a subtree attribute (for spans)
+# 					if hasattr(entity_obj, 'subtree'):
+# 						subtree = list(entity_obj.subtree)  # Get entire subtree
+# 					else:
+# 						subtree = [entity_obj]  # Default to entity_obj if no subtree
+# 				for token in subtree:
+# 				# for token in subtree:
+# 				# 	if token[2] in entity_dict and entity_dict[token[2]][1] in ['INOCTYPE', 'TREATMENT']:
+# 				# 		treatment.append(entity_dict[token[2]][0])
+# 					if token.i in entity_dict and entity_dict[token.i][1] in ['INOCTYPE', 'TREATMENT']:
+# 						treatment.append(entity_dict[token.i][0])
+# 				sent_treatments.append(" ".join(treatment))
+# 		if sent_treatments:
+# 			treatment_groups.extend(sent_treatments)
+# 	return treatment_groups
+
+# def find_treatment_groups(doc, entities):
+# 	entity_dict = {ent[2]: (ent[0], ent[1], ent) for ent in entities}  # Dictionary mapping start indices to entities
+# 	treatment_groups = []
+# 	for sent in doc.sents:
+# 		sent_entities = [entity_dict[token.i] for token in sent if token.i in entity_dict]
+# 		sent_treatments = []
+# 		for entity_text, entity_label, entity_obj in sent_entities:
+# 			if entity_label == 'TREATMENT':
+# 				treatment = [entity_text]
+# 				for child in entity_obj.children:
+# 					if child.i in entity_dict and (entity_dict[child.i][1] in ['INOCTYPE', 'TREATMENT']):
+# 						treatment.append(entity_dict[child.i][0])
+# 				sent_treatments.append(" ".join(treatment))
+# 		if sent_treatments:
+# 			treatment_groups.extend(sent_treatments)
+# 	return treatment_groups
+
+# def find_treatment_groups(doc, entities):
+# 	entity_dict = {ent[2]: (ent[0], ent[1], ent) for ent in entities}  # Dictionary mapping start indices to entities
+# 	treatment_groups = []
+# 	for token in doc:
+# 		if token.i in entity_dict:
+# 			entity_text, entity_label, entity_obj = entity_dict[token.i]
+# 			if entity_label == 'TREATMENT':
+# 				treatment = [entity_text]
+# 				for child in token.children:
+# 					if child.i in entity_dict:
+# 						child_text, child_label, _ = entity_dict[child.i]
+# 						if child_label in ['INOCTYPE', 'TREATMENT']:
+# 							treatment.append(child_text)
+# 				treatment_groups.append(" ".join(treatment))
+# 	return treatment_groups
+
+# # Find treatment groups
+# treatment_groups = find_treatment_groups(doc, entities)
+# print(treatment_groups)
+
+# Extract numerical entities with dependency parsing
+def find_dependencies(doc, entities):
+	entity_dict = {ent[2]: (ent[0], ent[1]) for ent in entities}  # Dictionary mapping start indices to entities
+	matches = []
+	for token in doc:
+		if token.i in entity_dict:
+			entity_text, entity_label = entity_dict[token.i]
+			if entity_label in ['CARDINAL', 'PERCENTAGE']:
+				# Check children for related entities
+				for child in token.children:
+					if child.i in entity_dict:
+						child_text, child_label = entity_dict[child.i]
+						if child_label in ['TREATMENT', 'RESPONSE']:
+							matches.append((entity_text, child_text, child_label))
+						elif child_label in ['INOCTYPE']:
+							matches.append((entity_text, child_text, child_label))
+			elif entity_label in ['TREATMENT', 'RESPONSE']:
+				# Check children for related entities
+				for child in token.children:
+					if child.i in entity_dict:
+						child_text, child_label = entity_dict[child.i]
+						if child_label in ['CARDINAL', 'PERCENTAGE']:
+							matches.append((child_text, entity_text, entity_label))
+							# Check parent for related entities
+			if token.head.i in entity_dict:
+				head_text, head_label = entity_dict[token.head.i]
+				if (entity_label in ['CARDINAL', 'PERCENTAGE'] and head_label in ['TREATMENT', 'RESPONSE']) or \
+					(entity_label in ['TREATMENT', 'RESPONSE'] and head_label in ['CARDINAL', 'PERCENTAGE']):
+					matches.append((entity_text, head_text, head_label))
+	return matches
+
+# Find dependencies and matches
+num_matches = find_dependencies(doc, entities)
+print(matches)
+
+
+###################################
+# Create a list of unique TREATMENT and INOCTYPE entities
+unique_treatments = list(set([ent[0] for ent in entities if ent[1] == 'TREATMENT']))
+unique_inoc_types = list(set([ent[0] for ent in entities if ent[1] == 'INOCTYPE']))
+
+# Create a DataFrame with columns for each label category
+columns = ['TREATMENT', 'INOCTYPE', 'ECOREGION', 'ECOTYPE', 'LANDUSE', 'LOCATION', 'RESPONSE', 'SOILTYPE']
+df = pd.DataFrame(columns=columns)
+
+# Populate the DataFrame
+rows = []
+for treatment in unique_treatments:
+    for inoc_type in unique_inoc_types:
+        row = {'TREATMENT': treatment, 'INOCTYPE': inoc_type}
+        rows.append(row)
+
+df = pd.DataFrame(rows, columns=columns)
+
+print(df)
+
+
+
+def contextual_match(text, entities):
+	# Find CARDINAL and PERCENTAGE entities
+	cardinal_entities = [(ent.text, ent.start_char, ent.end_char) for ent in nlp(text).ents if ent.label_ == 'CARDINAL']
+	percentage_entities = [(ent.text, ent.start_char, ent.end_char) for ent in nlp(text).ents if ent.label_ == 'PERCENTAGE']
+	matches = []
+	for cardinal in cardinal_entities:
+		context = text[max(0, cardinal[1] - 50): min(len(text), cardinal[2] + 50)]
+		for ent in entities:
+			if ent[1] in ['TREATMENT', 'RESPONSE'] and ent[0] in context:
+				matches.append((cardinal[0], ent[0], ent[1]))
+	for percentage in percentage_entities:
+		context = text[max(0, percentage[1] - 50): min(len(text), percentage[2] + 50)]
+		for ent in entities:
+			if ent[1] in ['TREATMENT', 'RESPONSE'] and ent[0] in context:
+				matches.append((percentage[0], ent[0], ent[1]))
+	return matches
+
+# Find contextual matches
+matches = contextual_match(abstract_text, entities)
+print(matches)
+
+
+
 
 #Step 5: Pattern Matching and Keyword Extraction
 def extract_keywords(text, keywords):
@@ -126,11 +396,11 @@ def extract_keywords(text, keywords):
 		keyword_sentences.extend(matches)
 	return keyword_sentences
 
-treatment_keywords = ['treatment', 'therapy', 'drug', 'intervention']
+treatment_keywords = treat_matches ['treatment', 'therapy', 'drug', 'intervention']
 response_keywords = ['response', 'outcome', 'result', 'effect']
 covariate_keywords = ['covariate', 'variable', 'factor']
 
-treatment_sentences = extract_keywords(methods_text, treatment_keywords)
+treatment_sentences = extract_keywords(abstract_text, treatment_keywords)
 response_sentences = extract_keywords(methods_text, response_keywords)
 covariate_sentences = extract_keywords(methods_text, covariate_keywords)
 
