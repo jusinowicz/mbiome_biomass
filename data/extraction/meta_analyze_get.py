@@ -1,7 +1,18 @@
 #==============================================================================
-# For the meta analysis and database: Try to automate retrieval of 
-# identification of relevant papers and retrieval of paper infos and text as 
-# much as possible. 
+# For the meta analysis and database: 
+# This is STEP 1 in the pipeline: 
+# Automate identification and retrieval of citations, abstracts for potentially 
+# relevant papers based on keyword search via PubMed. 
+# 
+# Automate creation (if needed) and uploading of abstracts to the labeling 
+# project in Label Studio (currently mbb_abstracts). This is done to help train
+# the custom NER.
+# 
+# Use the current version of the NER to streamline labeling by generating 
+# predictions. The labeling process is iterative! Label, predict, correct, 
+# generate a new version of the NER (via meta_analyze_model_update.py), use it 
+# to label, predict...
+#
 # export NCBI_API_KEY="f2857b2abca3fe365c756aeb647e06417b08"
 #==============================================================================
 #Libraries
@@ -176,8 +187,8 @@ for task in incomplete_tasks[:20]:
 project.create_predictions(predictions)
 
 #saving
-with open('predictions_v2','wb') as f:
-    pickle.dump(predictions_v2,f)
+with open('predictions_v381','wb') as f:
+    pickle.dump(predictions,f)
 
 # # Loading a variable
 # with open('predictions_v2', 'rb') as f:

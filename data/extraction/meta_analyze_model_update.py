@@ -1,7 +1,9 @@
 #==============================================================================
-# This is a third key chunk of code that is responsible for loading in the 
-# annotated data from Label Studio, cleans, converts it, and then fits the 
-# NER. 
+# For the meta analysis and database: 
+# This is STEP 1B in the pipeline:
+# Load the annotated data from Label Studio into python, clean, convert it, and 
+# then fit the NER with spacy.
+# 
 # Fitting the NER can either be done from scratch, or by loading the custom NER
 # and training it on new labels. 
 #==============================================================================
@@ -11,12 +13,14 @@
 import json 
 import spacy
 from spacy.training.example import Example
+
+#Make sure to load the latest version of text from Label Studio
+latest_labels = 'project-2-at-2024-06-15-21-33-e7ba0663train.json'
+
 #==============================================================================
 #==============================================================================
 #Load and clean data
 #==============================================================================
-latest_labels = 'project-2-at-2024-06-15-21-33-e7ba0663train.json'
-
 # Load the exported data from Label Studio
 with open(latest_labels, 'r', encoding='utf-8') as file:
     labeled_data = json.load(file)

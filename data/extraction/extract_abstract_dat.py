@@ -1,5 +1,8 @@
 #==============================================================================
-# This code uses NLP and a custom NER model to extract information from 
+# For the meta analysis and database: 
+# This is STEP 2 in the pipeline:
+# 
+# Use NLP and a custom NER model to extract information from 
 # scientific abstracts for following key categories: 
 # 
 # TREATMENT: Could be any number of inoculation, nutrient, environmental
@@ -18,6 +21,10 @@
 # 
 # The code will cycle through a list of abstracts, extract the pertanent 
 # information, and either create or add the information to a spreadsheet.
+# This code requires the following files to exist: 
+#  	articles.pkl	from 	meta_analyze_get.py
+#	custom_web_ner_abs_v381		from 	meta_analyze_model_updates.py
+#
 # Each entry in the spreadsheet will actually be a list of possible values.
 # For example, TREATMENT could be a list of "fertilizer, combined inoculation,
 # sterilized soil, AMF..." The resulting spreadsheet is meant to be its 
