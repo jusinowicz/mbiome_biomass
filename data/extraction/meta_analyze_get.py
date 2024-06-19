@@ -13,6 +13,8 @@
 # generate a new version of the NER (via meta_analyze_model_update.py), use it 
 # to label, predict...
 #
+# Predicting labels needs model_abstrac_app.py to be running on a terminal! 
+#
 # export NCBI_API_KEY="f2857b2abca3fe365c756aeb647e06417b08"
 #==============================================================================
 #Libraries
@@ -20,6 +22,8 @@ NCBI_API_KEY = "f2857b2abca3fe365c756aeb647e06417b08"
 
 #libraries
 import pandas as pd
+import dill
+import lxml.etree as ET
 from metapub import PubMedFetcher 
 import os
 os.environ['NCBI_API_KEY'] = NCBI_API_KEY
@@ -46,6 +50,25 @@ for pmid in pmids:
     article = fetcher.article_by_pmid(pmid)
     articles.append(article)
 
+#Save the articles 
+# Custom function to prepare articles for serialization
+def prepare_articles(articles):
+    articles_copy = copy.deepcopy(articles)
+    for article in articles_copy:
+        if hasattr(article, 'xml_element'):  # Replace 'xml_element' with the actual attribute name
+            article.xml_element = ET.tostring(article.xml_element, encoding='unicode')
+    return articles_copy
+
+# Custom function to restore articles after deserialization
+def restore_articles(articles):
+    for article in articles:
+        if hasattr(article, 'xml_element'):  # Replace 'xml_element' with the actual attribute name
+            article.xml_element = ET.fromstring(article.xml_element)
+    return articles
+
+articles_out = prepare_articles(articles)
+with open('articles.pkl', 'wb') as file:
+    dill.dump(articles_out, file)
 #==============================================================================
 # Create project to fine-tune an NER to pull useful info from abstracts
 # 1. First, link to Label Studio to label text
@@ -135,7 +158,7 @@ for a in articles:
 import requests
 from label_studio_sdk import Client
 
-LABEL_STUDIO_URL = 'http://localhost:8080'
+LABEL_STUDIO_URL = 'http://localhost:8080' #Run with model_abstract_app.py
 API_KEY = '45d69e3e9c859f4583dd42e5246f346e509a0a8e'
 PROJECT_ID = '2' #This links to the abstract-specific trainer
 
