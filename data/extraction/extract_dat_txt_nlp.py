@@ -341,6 +341,155 @@ def find_dependencies(doc, entities):
 num_matches = find_dependencies(doc, entities)
 print(matches)
 
+import tabula
+pdf_path = './papers/35410135.pdf' 
+# Extract tables from a PDF file
+tables = tabula.read_pdf(pdf_path, pages='all', multiple_tables=True)
+
+# Process each extracted table
+for i, df in enumerate(tables):
+    print(f"Table {i}:\n", df)
+
+
+import camelot
+# Extract tables from PDF
+tables = camelot.read_pdf(pdf_path, pages='all', flavor = 'stream', column_tol=2)
+table = tables[9].df.values.tolist() #Converts to text format
+#This gets rid of the first row, which seems to help because camelot will return a lot of noise
+table_df = pd.DataFrame(table[1:], columns=table[0]) 
+#Make sure each cell in the new df is actually of type str
+table_df = table_df.astype(str)  
+
+# Load the tokenizer and model
+tokenizer = TapasTokenizer.from_pretrained("google/tapas-base-finetuned-wtq")
+model = TapasForQuestionAnswering.from_pretrained("google/tapas-base-finetuned-wtq")
+
+# Tokenize inputs
+inputs = tokenizer(table=table_df, queries=queries, padding="max_length", return_tensors="pt")
+
+# Get model predictions
+outputs = model(**inputs)
+logits = outputs.logits
+
+# Detach logits from computation graph
+logits = logits.detach()
+
+# Decode answer
+predicted_answer_coordinates, _ = tokenizer.convert_logits_to_predictions(inputs, logits)
+
+# Debugging: print the predicted coordinates
+print("Predicted answer coordinates:", predicted_answer_coordinates)
+
+# Initialize the predicted_answer list
+predicted_answer = []
+
+# Convert the coordinates to text manually
+for coordinates_list in predicted_answer_coordinates[0]:  # Extract the list of coordinates
+    for coordinates in coordinates_list:  # Extract each tuple of coordinates
+        try:
+            row, column = coordinates  # Unpack the row and column indices
+            answer = table_df.iat[row, column]
+            predicted_answer.append(answer)
+        except IndexError:
+            predicted_answer.append("IndexError")  # Handle any unexpected indexing issues
+
+print(predicted_answer)
+
+
+dfs=[]
+with pdfplumber.open(pdf_path) as pdf:
+    for page in pdf.pages:
+        tables = page.extract_tables()
+        for table in tables:
+            df = pd.DataFrame(table[1:], columns=table[0])
+            print(df)
+
+class PDFTables:
+	def __init__(self):
+		self.tables = []
+	def add_table(self, table):
+		self.tables.append(table)
+	def get_tables(self):
+		return self.tables
+	def to_dict(self):
+		return {f"Table {i+1}": table.to_dict() for i, table in enumerate(self.tables)}
+	def to_excel(self, filename):
+		with pd.ExcelWriter(filename) as writer:
+			for i, table in enumerate(self.tables):
+				table.to_excel(writer, sheet_name=f"Table {i+1}")
+
+
+pdf_tables = PDFTables()
+with pdfplumber.open(pdf_path) as pdf:
+	for page_number, page in enumerate(pdf.pages):
+		print(f"Processing page {page_number + 1}...")
+		tables = page.extract_table()
+		print(f"Found {len(tables)} tables on page {page_number + 1}")
+		for table_index, table in enumerate(tables):
+			if table:  # Check if table is not empty
+				print(f"Processing table {table_index + 1} on page {page_number + 1}")
+				df = pd.DataFrame(table[1:], columns=table[0])
+				pdf_tables.add_table(df)
+			else:
+				print(f"Table {table_index + 1} on page {page_number + 1} is empty or could not be processed")
+    
+    return pdf_tables
+
+table_settings = {
+    "vertical_strategy": "text",
+    "horizontal_strategy": "text",
+    "snap_y_tolerance": 5,
+    "intersection_x_tolerance": 15,
+}
+
+from transformers import TapasTokenizer, TapasForQuestionAnswering
+import pandas as pd
+import torch
+
+
+# Example table as a pandas DataFrame
+data = {
+    "Inoculant": ["Inoculated", "Uninoculated"],
+    "Biomass": [3.5, 2.1]
+}
+table = pd.DataFrame(data)
+
+# Ensure all data in the DataFrame are strings
+table = table.astype(str)
+
+# Example questions
+queries = ["What is the biomass of inoculated soil?"]
+
+# Tokenize inputs
+inputs = tokenizer(table=table, queries=queries, padding="max_length", return_tensors="pt")
+
+# Get model predictions
+outputs = model(**inputs)
+logits = outputs.logits
+
+# Detach logits from computation graph
+logits = logits.detach()
+
+# Decode answer
+predicted_answer_coordinates, _ = tokenizer.convert_logits_to_predictions(inputs, logits)
+
+# Debugging: print the predicted coordinates
+print("Predicted answer coordinates:", predicted_answer_coordinates)
+
+# Initialize the predicted_answer list
+predicted_answer = []
+
+# Convert the coordinates to text manually
+for coordinates_list in predicted_answer_coordinates[0]:  # Extract the list of coordinates
+    for coordinates in coordinates_list:  # Extract each tuple of coordinates
+        try:
+            row, column = coordinates  # Unpack the row and column indices
+            answer = table.iat[row, column]
+            predicted_answer.append(answer)
+        except IndexError:
+            predicted_answer.append("IndexError")  # Handle any unexpected indexing issues
+
+print(predicted_answer)  # Output should be the answer(s) based on table 
 
 ###################################
 # Create a list of unique TREATMENT and INOCTYPE entities

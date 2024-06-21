@@ -203,7 +203,7 @@ for task in incomplete_tasks[:20]:
     predictions.append({
         'task': task['id'],
         'result': annotations, 
-        'model_version': 'custom_sci_ner_abs'  # You can set this to track the version of your model
+        'model_version': 'custom_web_ner_abs_v381'  # You can set this to track the version of your model
     })
 
 # Create predictions in bulk
