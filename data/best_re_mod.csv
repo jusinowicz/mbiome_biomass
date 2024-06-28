@@ -1,35 +1,32 @@
 
-Multivariate Meta-Analysis Model (k = 127; method: ML)
+Multivariate Meta-Analysis Model (k = 139; method: ML)
 
    logLik   Deviance        AIC        BIC       AICc   
--131.0564   453.5150   288.1128   325.0873   291.3341   
+-140.9100   475.4107   301.8200   331.1648   303.5388   
 
 Variance Components:
 
             estim    sqrt  nlvls  fixed            factor 
-sigma^2.1  0.0000  0.0000     17     no             Study 
-sigma^2.2  0.2543  0.5042     75     no  Study/studyGroup 
+sigma^2.1  0.0000  0.0000     19     no             Study 
+sigma^2.2  0.2456  0.4956     86     no  Study/studyGroup 
 
 Test for Residual Heterogeneity:
-QE(df = 116) = 1230.3148, p-val < .0001
+QE(df = 131) = 1397.5911, p-val < .0001
 
-Test of Moderators (coefficients 2:11):
-QM(df = 10) = 59.9366, p-val < .0001
+Test of Moderators (coefficients 2:8):
+QM(df = 7) = 59.8542, p-val < .0001
 
 Model Results:
 
-              estimate      se     zval    pval     ci.lb     ci.ub      
-intrcpt        21.9277  6.6228   3.3109  0.0009    8.9473   34.9081  *** 
-bdodmean      -20.5507  4.0882  -5.0268  <.0001  -28.5634  -12.5380  *** 
-Iso            -1.7059  0.2597  -6.5690  <.0001   -2.2149   -1.1969  *** 
-MDR             2.0112  0.4099   4.9066  <.0001    1.2078    2.8147  *** 
-nitrogenmean    0.4291  0.1800   2.3839  0.0171    0.0763    0.7819    * 
-PrC            -0.1726  0.0462  -3.7371  0.0002   -0.2631   -0.0821  *** 
-PrW             0.6227  0.1052   5.9210  <.0001    0.4166    0.8288  *** 
-PrWQ            1.1431  0.1770   6.4588  <.0001    0.7962    1.4899  *** 
-SeaPr          -1.0179  0.2752  -3.6993  0.0002   -1.5572   -0.4786  *** 
-siltmean       -0.0969  0.0238  -4.0811  <.0001   -0.1435   -0.0504  *** 
-wv0033mean     -0.6890  0.1303  -5.2892  <.0001   -0.9443   -0.4337  *** 
+            estimate      se     zval    pval    ci.lb    ci.ub      
+intrcpt       0.3010  1.0146   0.2967  0.7667  -1.6876   2.2896      
+AMT          -0.8315  0.1861  -4.4677  <.0001  -1.1962  -0.4667  *** 
+claymean      0.1335  0.0213   6.2597  <.0001   0.0917   0.1753  *** 
+MDR           0.4966  0.1285   3.8649  0.0001   0.2447   0.7484  *** 
+MTempC       -0.0034  0.0007  -4.6257  <.0001  -0.0048  -0.0020  *** 
+PrW           0.0365  0.0107   3.4220  0.0006   0.0156   0.0573  *** 
+PrWQ          0.3482  0.0777   4.4826  <.0001   0.1959   0.5004  *** 
+wv1500mean   -0.1812  0.0367  -4.9352  <.0001  -0.2532  -0.1093  *** 
 
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1

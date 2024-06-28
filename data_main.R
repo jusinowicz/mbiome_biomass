@@ -194,6 +194,8 @@ dfa_B_con2 = dfa_B_con2[dfa_B_con2$inocType != "no" & dfa_B_con2$inocType != "st
 #Remove studies without SD/SE? 
 dfa_B_con2 = dfa_B_con2[ dfa_B_con2$vi>0, ]
 
+#output1 = dfa_B_con2[,colnames(dfa_B_con2)[c(1:5,7,25,71,72,73,74,81)] ]
+#write.csv(file = "./data/bmbiome_studies.csv", output1)
 #=============================================================================
 # 4.Use dredge in MuMIn to explore the space of models from covariates in the 
 #   the original data set.
@@ -255,8 +257,8 @@ locations = locations_use[!is.na(locations_use[,2]),]
 #Soil charactertistics
 #####>>>>>>>>>>>>>>>Comment/uncomment here as needed <<<<<<<<<<<<<<<<<<<<
 #soil_use = get_SoilGrids(locations)
-#save(file = "./data/soilgrids1.var", soil_use)
-load("./data/soilgrids1.var")
+# save(file = "./data/soilgrids1.var", soil_use)
+ load("./data/soilgrids1.var")
 #####>>>>>>>>>>>>>>>Comment/uncomment here as needed <<<<<<<<<<<<<<<<<<<<
 
 #Append these to the df
@@ -266,8 +268,8 @@ dfa_B_con2 = left_join(dfa_B_con2, soil_use_key, by = "studyGroup" )
 #Average climate variables
 #####>>>>>>>>>>>>>>>Comment/uncomment here as needed <<<<<<<<<<<<<<<<<<<<
 #climate_use = get_climate(locations)
-#colnames(climate_use)[21] = "studyGroup"
-#save(file = "./data/worldclim_bio.var", climate_use)
+# colnames(climate_use)[21] = "studyGroup"
+# save(file = "./data/worldclim_bio.var", climate_use)
 load("./data/worldclim_bio.var")
 #####>>>>>>>>>>>>>>>Comment/uncomment here as needed <<<<<<<<<<<<<<<<<<<<
 
@@ -336,6 +338,8 @@ for(c in 1:col_l){
 
 }
 
+#Why is ocdmean missing entries? 
+dfa_ml = dfa_ml [,-11]
 #####Fit two versions of the model: One without, then one with the 
 #####the categoricals.
 # 1. Continuous values only:
@@ -358,7 +362,7 @@ import_ranks_cat = get_rank_importance(rf_dist_cat[[1]])
 
 #########
 #Plotting
-# fig.name = paste("./data/variable_importance1",".pdf",sep="")
+# fig.name = paste("./data/variable_importance2",".pdf",sep="")
 # pdf(file=fig.name, height=8, width=8, onefile=TRUE, family='Helvetica', pointsize=16)
 
 p1 = ggplot(import_ranks, aes(x = factor(IncNodePurity), y = IncNodePurity)) +
@@ -380,7 +384,7 @@ p2 = ggplot(irc_use , aes(x = factor(IncNodePurity), y = IncNodePurity)) +
 
 grid.arrange(p1,p2)
 
-# dev.off()
+#dev.off()
 
 
 ########This is the full list of the bioclimatic variables from WorldClim: 
@@ -420,18 +424,24 @@ colnames(dfa_ME)[95:113] = c("AMT", "MDR", "Iso","SeaT","MaxT","MinT","ART",
 
 #Model with the top 14 covariates from the RandomForest variable importance
 model_full = rma.mv(yi,vi, mods = ~bdodmean+wv0033mean+AMT+PrC+SeaPr+cecmean+
-                                    PrW+Iso+PrWQ+MDR+ocdmean+siltmean+
+                                    PrW+Iso+PrWQ+MDR+claymean+siltmean+
                                     nitrogenmean+APr,
                                     random =   ~ 1 | Study/studyGroup, 
                                     data= dfa_ME, method = "ML")
+
+# model_full = rma.mv(yi,vi, mods = ~bdodmean+MinT+MTempC+PrDQ+PrD+wv1500mean+
+#                                     PrW+Iso+PrWQ+MDR+claymean+AMT+
+#                                     nitrogenmean+phh2omean,
+#                                     random =   ~ 1 | Study/studyGroup, 
+#                                     data= dfa_ME, method = "ML")
 
 options(na.action = "na.fail") #Needed to run dredge
 eval(metafor:::.MuMIn) #Need this to tell MuMIn how to dredge correctly with metafor
 
 #####>>>>>>>>>>>>>>>Comment/uncomment here as needed <<<<<<<<<<<<<<<<<<<<
 #model_dredge = dredge(model_full, trace=2)
-#save(file="./data/dredged_RE_model.var", model_dredge)
-load(file="./data/dredged_RE_model.var")
+#save(file="./data/dredged_RE_model2.var", model_dredge)
+load(file="./data/dredged_RE_model2.var")
 #####>>>>>>>>>>>>>>>Comment/uncomment here as needed <<<<<<<<<<<<<<<<<<<<
 
 options(na.action = "na.omit") # set back to default

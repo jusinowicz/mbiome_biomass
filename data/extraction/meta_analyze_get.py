@@ -1,14 +1,14 @@
 #==============================================================================
 # For the meta analysis and database: 
-# This is STEP 1 in the pipeline: 
-# Automate identification and retrieval of citations, abstracts for potentially 
+# This is STEP 1 and STEP1C in the pipeline: 
+# STEP1: Automate identification and retrieval of citations, abstracts for potentially 
 # relevant papers based on keyword search via PubMed. 
 # 
 # Automate creation (if needed) and uploading of abstracts to the labeling 
 # project in Label Studio (currently mbb_abstracts). This is done to help train
 # the custom NER.
 # 
-# Use the current version of the NER to streamline labeling by generating 
+# STEP1C: Use the current version of the NER to streamline labeling by generating 
 # predictions. The labeling process is iterative! Label, predict, correct, 
 # generate a new version of the NER (via meta_analyze_model_update.py), use it 
 # to label, predict...
@@ -180,10 +180,10 @@ incomplete_tasks = [task for task in tasks if not is_task_completed(task)]
 # Prepare a list to hold the predictions
 predictions = []
 
-# Process the first 20 incomplete tasks
+# Process the e.g. first 20 [:20] incomplete tasks
 # Make sure the model is being hosted! 
 # py -3.10 model_abstract_app.py
-for task in incomplete_tasks[:20]:
+for task in incomplete_tasks:
     text = task['data']['text']  # Adjust this key based on your data format
     response = requests.post('http://localhost:5000/predict', json={'text': text})
     predictions_response = response.json()
@@ -209,9 +209,9 @@ for task in incomplete_tasks[:20]:
 # Create predictions in bulk
 project.create_predictions(predictions)
 
-#saving
-with open('predictions_v381','wb') as f:
-    pickle.dump(predictions,f)
+# #saving
+# with open('predictions_v381','wb') as f:
+#     pickle.dump(predictions,f)
 
 # # Loading a variable
 # with open('predictions_v2', 'rb') as f:

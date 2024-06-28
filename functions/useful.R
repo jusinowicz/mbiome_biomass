@@ -38,16 +38,17 @@ extract_coordinates = function(location) {
   }
 
   # Determine if latitude is North or South and longitude is East or West
-  if (grepl("S", location)) lat_lon_dms = -lat_dms
-  if (grepl("W", location)) lat_lon_dms = -lon_dms
+  temp1 = strsplit(location, ",")
+  if (grepl("S", temp1[[1]][1] ) | grepl("S", temp1[[1]][2] )  ) lat_dms = -lat_dms
+  if (grepl("W", temp1[[1]][1] ) | grepl("W", temp1[[1]][2] )  ) lon_dms = -lon_dms
 
   # Convert decimal degree format to decimal degrees
   lat_dd = as.numeric(lat_lon_dd[1])
   lon_dd = as.numeric(lat_lon_dd[2])
 
   # Determine if latitude is North or South and longitude is East or West
-  if (grepl("S", location)) lat_lon_dd = -lat_dd
-  if (grepl("W", location)) lat_lon_dd = -lon_dd
+  if (grepl("S", temp1[[1]][1] ) | grepl("S", temp1[[1]][2] )  )  lat_dd = -lat_dd
+  if (grepl("W", temp1[[1]][1] ) | grepl("W", temp1[[1]][2] )  ) lon_dd = -lon_dd
 
     # Determine latitude and longitude based on which format is present
   if (!is.na(lat_dms)) {
