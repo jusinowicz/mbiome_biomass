@@ -456,7 +456,7 @@ avg_model = summary(model.avg(best_mods))
 top_model = get.models(model_dredge,subset = 1)[[1]]
 
 #####To export summaries into csv: 
-# fp = "./data/best_re_mod.csv"                                                                                                
+# fp = "./data/best_re_mod2.csv"                                                                                                
 # sink(file = fp)                                                                                                              
 # summary(top_model)                                                                                                           
 # sink()    
