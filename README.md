@@ -1,4 +1,4 @@
-#Soil microbiomes and biomass meta analysis project
+# Soil microbiomes and biomass meta analysis project
 The goal of this project is to use existing studies to: 
 1. Build a database of experimental studies that investigate whether the addition of soil microbiome innocula (defined broadly) impact plant biomass, and 
 2. Analyze the extent to which experimental outcomes contain signals of ecosystem type or environmental covariates.
