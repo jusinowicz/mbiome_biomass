@@ -34,13 +34,15 @@ from label_studio_sdk import Client
 #==============================================================================
 #Fetch records from PubMed
 #==============================================================================
-fetcher = PubMedFetcher()
+fetcher = PubMedFetcher(cachedir='./papers/')
+# Construct search query: based on Averil et al 2022
+#query = '(mycorrhiz*) AND ((soil inocul*) OR (whole soil inocul*) OR (soil transplant*) OR (whole community transplant*))'
 
-# Construct search query: based on Averil et al 2022 
-query = '(mycorrhiz*) AND ((soil inocul*) OR (whole soil inocul*) OR (soil transplant*) OR (whole community transplant*)) AND biomass NOT review'
+#Modified to be more specific: 
+#query = '(mycorrhiz*) AND ((soil inocul*) OR (whole soil inocul*) OR (soil transplant*) OR (whole community transplant*)) AND biomass NOT review'
 #(mycorrhiz*) AND ((soil inocul*) OR (whole soil inocul*) OR (soil transplant*) OR (whole community transplant*)) AND biomass AND (control OR non-inoculate* OR non inoculate* OR uninoculate* OR steril* OR noncondition* OR uncondition* OR non condition*) NOT review
 # Use the fetcher to get PMIDs for the query
-pmids = fetcher.pmids_for_query(query)
+pmids = fetcher.pmids_for_query(query,retmax = 10000)
 
 # Create an empty list to store articles
 articles = []

@@ -1,11 +1,11 @@
 #==============================================================================
 # For the meta analysis and database: 
-# This is STEP 3 in the pipeline:
+# This is STEP 4 in the pipeline:
 # 
 # Use NLP and a custom NER model to extract the TREATMENTs and RESPONSEs from 
 # the text of the Methods and Results sections in scientfic papers. 
 #
-# Current NER: custom_web_ner_abs_v381
+# Current NER: custom_web_ner_abs_v382
 #
 # Each entry in the spreadsheet will be...
 #

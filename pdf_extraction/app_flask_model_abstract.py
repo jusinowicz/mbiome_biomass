@@ -8,7 +8,7 @@ import spacy
 
 # Load your custom model
 #nlp = spacy.load("custom_sci_ner_abs_v2")
-nlp = spacy.load("custom_web_ner_abs_v381")
+nlp = spacy.load("custom_web_ner_abs_v382")
 
 app = Flask(__name__)
 
