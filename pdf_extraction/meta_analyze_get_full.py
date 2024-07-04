@@ -25,6 +25,7 @@ import pandas as pd
 
 #For references 
 from metapub import PubMedFetcher 
+from metapub import FindIt 
 import os
 os.environ['NCBI_API_KEY'] = NCBI_API_KEY
 
@@ -44,13 +45,15 @@ import spacy
 #==============================================================================
 #Fetch records from PubMed
 #==============================================================================
-fetcher = PubMedFetcher()
+fetcher = PubMedFetcher(cachedir='./papers/')
+# Construct search query: based on Averil et al 2022
+#query = '(mycorrhiz*) AND ((soil inocul*) OR (whole soil inocul*) OR (soil transplant*) OR (whole community transplant*))'
 
-# Construct search query: based on Averil et al 2022 
+#Modified to be more specific: 
 query = '(mycorrhiz*) AND ((soil inocul*) OR (whole soil inocul*) OR (soil transplant*) OR (whole community transplant*)) AND biomass NOT review'
 #(mycorrhiz*) AND ((soil inocul*) OR (whole soil inocul*) OR (soil transplant*) OR (whole community transplant*)) AND biomass AND (control OR non-inoculate* OR non inoculate* OR uninoculate* OR steril* OR noncondition* OR uncondition* OR non condition*) NOT review
 # Use the fetcher to get PMIDs for the query
-pmids = fetcher.pmids_for_query(query)
+pmids = fetcher.pmids_for_query(query,retmax = 10000)
 
 # Create an empty list to store articles
 articles = []
@@ -169,11 +172,15 @@ def extract_text_from_pdf(pdf_path):
 nltk.download('punkt')
 
 def preprocess_text(text):
-    # Remove References section
+    # Remove References/Bibliography and Acknowledgements sections
     text = re.sub(r'\bREFERENCES\b.*', '', text, flags=re.DOTALL | re.IGNORECASE)
+    text = re.sub(r'\bACKNOWLEDGEMENTS\b.*', '', text, flags=re.DOTALL | re.IGNORECASE)
+    text = re.sub(r'\bBIBLIOGRAPHY\b.*', '', text, flags=re.DOTALL | re.IGNORECASE)
     # Tokenize text into sentences
     sentences = sent_tokenize(text)
     return sentences
+
+
 
 #Step 3: Identify Sections
 #Define a mapping for section variations
@@ -197,9 +204,9 @@ def identify_sections(sentences):
     # Initialize the sections dictionary with each section name as a key and an empty list as the value
     sections = {section: [] for section in sections}
     current_section = None
-    
+
     # Enhanced regex to match section headers
-    section_header_pattern = re.compile(r'\b(Abstract|Introduction|Methods|Materials and Methods|Results|Discussion|Conclusion|Background|Summary|Acknowledgments|References|Bibliography)\b', re.IGNORECASE)
+    section_header_pattern = re.compile(r'\b(Abstract|Introduction|Methods|Materials and Methods|Results|Discussion|Conclusion|Background|Summary)\b', re.IGNORECASE)
     for sentence in sentences:
         # Check if the sentence is a section header
         header_match = section_header_pattern.search(sentence)

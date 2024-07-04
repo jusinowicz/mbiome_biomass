@@ -1,0 +1,10156 @@
+STUDY,TREATMENT,RESPONSE,CARDINAL,PERCENTAGE,SENTENCE,ISTABLE
+29291742,['treatments'],biomass,0.0001,,"We used plant dry biomass as a proxy for plant fit-
+ness (Fig. Total plant dry weight (g) was significantly 
+affected by percent colonization across treatments 
+(P < 0.0001).",0
+33893547,"['treatments', 'control', 'treatments', 'control', 'absence']",dry weight,2,,"Table 1   Analysis of variance: 
+F- and p-values for the effects 
+of the applied treatments 
+(Fertilisation, Fert (1); 
+Mycorrhization, Myc (2); and 
+their interaction (1 × 2)) on the 
+traits observed in durum wheat 
+plants
+Fert (1)
+Myc (2)
+1 × 2
+df
+F-values
+p-values
+df
+F-values
+p-values
+df
+F-values
+p-values
+AM fungi colonisation
+2
+24.46
+0.001
+-
+-
+-
+-
+-
+-
+Aboveground biomass
+2
+12.58
+ < 0.001
+1
+17.13
+ < 0.001
+2
+0.53
+0.601
+Belowground biomass
+2
+39.85
+ < 0.001
+1
+9.37
+0.008
+2
+0.73
+0.497
+Nitrogen concentration
+2
+73.66
+ < 0.001
+1
+2.23
+0.116
+2
+1.45
+0.261
+Nitrogen content
+2
+175.18
+ < 0.001
+1
+24.21
+ < 0.001
+2
+14.80
+ < 0.001
+15Nitrogen recovery
+1
+2915.12
+ < 0.001
+1
+0.61
+0.454
+1
+14.77
+0.004
+Phosphorus concentration
+2
+0.37
+0.693
+1
+64.77
+ < 0.001
+2
+11.21
+ < 0.001
+Phosphorus content
+2
+7.21
+0.007
+1
+65.79
+ < 0.001
+2
+7.00
+0.007
+N:P
+2
+42.95
+ < 0.001
+1
+49.12
+ < 0.001
+2
+4.48
+0.030
+Root length
+2
+40.56
+ < 0.001
+1
+12.67
+0.003
+2
+1.54
+0.246
+Specific root length
+2
+7.15
+0.007
+1
+6.45
+0.023
+2
+2.70
+0.099
+Fig. Data 
+are plotted with the mean depicted as a black circle ± SE (n = 4) rep-
+resented by the end of the vertical black line to the right of the raw 
+data
+445
+Mycorrhiza (2021) 31:441–454
+1 3
+Table 2   p-values for pairwise comparisons, effect size mean (unpaired means), and estimated 95% confidence intervals (Δ mean and CIs; in brackets) in the different fertilisation treatments 
+(Ctr, control not fertilised; Ctr+N, control fertilised with ammonium sulphate; Org, soil amended with crop residues) in the absence (−AM) or presence (+AM) of arbuscular mycorrhizal fungal 
+inoculum
+–AM
+ +AM
+Ctr vs Ctr+N
+Ctr vs Org
+Ctr+N vs Org
+Ctr vs Ctr+N
+Ctr vs Org
+Ctr+N vs Org
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+AM fungi 
+colonization
+-
+-
+-
+-
+-
+-
+0.173  −4.18 (−10.5; 
+0)
+0.008 9.48 (3.41; 13.7)
+0.001 13.7 (9.98; 17.6)
+Aboveground 
+biomass
+0.207 0.23 (0.17; 0.31)
+0.002 0.55 (0.19; 0.74)
+0.069 0.31 (−0.06; 
+0.52)
+0.263 0.21 (−0.08; 
+0.5)
+0.029 0.37 (0.1; 0.65)
+0.444 0.16 (0.04; 0.27)
+Belowground 
+biomass
+0.088  −0.13 
+(−0.19; −0.03)
+0.002 0.23 (0.06; 0.36)
+ < 0.001 0.36 (0.19; 0.49)
+0.831  −0.03 (−0.12; 
+0.05)
+ < 0.001 0.28 (0.13; 0.46)
+ < 0.001 0.31 (0.19; 0.49)
+Nitrogen con-
+centration
+0.078 2.15 (1.17; 3.05)
+ < 0.001  −3.95 
+(−5.12; −255)
+ < 0.001  −6.1 
+(−6.88; −4.8)
+0.163 1.67 (−0.52; 
+3.67)
+ < 0.001  −5.55 
+(−7.6; −3.6)
+ < 0.001  −7.22 
+(−8.08; −6.45)
+Nitrogen 
+content
+ < 0.001 10.5 (8.22; 13)
+0.265  −2.06 (−4.92; 
+0.87)
+ < 0.001  −12.6 
+(−15.1; −10.2)
+ < 0.001 9.87 (6.93; 
+11.9)
+ < 0.001  −10.8 
+(−12; −9.59)
+ < 0.001  −20.7 
+(−22.7; −17.9)
+15Nitrogen 
+recovery
+-
+-
+-
+-
+ < 0.001  −52.8 (−55.4; 
+−50.4)
+-
+-
+-
+-
+ < 0.001  −61 
+(−62.8; −57.5)
+Phosphorus 
+concentra-
+tion
+0.933  −0.02 (−0.2; 
+0.08)
+0.012 0.2 (0.1; 0.3)
+0.006 0.23 (0.1; 0.39)
+0.999 0.0 (−0.01; 
+0.01)
+0.072  −0.15 
+(−0.23; −0.02)
+0.067  −0.15 
+(−0.23; −0.02)
+Phosphorus 
+content
+0.678 0.24 (−0.23; 
+0.57)
+0.001 1.37 (0.69; 1.85)
+0.003 1.13 (0.39; 1.74)
+0.415 0.37 (−0.1; 
+0.84)
+0.873 0.14 (−0.36; 
+0.78)
+0.705  −0.23 (−0.56; 
+0.29)
+N:P
+0.052 2.03 (0.57; 4.33)
+ < 0.001  −4.63 
+(−5.88; −2.99)
+ < 0.001  −6.66 
+(−8.76; −5.06)
+0.461 0.96 (−0.24; 
+2.08)
+0.019  −2.43 
+(−3.83; −1.29)
+0.002  −3.39 
+(−4.3; −2.81)
+Root length
+0.384  −5.25 
+(−8.75; −1.75)
+ < 0.001 21.5 (12.2; 30.8)
+ < 0.001 26.8 (17.2; 36)
+0.920 1.5 (−5; 8.25)
+0.001 19 (8.75; 29.5)
+0.001 17.5 (7.25; 26.5)
+Specific root 
+length
+0.228 5 (−0.25; 9.75)
+0.003 11.8 (5.75; 17.5)
+0.082 6.75 (2.5; 11.2)
+0.228 5 (1; 11)
+0.467 3.5 (0.5; 6.5)
+0.864  −1.5 (−7.93; 
+2.25)
+446
+Mycorrhiza (2021) 31:441–454
+1 3
+In the Ctr+N treatment, the percentage of 15N recov-
+ery was 61.5% on average, with no significant differences 
+by mycorrhization (Fig. 2   Aboveground and belowground biomass dry weight of durum 
+wheat in the different fertilisation treatments (Ctr control not ferti-
+lised, Ctr+N control fertilised with ammonium sulphate, Org soil 
+amended with  crop residues) in the absence (grey points) or pres-
+ence (coloured points) of arbuscular mycorrhizal (AM) fungal inocu-
+lum.",2
+33893547,[],biomass,,11,"On average, the +AM plants showed higher aboveground 
+biomass than the −AM plants (+ 11%).",1
+33893547,"['Myc', 'treatments', 'control', 'absence']",biomass,24.46,,"Table 1   Analysis of variance: 
+F- and p-values for the effects 
+of the applied treatments 
+(Fertilisation, Fert (1); 
+Mycorrhization, Myc (2); and 
+their interaction (1 × 2)) on the 
+traits observed in durum wheat 
+plants
+Fert (1)
+Myc (2)
+1 × 2
+df
+F-values
+p-values
+df
+F-values
+p-values
+df
+F-values
+p-values
+AM fungi colonisation
+2
+24.46
+0.001
+-
+-
+-
+-
+-
+-
+Aboveground biomass
+2
+12.58
+ < 0.001
+1
+17.13
+ < 0.001
+2
+0.53
+0.601
+Belowground biomass
+2
+39.85
+ < 0.001
+1
+9.37
+0.008
+2
+0.73
+0.497
+Nitrogen concentration
+2
+73.66
+ < 0.001
+1
+2.23
+0.116
+2
+1.45
+0.261
+Nitrogen content
+2
+175.18
+ < 0.001
+1
+24.21
+ < 0.001
+2
+14.80
+ < 0.001
+15Nitrogen recovery
+1
+2915.12
+ < 0.001
+1
+0.61
+0.454
+1
+14.77
+0.004
+Phosphorus concentration
+2
+0.37
+0.693
+1
+64.77
+ < 0.001
+2
+11.21
+ < 0.001
+Phosphorus content
+2
+7.21
+0.007
+1
+65.79
+ < 0.001
+2
+7.00
+0.007
+N:P
+2
+42.95
+ < 0.001
+1
+49.12
+ < 0.001
+2
+4.48
+0.030
+Root length
+2
+40.56
+ < 0.001
+1
+12.67
+0.003
+2
+1.54
+0.246
+Specific root length
+2
+7.15
+0.007
+1
+6.45
+0.023
+2
+2.70
+0.099
+Fig. Data 
+are plotted with the mean depicted as a black circle ± SE (n = 4) rep-
+resented by the end of the vertical black line to the right of the raw 
+data
+445
+Mycorrhiza (2021) 31:441–454
+1 3
+Table 2   p-values for pairwise comparisons, effect size mean (unpaired means), and estimated 95% confidence intervals (Δ mean and CIs; in brackets) in the different fertilisation treatments 
+(Ctr, control not fertilised; Ctr+N, control fertilised with ammonium sulphate; Org, soil amended with crop residues) in the absence (−AM) or presence (+AM) of arbuscular mycorrhizal fungal 
+inoculum
+–AM
+ +AM
+Ctr vs Ctr+N
+Ctr vs Org
+Ctr+N vs Org
+Ctr vs Ctr+N
+Ctr vs Org
+Ctr+N vs Org
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+AM fungi 
+colonization
+-
+-
+-
+-
+-
+-
+0.173  −4.18 (−10.5; 
+0)
+0.008 9.48 (3.41; 13.7)
+0.001 13.7 (9.98; 17.6)
+Aboveground 
+biomass
+0.207 0.23 (0.17; 0.31)
+0.002 0.55 (0.19; 0.74)
+0.069 0.31 (−0.06; 
+0.52)
+0.263 0.21 (−0.08; 
+0.5)
+0.029 0.37 (0.1; 0.65)
+0.444 0.16 (0.04; 0.27)
+Belowground 
+biomass
+0.088  −0.13 
+(−0.19; −0.03)
+0.002 0.23 (0.06; 0.36)
+ < 0.001 0.36 (0.19; 0.49)
+0.831  −0.03 (−0.12; 
+0.05)
+ < 0.001 0.28 (0.13; 0.46)
+ < 0.001 0.31 (0.19; 0.49)
+Nitrogen con-
+centration
+0.078 2.15 (1.17; 3.05)
+ < 0.001  −3.95 
+(−5.12; −255)
+ < 0.001  −6.1 
+(−6.88; −4.8)
+0.163 1.67 (−0.52; 
+3.67)
+ < 0.001  −5.55 
+(−7.6; −3.6)
+ < 0.001  −7.22 
+(−8.08; −6.45)
+Nitrogen 
+content
+ < 0.001 10.5 (8.22; 13)
+0.265  −2.06 (−4.92; 
+0.87)
+ < 0.001  −12.6 
+(−15.1; −10.2)
+ < 0.001 9.87 (6.93; 
+11.9)
+ < 0.001  −10.8 
+(−12; −9.59)
+ < 0.001  −20.7 
+(−22.7; −17.9)
+15Nitrogen 
+recovery
+-
+-
+-
+-
+ < 0.001  −52.8 (−55.4; 
+−50.4)
+-
+-
+-
+-
+ < 0.001  −61 
+(−62.8; −57.5)
+Phosphorus 
+concentra-
+tion
+0.933  −0.02 (−0.2; 
+0.08)
+0.012 0.2 (0.1; 0.3)
+0.006 0.23 (0.1; 0.39)
+0.999 0.0 (−0.01; 
+0.01)
+0.072  −0.15 
+(−0.23; −0.02)
+0.067  −0.15 
+(−0.23; −0.02)
+Phosphorus 
+content
+0.678 0.24 (−0.23; 
+0.57)
+0.001 1.37 (0.69; 1.85)
+0.003 1.13 (0.39; 1.74)
+0.415 0.37 (−0.1; 
+0.84)
+0.873 0.14 (−0.36; 
+0.78)
+0.705  −0.23 (−0.56; 
+0.29)
+N:P
+0.052 2.03 (0.57; 4.33)
+ < 0.001  −4.63 
+(−5.88; −2.99)
+ < 0.001  −6.66 
+(−8.76; −5.06)
+0.461 0.96 (−0.24; 
+2.08)
+0.019  −2.43 
+(−3.83; −1.29)
+0.002  −3.39 
+(−4.3; −2.81)
+Root length
+0.384  −5.25 
+(−8.75; −1.75)
+ < 0.001 21.5 (12.2; 30.8)
+ < 0.001 26.8 (17.2; 36)
+0.920 1.5 (−5; 8.25)
+0.001 19 (8.75; 29.5)
+0.001 17.5 (7.25; 26.5)
+Specific root 
+length
+0.228 5 (−0.25; 9.75)
+0.003 11.8 (5.75; 17.5)
+0.082 6.75 (2.5; 11.2)
+0.228 5 (1; 11)
+0.467 3.5 (0.5; 6.5)
+0.864  −1.5 (−7.93; 
+2.25)
+446
+Mycorrhiza (2021) 31:441–454
+1 3
+In the Ctr+N treatment, the percentage of 15N recov-
+ery was 61.5% on average, with no significant differences 
+by mycorrhization (Fig. 2   Aboveground and belowground biomass dry weight of durum 
+wheat in the different fertilisation treatments (Ctr control not ferti-
+lised, Ctr+N control fertilised with ammonium sulphate, Org soil 
+amended with  crop residues) in the absence (grey points) or pres-
+ence (coloured points) of arbuscular mycorrhizal (AM) fungal inocu-
+lum.",2
+33893547,"['Myc', 'treatments', 'control', 'absence']",biomass,"
+",,"Table 1   Analysis of variance: 
+F- and p-values for the effects 
+of the applied treatments 
+(Fertilisation, Fert (1); 
+Mycorrhization, Myc (2); and 
+their interaction (1 × 2)) on the 
+traits observed in durum wheat 
+plants
+Fert (1)
+Myc (2)
+1 × 2
+df
+F-values
+p-values
+df
+F-values
+p-values
+df
+F-values
+p-values
+AM fungi colonisation
+2
+24.46
+0.001
+-
+-
+-
+-
+-
+-
+Aboveground biomass
+2
+12.58
+ < 0.001
+1
+17.13
+ < 0.001
+2
+0.53
+0.601
+Belowground biomass
+2
+39.85
+ < 0.001
+1
+9.37
+0.008
+2
+0.73
+0.497
+Nitrogen concentration
+2
+73.66
+ < 0.001
+1
+2.23
+0.116
+2
+1.45
+0.261
+Nitrogen content
+2
+175.18
+ < 0.001
+1
+24.21
+ < 0.001
+2
+14.80
+ < 0.001
+15Nitrogen recovery
+1
+2915.12
+ < 0.001
+1
+0.61
+0.454
+1
+14.77
+0.004
+Phosphorus concentration
+2
+0.37
+0.693
+1
+64.77
+ < 0.001
+2
+11.21
+ < 0.001
+Phosphorus content
+2
+7.21
+0.007
+1
+65.79
+ < 0.001
+2
+7.00
+0.007
+N:P
+2
+42.95
+ < 0.001
+1
+49.12
+ < 0.001
+2
+4.48
+0.030
+Root length
+2
+40.56
+ < 0.001
+1
+12.67
+0.003
+2
+1.54
+0.246
+Specific root length
+2
+7.15
+0.007
+1
+6.45
+0.023
+2
+2.70
+0.099
+Fig. Data 
+are plotted with the mean depicted as a black circle ± SE (n = 4) rep-
+resented by the end of the vertical black line to the right of the raw 
+data
+445
+Mycorrhiza (2021) 31:441–454
+1 3
+Table 2   p-values for pairwise comparisons, effect size mean (unpaired means), and estimated 95% confidence intervals (Δ mean and CIs; in brackets) in the different fertilisation treatments 
+(Ctr, control not fertilised; Ctr+N, control fertilised with ammonium sulphate; Org, soil amended with crop residues) in the absence (−AM) or presence (+AM) of arbuscular mycorrhizal fungal 
+inoculum
+–AM
+ +AM
+Ctr vs Ctr+N
+Ctr vs Org
+Ctr+N vs Org
+Ctr vs Ctr+N
+Ctr vs Org
+Ctr+N vs Org
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+AM fungi 
+colonization
+-
+-
+-
+-
+-
+-
+0.173  −4.18 (−10.5; 
+0)
+0.008 9.48 (3.41; 13.7)
+0.001 13.7 (9.98; 17.6)
+Aboveground 
+biomass
+0.207 0.23 (0.17; 0.31)
+0.002 0.55 (0.19; 0.74)
+0.069 0.31 (−0.06; 
+0.52)
+0.263 0.21 (−0.08; 
+0.5)
+0.029 0.37 (0.1; 0.65)
+0.444 0.16 (0.04; 0.27)
+Belowground 
+biomass
+0.088  −0.13 
+(−0.19; −0.03)
+0.002 0.23 (0.06; 0.36)
+ < 0.001 0.36 (0.19; 0.49)
+0.831  −0.03 (−0.12; 
+0.05)
+ < 0.001 0.28 (0.13; 0.46)
+ < 0.001 0.31 (0.19; 0.49)
+Nitrogen con-
+centration
+0.078 2.15 (1.17; 3.05)
+ < 0.001  −3.95 
+(−5.12; −255)
+ < 0.001  −6.1 
+(−6.88; −4.8)
+0.163 1.67 (−0.52; 
+3.67)
+ < 0.001  −5.55 
+(−7.6; −3.6)
+ < 0.001  −7.22 
+(−8.08; −6.45)
+Nitrogen 
+content
+ < 0.001 10.5 (8.22; 13)
+0.265  −2.06 (−4.92; 
+0.87)
+ < 0.001  −12.6 
+(−15.1; −10.2)
+ < 0.001 9.87 (6.93; 
+11.9)
+ < 0.001  −10.8 
+(−12; −9.59)
+ < 0.001  −20.7 
+(−22.7; −17.9)
+15Nitrogen 
+recovery
+-
+-
+-
+-
+ < 0.001  −52.8 (−55.4; 
+−50.4)
+-
+-
+-
+-
+ < 0.001  −61 
+(−62.8; −57.5)
+Phosphorus 
+concentra-
+tion
+0.933  −0.02 (−0.2; 
+0.08)
+0.012 0.2 (0.1; 0.3)
+0.006 0.23 (0.1; 0.39)
+0.999 0.0 (−0.01; 
+0.01)
+0.072  −0.15 
+(−0.23; −0.02)
+0.067  −0.15 
+(−0.23; −0.02)
+Phosphorus 
+content
+0.678 0.24 (−0.23; 
+0.57)
+0.001 1.37 (0.69; 1.85)
+0.003 1.13 (0.39; 1.74)
+0.415 0.37 (−0.1; 
+0.84)
+0.873 0.14 (−0.36; 
+0.78)
+0.705  −0.23 (−0.56; 
+0.29)
+N:P
+0.052 2.03 (0.57; 4.33)
+ < 0.001  −4.63 
+(−5.88; −2.99)
+ < 0.001  −6.66 
+(−8.76; −5.06)
+0.461 0.96 (−0.24; 
+2.08)
+0.019  −2.43 
+(−3.83; −1.29)
+0.002  −3.39 
+(−4.3; −2.81)
+Root length
+0.384  −5.25 
+(−8.75; −1.75)
+ < 0.001 21.5 (12.2; 30.8)
+ < 0.001 26.8 (17.2; 36)
+0.920 1.5 (−5; 8.25)
+0.001 19 (8.75; 29.5)
+0.001 17.5 (7.25; 26.5)
+Specific root 
+length
+0.228 5 (−0.25; 9.75)
+0.003 11.8 (5.75; 17.5)
+0.082 6.75 (2.5; 11.2)
+0.228 5 (1; 11)
+0.467 3.5 (0.5; 6.5)
+0.864  −1.5 (−7.93; 
+2.25)
+446
+Mycorrhiza (2021) 31:441–454
+1 3
+In the Ctr+N treatment, the percentage of 15N recov-
+ery was 61.5% on average, with no significant differences 
+by mycorrhization (Fig. 2   Aboveground and belowground biomass dry weight of durum 
+wheat in the different fertilisation treatments (Ctr control not ferti-
+lised, Ctr+N control fertilised with ammonium sulphate, Org soil 
+amended with  crop residues) in the absence (grey points) or pres-
+ence (coloured points) of arbuscular mycorrhizal (AM) fungal inocu-
+lum.",2
+33893547,"['Myc', 'treatments', 'control', 'absence']",biomass,0.001,,"Table 1   Analysis of variance: 
+F- and p-values for the effects 
+of the applied treatments 
+(Fertilisation, Fert (1); 
+Mycorrhization, Myc (2); and 
+their interaction (1 × 2)) on the 
+traits observed in durum wheat 
+plants
+Fert (1)
+Myc (2)
+1 × 2
+df
+F-values
+p-values
+df
+F-values
+p-values
+df
+F-values
+p-values
+AM fungi colonisation
+2
+24.46
+0.001
+-
+-
+-
+-
+-
+-
+Aboveground biomass
+2
+12.58
+ < 0.001
+1
+17.13
+ < 0.001
+2
+0.53
+0.601
+Belowground biomass
+2
+39.85
+ < 0.001
+1
+9.37
+0.008
+2
+0.73
+0.497
+Nitrogen concentration
+2
+73.66
+ < 0.001
+1
+2.23
+0.116
+2
+1.45
+0.261
+Nitrogen content
+2
+175.18
+ < 0.001
+1
+24.21
+ < 0.001
+2
+14.80
+ < 0.001
+15Nitrogen recovery
+1
+2915.12
+ < 0.001
+1
+0.61
+0.454
+1
+14.77
+0.004
+Phosphorus concentration
+2
+0.37
+0.693
+1
+64.77
+ < 0.001
+2
+11.21
+ < 0.001
+Phosphorus content
+2
+7.21
+0.007
+1
+65.79
+ < 0.001
+2
+7.00
+0.007
+N:P
+2
+42.95
+ < 0.001
+1
+49.12
+ < 0.001
+2
+4.48
+0.030
+Root length
+2
+40.56
+ < 0.001
+1
+12.67
+0.003
+2
+1.54
+0.246
+Specific root length
+2
+7.15
+0.007
+1
+6.45
+0.023
+2
+2.70
+0.099
+Fig. Data 
+are plotted with the mean depicted as a black circle ± SE (n = 4) rep-
+resented by the end of the vertical black line to the right of the raw 
+data
+445
+Mycorrhiza (2021) 31:441–454
+1 3
+Table 2   p-values for pairwise comparisons, effect size mean (unpaired means), and estimated 95% confidence intervals (Δ mean and CIs; in brackets) in the different fertilisation treatments 
+(Ctr, control not fertilised; Ctr+N, control fertilised with ammonium sulphate; Org, soil amended with crop residues) in the absence (−AM) or presence (+AM) of arbuscular mycorrhizal fungal 
+inoculum
+–AM
+ +AM
+Ctr vs Ctr+N
+Ctr vs Org
+Ctr+N vs Org
+Ctr vs Ctr+N
+Ctr vs Org
+Ctr+N vs Org
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+AM fungi 
+colonization
+-
+-
+-
+-
+-
+-
+0.173  −4.18 (−10.5; 
+0)
+0.008 9.48 (3.41; 13.7)
+0.001 13.7 (9.98; 17.6)
+Aboveground 
+biomass
+0.207 0.23 (0.17; 0.31)
+0.002 0.55 (0.19; 0.74)
+0.069 0.31 (−0.06; 
+0.52)
+0.263 0.21 (−0.08; 
+0.5)
+0.029 0.37 (0.1; 0.65)
+0.444 0.16 (0.04; 0.27)
+Belowground 
+biomass
+0.088  −0.13 
+(−0.19; −0.03)
+0.002 0.23 (0.06; 0.36)
+ < 0.001 0.36 (0.19; 0.49)
+0.831  −0.03 (−0.12; 
+0.05)
+ < 0.001 0.28 (0.13; 0.46)
+ < 0.001 0.31 (0.19; 0.49)
+Nitrogen con-
+centration
+0.078 2.15 (1.17; 3.05)
+ < 0.001  −3.95 
+(−5.12; −255)
+ < 0.001  −6.1 
+(−6.88; −4.8)
+0.163 1.67 (−0.52; 
+3.67)
+ < 0.001  −5.55 
+(−7.6; −3.6)
+ < 0.001  −7.22 
+(−8.08; −6.45)
+Nitrogen 
+content
+ < 0.001 10.5 (8.22; 13)
+0.265  −2.06 (−4.92; 
+0.87)
+ < 0.001  −12.6 
+(−15.1; −10.2)
+ < 0.001 9.87 (6.93; 
+11.9)
+ < 0.001  −10.8 
+(−12; −9.59)
+ < 0.001  −20.7 
+(−22.7; −17.9)
+15Nitrogen 
+recovery
+-
+-
+-
+-
+ < 0.001  −52.8 (−55.4; 
+−50.4)
+-
+-
+-
+-
+ < 0.001  −61 
+(−62.8; −57.5)
+Phosphorus 
+concentra-
+tion
+0.933  −0.02 (−0.2; 
+0.08)
+0.012 0.2 (0.1; 0.3)
+0.006 0.23 (0.1; 0.39)
+0.999 0.0 (−0.01; 
+0.01)
+0.072  −0.15 
+(−0.23; −0.02)
+0.067  −0.15 
+(−0.23; −0.02)
+Phosphorus 
+content
+0.678 0.24 (−0.23; 
+0.57)
+0.001 1.37 (0.69; 1.85)
+0.003 1.13 (0.39; 1.74)
+0.415 0.37 (−0.1; 
+0.84)
+0.873 0.14 (−0.36; 
+0.78)
+0.705  −0.23 (−0.56; 
+0.29)
+N:P
+0.052 2.03 (0.57; 4.33)
+ < 0.001  −4.63 
+(−5.88; −2.99)
+ < 0.001  −6.66 
+(−8.76; −5.06)
+0.461 0.96 (−0.24; 
+2.08)
+0.019  −2.43 
+(−3.83; −1.29)
+0.002  −3.39 
+(−4.3; −2.81)
+Root length
+0.384  −5.25 
+(−8.75; −1.75)
+ < 0.001 21.5 (12.2; 30.8)
+ < 0.001 26.8 (17.2; 36)
+0.920 1.5 (−5; 8.25)
+0.001 19 (8.75; 29.5)
+0.001 17.5 (7.25; 26.5)
+Specific root 
+length
+0.228 5 (−0.25; 9.75)
+0.003 11.8 (5.75; 17.5)
+0.082 6.75 (2.5; 11.2)
+0.228 5 (1; 11)
+0.467 3.5 (0.5; 6.5)
+0.864  −1.5 (−7.93; 
+2.25)
+446
+Mycorrhiza (2021) 31:441–454
+1 3
+In the Ctr+N treatment, the percentage of 15N recov-
+ery was 61.5% on average, with no significant differences 
+by mycorrhization (Fig. 2   Aboveground and belowground biomass dry weight of durum 
+wheat in the different fertilisation treatments (Ctr control not ferti-
+lised, Ctr+N control fertilised with ammonium sulphate, Org soil 
+amended with  crop residues) in the absence (grey points) or pres-
+ence (coloured points) of arbuscular mycorrhizal (AM) fungal inocu-
+lum.",2
+33893547,"['Myc', 'treatments', 'control', 'absence']",biomass,2,,"Table 1   Analysis of variance: 
+F- and p-values for the effects 
+of the applied treatments 
+(Fertilisation, Fert (1); 
+Mycorrhization, Myc (2); and 
+their interaction (1 × 2)) on the 
+traits observed in durum wheat 
+plants
+Fert (1)
+Myc (2)
+1 × 2
+df
+F-values
+p-values
+df
+F-values
+p-values
+df
+F-values
+p-values
+AM fungi colonisation
+2
+24.46
+0.001
+-
+-
+-
+-
+-
+-
+Aboveground biomass
+2
+12.58
+ < 0.001
+1
+17.13
+ < 0.001
+2
+0.53
+0.601
+Belowground biomass
+2
+39.85
+ < 0.001
+1
+9.37
+0.008
+2
+0.73
+0.497
+Nitrogen concentration
+2
+73.66
+ < 0.001
+1
+2.23
+0.116
+2
+1.45
+0.261
+Nitrogen content
+2
+175.18
+ < 0.001
+1
+24.21
+ < 0.001
+2
+14.80
+ < 0.001
+15Nitrogen recovery
+1
+2915.12
+ < 0.001
+1
+0.61
+0.454
+1
+14.77
+0.004
+Phosphorus concentration
+2
+0.37
+0.693
+1
+64.77
+ < 0.001
+2
+11.21
+ < 0.001
+Phosphorus content
+2
+7.21
+0.007
+1
+65.79
+ < 0.001
+2
+7.00
+0.007
+N:P
+2
+42.95
+ < 0.001
+1
+49.12
+ < 0.001
+2
+4.48
+0.030
+Root length
+2
+40.56
+ < 0.001
+1
+12.67
+0.003
+2
+1.54
+0.246
+Specific root length
+2
+7.15
+0.007
+1
+6.45
+0.023
+2
+2.70
+0.099
+Fig. Data 
+are plotted with the mean depicted as a black circle ± SE (n = 4) rep-
+resented by the end of the vertical black line to the right of the raw 
+data
+445
+Mycorrhiza (2021) 31:441–454
+1 3
+Table 2   p-values for pairwise comparisons, effect size mean (unpaired means), and estimated 95% confidence intervals (Δ mean and CIs; in brackets) in the different fertilisation treatments 
+(Ctr, control not fertilised; Ctr+N, control fertilised with ammonium sulphate; Org, soil amended with crop residues) in the absence (−AM) or presence (+AM) of arbuscular mycorrhizal fungal 
+inoculum
+–AM
+ +AM
+Ctr vs Ctr+N
+Ctr vs Org
+Ctr+N vs Org
+Ctr vs Ctr+N
+Ctr vs Org
+Ctr+N vs Org
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+AM fungi 
+colonization
+-
+-
+-
+-
+-
+-
+0.173  −4.18 (−10.5; 
+0)
+0.008 9.48 (3.41; 13.7)
+0.001 13.7 (9.98; 17.6)
+Aboveground 
+biomass
+0.207 0.23 (0.17; 0.31)
+0.002 0.55 (0.19; 0.74)
+0.069 0.31 (−0.06; 
+0.52)
+0.263 0.21 (−0.08; 
+0.5)
+0.029 0.37 (0.1; 0.65)
+0.444 0.16 (0.04; 0.27)
+Belowground 
+biomass
+0.088  −0.13 
+(−0.19; −0.03)
+0.002 0.23 (0.06; 0.36)
+ < 0.001 0.36 (0.19; 0.49)
+0.831  −0.03 (−0.12; 
+0.05)
+ < 0.001 0.28 (0.13; 0.46)
+ < 0.001 0.31 (0.19; 0.49)
+Nitrogen con-
+centration
+0.078 2.15 (1.17; 3.05)
+ < 0.001  −3.95 
+(−5.12; −255)
+ < 0.001  −6.1 
+(−6.88; −4.8)
+0.163 1.67 (−0.52; 
+3.67)
+ < 0.001  −5.55 
+(−7.6; −3.6)
+ < 0.001  −7.22 
+(−8.08; −6.45)
+Nitrogen 
+content
+ < 0.001 10.5 (8.22; 13)
+0.265  −2.06 (−4.92; 
+0.87)
+ < 0.001  −12.6 
+(−15.1; −10.2)
+ < 0.001 9.87 (6.93; 
+11.9)
+ < 0.001  −10.8 
+(−12; −9.59)
+ < 0.001  −20.7 
+(−22.7; −17.9)
+15Nitrogen 
+recovery
+-
+-
+-
+-
+ < 0.001  −52.8 (−55.4; 
+−50.4)
+-
+-
+-
+-
+ < 0.001  −61 
+(−62.8; −57.5)
+Phosphorus 
+concentra-
+tion
+0.933  −0.02 (−0.2; 
+0.08)
+0.012 0.2 (0.1; 0.3)
+0.006 0.23 (0.1; 0.39)
+0.999 0.0 (−0.01; 
+0.01)
+0.072  −0.15 
+(−0.23; −0.02)
+0.067  −0.15 
+(−0.23; −0.02)
+Phosphorus 
+content
+0.678 0.24 (−0.23; 
+0.57)
+0.001 1.37 (0.69; 1.85)
+0.003 1.13 (0.39; 1.74)
+0.415 0.37 (−0.1; 
+0.84)
+0.873 0.14 (−0.36; 
+0.78)
+0.705  −0.23 (−0.56; 
+0.29)
+N:P
+0.052 2.03 (0.57; 4.33)
+ < 0.001  −4.63 
+(−5.88; −2.99)
+ < 0.001  −6.66 
+(−8.76; −5.06)
+0.461 0.96 (−0.24; 
+2.08)
+0.019  −2.43 
+(−3.83; −1.29)
+0.002  −3.39 
+(−4.3; −2.81)
+Root length
+0.384  −5.25 
+(−8.75; −1.75)
+ < 0.001 21.5 (12.2; 30.8)
+ < 0.001 26.8 (17.2; 36)
+0.920 1.5 (−5; 8.25)
+0.001 19 (8.75; 29.5)
+0.001 17.5 (7.25; 26.5)
+Specific root 
+length
+0.228 5 (−0.25; 9.75)
+0.003 11.8 (5.75; 17.5)
+0.082 6.75 (2.5; 11.2)
+0.228 5 (1; 11)
+0.467 3.5 (0.5; 6.5)
+0.864  −1.5 (−7.93; 
+2.25)
+446
+Mycorrhiza (2021) 31:441–454
+1 3
+In the Ctr+N treatment, the percentage of 15N recov-
+ery was 61.5% on average, with no significant differences 
+by mycorrhization (Fig. 2   Aboveground and belowground biomass dry weight of durum 
+wheat in the different fertilisation treatments (Ctr control not ferti-
+lised, Ctr+N control fertilised with ammonium sulphate, Org soil 
+amended with  crop residues) in the absence (grey points) or pres-
+ence (coloured points) of arbuscular mycorrhizal (AM) fungal inocu-
+lum.",2
+33893547,"['Myc', 'treatments', 'control', 'absence']",biomass,12.58,,"Table 1   Analysis of variance: 
+F- and p-values for the effects 
+of the applied treatments 
+(Fertilisation, Fert (1); 
+Mycorrhization, Myc (2); and 
+their interaction (1 × 2)) on the 
+traits observed in durum wheat 
+plants
+Fert (1)
+Myc (2)
+1 × 2
+df
+F-values
+p-values
+df
+F-values
+p-values
+df
+F-values
+p-values
+AM fungi colonisation
+2
+24.46
+0.001
+-
+-
+-
+-
+-
+-
+Aboveground biomass
+2
+12.58
+ < 0.001
+1
+17.13
+ < 0.001
+2
+0.53
+0.601
+Belowground biomass
+2
+39.85
+ < 0.001
+1
+9.37
+0.008
+2
+0.73
+0.497
+Nitrogen concentration
+2
+73.66
+ < 0.001
+1
+2.23
+0.116
+2
+1.45
+0.261
+Nitrogen content
+2
+175.18
+ < 0.001
+1
+24.21
+ < 0.001
+2
+14.80
+ < 0.001
+15Nitrogen recovery
+1
+2915.12
+ < 0.001
+1
+0.61
+0.454
+1
+14.77
+0.004
+Phosphorus concentration
+2
+0.37
+0.693
+1
+64.77
+ < 0.001
+2
+11.21
+ < 0.001
+Phosphorus content
+2
+7.21
+0.007
+1
+65.79
+ < 0.001
+2
+7.00
+0.007
+N:P
+2
+42.95
+ < 0.001
+1
+49.12
+ < 0.001
+2
+4.48
+0.030
+Root length
+2
+40.56
+ < 0.001
+1
+12.67
+0.003
+2
+1.54
+0.246
+Specific root length
+2
+7.15
+0.007
+1
+6.45
+0.023
+2
+2.70
+0.099
+Fig. Data 
+are plotted with the mean depicted as a black circle ± SE (n = 4) rep-
+resented by the end of the vertical black line to the right of the raw 
+data
+445
+Mycorrhiza (2021) 31:441–454
+1 3
+Table 2   p-values for pairwise comparisons, effect size mean (unpaired means), and estimated 95% confidence intervals (Δ mean and CIs; in brackets) in the different fertilisation treatments 
+(Ctr, control not fertilised; Ctr+N, control fertilised with ammonium sulphate; Org, soil amended with crop residues) in the absence (−AM) or presence (+AM) of arbuscular mycorrhizal fungal 
+inoculum
+–AM
+ +AM
+Ctr vs Ctr+N
+Ctr vs Org
+Ctr+N vs Org
+Ctr vs Ctr+N
+Ctr vs Org
+Ctr+N vs Org
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+AM fungi 
+colonization
+-
+-
+-
+-
+-
+-
+0.173  −4.18 (−10.5; 
+0)
+0.008 9.48 (3.41; 13.7)
+0.001 13.7 (9.98; 17.6)
+Aboveground 
+biomass
+0.207 0.23 (0.17; 0.31)
+0.002 0.55 (0.19; 0.74)
+0.069 0.31 (−0.06; 
+0.52)
+0.263 0.21 (−0.08; 
+0.5)
+0.029 0.37 (0.1; 0.65)
+0.444 0.16 (0.04; 0.27)
+Belowground 
+biomass
+0.088  −0.13 
+(−0.19; −0.03)
+0.002 0.23 (0.06; 0.36)
+ < 0.001 0.36 (0.19; 0.49)
+0.831  −0.03 (−0.12; 
+0.05)
+ < 0.001 0.28 (0.13; 0.46)
+ < 0.001 0.31 (0.19; 0.49)
+Nitrogen con-
+centration
+0.078 2.15 (1.17; 3.05)
+ < 0.001  −3.95 
+(−5.12; −255)
+ < 0.001  −6.1 
+(−6.88; −4.8)
+0.163 1.67 (−0.52; 
+3.67)
+ < 0.001  −5.55 
+(−7.6; −3.6)
+ < 0.001  −7.22 
+(−8.08; −6.45)
+Nitrogen 
+content
+ < 0.001 10.5 (8.22; 13)
+0.265  −2.06 (−4.92; 
+0.87)
+ < 0.001  −12.6 
+(−15.1; −10.2)
+ < 0.001 9.87 (6.93; 
+11.9)
+ < 0.001  −10.8 
+(−12; −9.59)
+ < 0.001  −20.7 
+(−22.7; −17.9)
+15Nitrogen 
+recovery
+-
+-
+-
+-
+ < 0.001  −52.8 (−55.4; 
+−50.4)
+-
+-
+-
+-
+ < 0.001  −61 
+(−62.8; −57.5)
+Phosphorus 
+concentra-
+tion
+0.933  −0.02 (−0.2; 
+0.08)
+0.012 0.2 (0.1; 0.3)
+0.006 0.23 (0.1; 0.39)
+0.999 0.0 (−0.01; 
+0.01)
+0.072  −0.15 
+(−0.23; −0.02)
+0.067  −0.15 
+(−0.23; −0.02)
+Phosphorus 
+content
+0.678 0.24 (−0.23; 
+0.57)
+0.001 1.37 (0.69; 1.85)
+0.003 1.13 (0.39; 1.74)
+0.415 0.37 (−0.1; 
+0.84)
+0.873 0.14 (−0.36; 
+0.78)
+0.705  −0.23 (−0.56; 
+0.29)
+N:P
+0.052 2.03 (0.57; 4.33)
+ < 0.001  −4.63 
+(−5.88; −2.99)
+ < 0.001  −6.66 
+(−8.76; −5.06)
+0.461 0.96 (−0.24; 
+2.08)
+0.019  −2.43 
+(−3.83; −1.29)
+0.002  −3.39 
+(−4.3; −2.81)
+Root length
+0.384  −5.25 
+(−8.75; −1.75)
+ < 0.001 21.5 (12.2; 30.8)
+ < 0.001 26.8 (17.2; 36)
+0.920 1.5 (−5; 8.25)
+0.001 19 (8.75; 29.5)
+0.001 17.5 (7.25; 26.5)
+Specific root 
+length
+0.228 5 (−0.25; 9.75)
+0.003 11.8 (5.75; 17.5)
+0.082 6.75 (2.5; 11.2)
+0.228 5 (1; 11)
+0.467 3.5 (0.5; 6.5)
+0.864  −1.5 (−7.93; 
+2.25)
+446
+Mycorrhiza (2021) 31:441–454
+1 3
+In the Ctr+N treatment, the percentage of 15N recov-
+ery was 61.5% on average, with no significant differences 
+by mycorrhization (Fig. 2   Aboveground and belowground biomass dry weight of durum 
+wheat in the different fertilisation treatments (Ctr control not ferti-
+lised, Ctr+N control fertilised with ammonium sulphate, Org soil 
+amended with  crop residues) in the absence (grey points) or pres-
+ence (coloured points) of arbuscular mycorrhizal (AM) fungal inocu-
+lum.",2
+33893547,"['Myc', 'treatments', 'control', 'absence']",biomass,"
+ ",,"Table 1   Analysis of variance: 
+F- and p-values for the effects 
+of the applied treatments 
+(Fertilisation, Fert (1); 
+Mycorrhization, Myc (2); and 
+their interaction (1 × 2)) on the 
+traits observed in durum wheat 
+plants
+Fert (1)
+Myc (2)
+1 × 2
+df
+F-values
+p-values
+df
+F-values
+p-values
+df
+F-values
+p-values
+AM fungi colonisation
+2
+24.46
+0.001
+-
+-
+-
+-
+-
+-
+Aboveground biomass
+2
+12.58
+ < 0.001
+1
+17.13
+ < 0.001
+2
+0.53
+0.601
+Belowground biomass
+2
+39.85
+ < 0.001
+1
+9.37
+0.008
+2
+0.73
+0.497
+Nitrogen concentration
+2
+73.66
+ < 0.001
+1
+2.23
+0.116
+2
+1.45
+0.261
+Nitrogen content
+2
+175.18
+ < 0.001
+1
+24.21
+ < 0.001
+2
+14.80
+ < 0.001
+15Nitrogen recovery
+1
+2915.12
+ < 0.001
+1
+0.61
+0.454
+1
+14.77
+0.004
+Phosphorus concentration
+2
+0.37
+0.693
+1
+64.77
+ < 0.001
+2
+11.21
+ < 0.001
+Phosphorus content
+2
+7.21
+0.007
+1
+65.79
+ < 0.001
+2
+7.00
+0.007
+N:P
+2
+42.95
+ < 0.001
+1
+49.12
+ < 0.001
+2
+4.48
+0.030
+Root length
+2
+40.56
+ < 0.001
+1
+12.67
+0.003
+2
+1.54
+0.246
+Specific root length
+2
+7.15
+0.007
+1
+6.45
+0.023
+2
+2.70
+0.099
+Fig. Data 
+are plotted with the mean depicted as a black circle ± SE (n = 4) rep-
+resented by the end of the vertical black line to the right of the raw 
+data
+445
+Mycorrhiza (2021) 31:441–454
+1 3
+Table 2   p-values for pairwise comparisons, effect size mean (unpaired means), and estimated 95% confidence intervals (Δ mean and CIs; in brackets) in the different fertilisation treatments 
+(Ctr, control not fertilised; Ctr+N, control fertilised with ammonium sulphate; Org, soil amended with crop residues) in the absence (−AM) or presence (+AM) of arbuscular mycorrhizal fungal 
+inoculum
+–AM
+ +AM
+Ctr vs Ctr+N
+Ctr vs Org
+Ctr+N vs Org
+Ctr vs Ctr+N
+Ctr vs Org
+Ctr+N vs Org
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+AM fungi 
+colonization
+-
+-
+-
+-
+-
+-
+0.173  −4.18 (−10.5; 
+0)
+0.008 9.48 (3.41; 13.7)
+0.001 13.7 (9.98; 17.6)
+Aboveground 
+biomass
+0.207 0.23 (0.17; 0.31)
+0.002 0.55 (0.19; 0.74)
+0.069 0.31 (−0.06; 
+0.52)
+0.263 0.21 (−0.08; 
+0.5)
+0.029 0.37 (0.1; 0.65)
+0.444 0.16 (0.04; 0.27)
+Belowground 
+biomass
+0.088  −0.13 
+(−0.19; −0.03)
+0.002 0.23 (0.06; 0.36)
+ < 0.001 0.36 (0.19; 0.49)
+0.831  −0.03 (−0.12; 
+0.05)
+ < 0.001 0.28 (0.13; 0.46)
+ < 0.001 0.31 (0.19; 0.49)
+Nitrogen con-
+centration
+0.078 2.15 (1.17; 3.05)
+ < 0.001  −3.95 
+(−5.12; −255)
+ < 0.001  −6.1 
+(−6.88; −4.8)
+0.163 1.67 (−0.52; 
+3.67)
+ < 0.001  −5.55 
+(−7.6; −3.6)
+ < 0.001  −7.22 
+(−8.08; −6.45)
+Nitrogen 
+content
+ < 0.001 10.5 (8.22; 13)
+0.265  −2.06 (−4.92; 
+0.87)
+ < 0.001  −12.6 
+(−15.1; −10.2)
+ < 0.001 9.87 (6.93; 
+11.9)
+ < 0.001  −10.8 
+(−12; −9.59)
+ < 0.001  −20.7 
+(−22.7; −17.9)
+15Nitrogen 
+recovery
+-
+-
+-
+-
+ < 0.001  −52.8 (−55.4; 
+−50.4)
+-
+-
+-
+-
+ < 0.001  −61 
+(−62.8; −57.5)
+Phosphorus 
+concentra-
+tion
+0.933  −0.02 (−0.2; 
+0.08)
+0.012 0.2 (0.1; 0.3)
+0.006 0.23 (0.1; 0.39)
+0.999 0.0 (−0.01; 
+0.01)
+0.072  −0.15 
+(−0.23; −0.02)
+0.067  −0.15 
+(−0.23; −0.02)
+Phosphorus 
+content
+0.678 0.24 (−0.23; 
+0.57)
+0.001 1.37 (0.69; 1.85)
+0.003 1.13 (0.39; 1.74)
+0.415 0.37 (−0.1; 
+0.84)
+0.873 0.14 (−0.36; 
+0.78)
+0.705  −0.23 (−0.56; 
+0.29)
+N:P
+0.052 2.03 (0.57; 4.33)
+ < 0.001  −4.63 
+(−5.88; −2.99)
+ < 0.001  −6.66 
+(−8.76; −5.06)
+0.461 0.96 (−0.24; 
+2.08)
+0.019  −2.43 
+(−3.83; −1.29)
+0.002  −3.39 
+(−4.3; −2.81)
+Root length
+0.384  −5.25 
+(−8.75; −1.75)
+ < 0.001 21.5 (12.2; 30.8)
+ < 0.001 26.8 (17.2; 36)
+0.920 1.5 (−5; 8.25)
+0.001 19 (8.75; 29.5)
+0.001 17.5 (7.25; 26.5)
+Specific root 
+length
+0.228 5 (−0.25; 9.75)
+0.003 11.8 (5.75; 17.5)
+0.082 6.75 (2.5; 11.2)
+0.228 5 (1; 11)
+0.467 3.5 (0.5; 6.5)
+0.864  −1.5 (−7.93; 
+2.25)
+446
+Mycorrhiza (2021) 31:441–454
+1 3
+In the Ctr+N treatment, the percentage of 15N recov-
+ery was 61.5% on average, with no significant differences 
+by mycorrhization (Fig. 2   Aboveground and belowground biomass dry weight of durum 
+wheat in the different fertilisation treatments (Ctr control not ferti-
+lised, Ctr+N control fertilised with ammonium sulphate, Org soil 
+amended with  crop residues) in the absence (grey points) or pres-
+ence (coloured points) of arbuscular mycorrhizal (AM) fungal inocu-
+lum.",2
+33893547,"['Myc', 'treatments', 'control', 'absence']",biomass,<,,"Table 1   Analysis of variance: 
+F- and p-values for the effects 
+of the applied treatments 
+(Fertilisation, Fert (1); 
+Mycorrhization, Myc (2); and 
+their interaction (1 × 2)) on the 
+traits observed in durum wheat 
+plants
+Fert (1)
+Myc (2)
+1 × 2
+df
+F-values
+p-values
+df
+F-values
+p-values
+df
+F-values
+p-values
+AM fungi colonisation
+2
+24.46
+0.001
+-
+-
+-
+-
+-
+-
+Aboveground biomass
+2
+12.58
+ < 0.001
+1
+17.13
+ < 0.001
+2
+0.53
+0.601
+Belowground biomass
+2
+39.85
+ < 0.001
+1
+9.37
+0.008
+2
+0.73
+0.497
+Nitrogen concentration
+2
+73.66
+ < 0.001
+1
+2.23
+0.116
+2
+1.45
+0.261
+Nitrogen content
+2
+175.18
+ < 0.001
+1
+24.21
+ < 0.001
+2
+14.80
+ < 0.001
+15Nitrogen recovery
+1
+2915.12
+ < 0.001
+1
+0.61
+0.454
+1
+14.77
+0.004
+Phosphorus concentration
+2
+0.37
+0.693
+1
+64.77
+ < 0.001
+2
+11.21
+ < 0.001
+Phosphorus content
+2
+7.21
+0.007
+1
+65.79
+ < 0.001
+2
+7.00
+0.007
+N:P
+2
+42.95
+ < 0.001
+1
+49.12
+ < 0.001
+2
+4.48
+0.030
+Root length
+2
+40.56
+ < 0.001
+1
+12.67
+0.003
+2
+1.54
+0.246
+Specific root length
+2
+7.15
+0.007
+1
+6.45
+0.023
+2
+2.70
+0.099
+Fig. Data 
+are plotted with the mean depicted as a black circle ± SE (n = 4) rep-
+resented by the end of the vertical black line to the right of the raw 
+data
+445
+Mycorrhiza (2021) 31:441–454
+1 3
+Table 2   p-values for pairwise comparisons, effect size mean (unpaired means), and estimated 95% confidence intervals (Δ mean and CIs; in brackets) in the different fertilisation treatments 
+(Ctr, control not fertilised; Ctr+N, control fertilised with ammonium sulphate; Org, soil amended with crop residues) in the absence (−AM) or presence (+AM) of arbuscular mycorrhizal fungal 
+inoculum
+–AM
+ +AM
+Ctr vs Ctr+N
+Ctr vs Org
+Ctr+N vs Org
+Ctr vs Ctr+N
+Ctr vs Org
+Ctr+N vs Org
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+AM fungi 
+colonization
+-
+-
+-
+-
+-
+-
+0.173  −4.18 (−10.5; 
+0)
+0.008 9.48 (3.41; 13.7)
+0.001 13.7 (9.98; 17.6)
+Aboveground 
+biomass
+0.207 0.23 (0.17; 0.31)
+0.002 0.55 (0.19; 0.74)
+0.069 0.31 (−0.06; 
+0.52)
+0.263 0.21 (−0.08; 
+0.5)
+0.029 0.37 (0.1; 0.65)
+0.444 0.16 (0.04; 0.27)
+Belowground 
+biomass
+0.088  −0.13 
+(−0.19; −0.03)
+0.002 0.23 (0.06; 0.36)
+ < 0.001 0.36 (0.19; 0.49)
+0.831  −0.03 (−0.12; 
+0.05)
+ < 0.001 0.28 (0.13; 0.46)
+ < 0.001 0.31 (0.19; 0.49)
+Nitrogen con-
+centration
+0.078 2.15 (1.17; 3.05)
+ < 0.001  −3.95 
+(−5.12; −255)
+ < 0.001  −6.1 
+(−6.88; −4.8)
+0.163 1.67 (−0.52; 
+3.67)
+ < 0.001  −5.55 
+(−7.6; −3.6)
+ < 0.001  −7.22 
+(−8.08; −6.45)
+Nitrogen 
+content
+ < 0.001 10.5 (8.22; 13)
+0.265  −2.06 (−4.92; 
+0.87)
+ < 0.001  −12.6 
+(−15.1; −10.2)
+ < 0.001 9.87 (6.93; 
+11.9)
+ < 0.001  −10.8 
+(−12; −9.59)
+ < 0.001  −20.7 
+(−22.7; −17.9)
+15Nitrogen 
+recovery
+-
+-
+-
+-
+ < 0.001  −52.8 (−55.4; 
+−50.4)
+-
+-
+-
+-
+ < 0.001  −61 
+(−62.8; −57.5)
+Phosphorus 
+concentra-
+tion
+0.933  −0.02 (−0.2; 
+0.08)
+0.012 0.2 (0.1; 0.3)
+0.006 0.23 (0.1; 0.39)
+0.999 0.0 (−0.01; 
+0.01)
+0.072  −0.15 
+(−0.23; −0.02)
+0.067  −0.15 
+(−0.23; −0.02)
+Phosphorus 
+content
+0.678 0.24 (−0.23; 
+0.57)
+0.001 1.37 (0.69; 1.85)
+0.003 1.13 (0.39; 1.74)
+0.415 0.37 (−0.1; 
+0.84)
+0.873 0.14 (−0.36; 
+0.78)
+0.705  −0.23 (−0.56; 
+0.29)
+N:P
+0.052 2.03 (0.57; 4.33)
+ < 0.001  −4.63 
+(−5.88; −2.99)
+ < 0.001  −6.66 
+(−8.76; −5.06)
+0.461 0.96 (−0.24; 
+2.08)
+0.019  −2.43 
+(−3.83; −1.29)
+0.002  −3.39 
+(−4.3; −2.81)
+Root length
+0.384  −5.25 
+(−8.75; −1.75)
+ < 0.001 21.5 (12.2; 30.8)
+ < 0.001 26.8 (17.2; 36)
+0.920 1.5 (−5; 8.25)
+0.001 19 (8.75; 29.5)
+0.001 17.5 (7.25; 26.5)
+Specific root 
+length
+0.228 5 (−0.25; 9.75)
+0.003 11.8 (5.75; 17.5)
+0.082 6.75 (2.5; 11.2)
+0.228 5 (1; 11)
+0.467 3.5 (0.5; 6.5)
+0.864  −1.5 (−7.93; 
+2.25)
+446
+Mycorrhiza (2021) 31:441–454
+1 3
+In the Ctr+N treatment, the percentage of 15N recov-
+ery was 61.5% on average, with no significant differences 
+by mycorrhization (Fig. 2   Aboveground and belowground biomass dry weight of durum 
+wheat in the different fertilisation treatments (Ctr control not ferti-
+lised, Ctr+N control fertilised with ammonium sulphate, Org soil 
+amended with  crop residues) in the absence (grey points) or pres-
+ence (coloured points) of arbuscular mycorrhizal (AM) fungal inocu-
+lum.",2
+33893547,"['Myc', 'treatments', 'control', 'absence']",biomass, ,,"Table 1   Analysis of variance: 
+F- and p-values for the effects 
+of the applied treatments 
+(Fertilisation, Fert (1); 
+Mycorrhization, Myc (2); and 
+their interaction (1 × 2)) on the 
+traits observed in durum wheat 
+plants
+Fert (1)
+Myc (2)
+1 × 2
+df
+F-values
+p-values
+df
+F-values
+p-values
+df
+F-values
+p-values
+AM fungi colonisation
+2
+24.46
+0.001
+-
+-
+-
+-
+-
+-
+Aboveground biomass
+2
+12.58
+ < 0.001
+1
+17.13
+ < 0.001
+2
+0.53
+0.601
+Belowground biomass
+2
+39.85
+ < 0.001
+1
+9.37
+0.008
+2
+0.73
+0.497
+Nitrogen concentration
+2
+73.66
+ < 0.001
+1
+2.23
+0.116
+2
+1.45
+0.261
+Nitrogen content
+2
+175.18
+ < 0.001
+1
+24.21
+ < 0.001
+2
+14.80
+ < 0.001
+15Nitrogen recovery
+1
+2915.12
+ < 0.001
+1
+0.61
+0.454
+1
+14.77
+0.004
+Phosphorus concentration
+2
+0.37
+0.693
+1
+64.77
+ < 0.001
+2
+11.21
+ < 0.001
+Phosphorus content
+2
+7.21
+0.007
+1
+65.79
+ < 0.001
+2
+7.00
+0.007
+N:P
+2
+42.95
+ < 0.001
+1
+49.12
+ < 0.001
+2
+4.48
+0.030
+Root length
+2
+40.56
+ < 0.001
+1
+12.67
+0.003
+2
+1.54
+0.246
+Specific root length
+2
+7.15
+0.007
+1
+6.45
+0.023
+2
+2.70
+0.099
+Fig. Data 
+are plotted with the mean depicted as a black circle ± SE (n = 4) rep-
+resented by the end of the vertical black line to the right of the raw 
+data
+445
+Mycorrhiza (2021) 31:441–454
+1 3
+Table 2   p-values for pairwise comparisons, effect size mean (unpaired means), and estimated 95% confidence intervals (Δ mean and CIs; in brackets) in the different fertilisation treatments 
+(Ctr, control not fertilised; Ctr+N, control fertilised with ammonium sulphate; Org, soil amended with crop residues) in the absence (−AM) or presence (+AM) of arbuscular mycorrhizal fungal 
+inoculum
+–AM
+ +AM
+Ctr vs Ctr+N
+Ctr vs Org
+Ctr+N vs Org
+Ctr vs Ctr+N
+Ctr vs Org
+Ctr+N vs Org
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+AM fungi 
+colonization
+-
+-
+-
+-
+-
+-
+0.173  −4.18 (−10.5; 
+0)
+0.008 9.48 (3.41; 13.7)
+0.001 13.7 (9.98; 17.6)
+Aboveground 
+biomass
+0.207 0.23 (0.17; 0.31)
+0.002 0.55 (0.19; 0.74)
+0.069 0.31 (−0.06; 
+0.52)
+0.263 0.21 (−0.08; 
+0.5)
+0.029 0.37 (0.1; 0.65)
+0.444 0.16 (0.04; 0.27)
+Belowground 
+biomass
+0.088  −0.13 
+(−0.19; −0.03)
+0.002 0.23 (0.06; 0.36)
+ < 0.001 0.36 (0.19; 0.49)
+0.831  −0.03 (−0.12; 
+0.05)
+ < 0.001 0.28 (0.13; 0.46)
+ < 0.001 0.31 (0.19; 0.49)
+Nitrogen con-
+centration
+0.078 2.15 (1.17; 3.05)
+ < 0.001  −3.95 
+(−5.12; −255)
+ < 0.001  −6.1 
+(−6.88; −4.8)
+0.163 1.67 (−0.52; 
+3.67)
+ < 0.001  −5.55 
+(−7.6; −3.6)
+ < 0.001  −7.22 
+(−8.08; −6.45)
+Nitrogen 
+content
+ < 0.001 10.5 (8.22; 13)
+0.265  −2.06 (−4.92; 
+0.87)
+ < 0.001  −12.6 
+(−15.1; −10.2)
+ < 0.001 9.87 (6.93; 
+11.9)
+ < 0.001  −10.8 
+(−12; −9.59)
+ < 0.001  −20.7 
+(−22.7; −17.9)
+15Nitrogen 
+recovery
+-
+-
+-
+-
+ < 0.001  −52.8 (−55.4; 
+−50.4)
+-
+-
+-
+-
+ < 0.001  −61 
+(−62.8; −57.5)
+Phosphorus 
+concentra-
+tion
+0.933  −0.02 (−0.2; 
+0.08)
+0.012 0.2 (0.1; 0.3)
+0.006 0.23 (0.1; 0.39)
+0.999 0.0 (−0.01; 
+0.01)
+0.072  −0.15 
+(−0.23; −0.02)
+0.067  −0.15 
+(−0.23; −0.02)
+Phosphorus 
+content
+0.678 0.24 (−0.23; 
+0.57)
+0.001 1.37 (0.69; 1.85)
+0.003 1.13 (0.39; 1.74)
+0.415 0.37 (−0.1; 
+0.84)
+0.873 0.14 (−0.36; 
+0.78)
+0.705  −0.23 (−0.56; 
+0.29)
+N:P
+0.052 2.03 (0.57; 4.33)
+ < 0.001  −4.63 
+(−5.88; −2.99)
+ < 0.001  −6.66 
+(−8.76; −5.06)
+0.461 0.96 (−0.24; 
+2.08)
+0.019  −2.43 
+(−3.83; −1.29)
+0.002  −3.39 
+(−4.3; −2.81)
+Root length
+0.384  −5.25 
+(−8.75; −1.75)
+ < 0.001 21.5 (12.2; 30.8)
+ < 0.001 26.8 (17.2; 36)
+0.920 1.5 (−5; 8.25)
+0.001 19 (8.75; 29.5)
+0.001 17.5 (7.25; 26.5)
+Specific root 
+length
+0.228 5 (−0.25; 9.75)
+0.003 11.8 (5.75; 17.5)
+0.082 6.75 (2.5; 11.2)
+0.228 5 (1; 11)
+0.467 3.5 (0.5; 6.5)
+0.864  −1.5 (−7.93; 
+2.25)
+446
+Mycorrhiza (2021) 31:441–454
+1 3
+In the Ctr+N treatment, the percentage of 15N recov-
+ery was 61.5% on average, with no significant differences 
+by mycorrhization (Fig. 2   Aboveground and belowground biomass dry weight of durum 
+wheat in the different fertilisation treatments (Ctr control not ferti-
+lised, Ctr+N control fertilised with ammonium sulphate, Org soil 
+amended with  crop residues) in the absence (grey points) or pres-
+ence (coloured points) of arbuscular mycorrhizal (AM) fungal inocu-
+lum.",2
+33893547,"['Myc', 'treatments', 'control', 'absence']",biomass,0.001,,"Table 1   Analysis of variance: 
+F- and p-values for the effects 
+of the applied treatments 
+(Fertilisation, Fert (1); 
+Mycorrhization, Myc (2); and 
+their interaction (1 × 2)) on the 
+traits observed in durum wheat 
+plants
+Fert (1)
+Myc (2)
+1 × 2
+df
+F-values
+p-values
+df
+F-values
+p-values
+df
+F-values
+p-values
+AM fungi colonisation
+2
+24.46
+0.001
+-
+-
+-
+-
+-
+-
+Aboveground biomass
+2
+12.58
+ < 0.001
+1
+17.13
+ < 0.001
+2
+0.53
+0.601
+Belowground biomass
+2
+39.85
+ < 0.001
+1
+9.37
+0.008
+2
+0.73
+0.497
+Nitrogen concentration
+2
+73.66
+ < 0.001
+1
+2.23
+0.116
+2
+1.45
+0.261
+Nitrogen content
+2
+175.18
+ < 0.001
+1
+24.21
+ < 0.001
+2
+14.80
+ < 0.001
+15Nitrogen recovery
+1
+2915.12
+ < 0.001
+1
+0.61
+0.454
+1
+14.77
+0.004
+Phosphorus concentration
+2
+0.37
+0.693
+1
+64.77
+ < 0.001
+2
+11.21
+ < 0.001
+Phosphorus content
+2
+7.21
+0.007
+1
+65.79
+ < 0.001
+2
+7.00
+0.007
+N:P
+2
+42.95
+ < 0.001
+1
+49.12
+ < 0.001
+2
+4.48
+0.030
+Root length
+2
+40.56
+ < 0.001
+1
+12.67
+0.003
+2
+1.54
+0.246
+Specific root length
+2
+7.15
+0.007
+1
+6.45
+0.023
+2
+2.70
+0.099
+Fig. Data 
+are plotted with the mean depicted as a black circle ± SE (n = 4) rep-
+resented by the end of the vertical black line to the right of the raw 
+data
+445
+Mycorrhiza (2021) 31:441–454
+1 3
+Table 2   p-values for pairwise comparisons, effect size mean (unpaired means), and estimated 95% confidence intervals (Δ mean and CIs; in brackets) in the different fertilisation treatments 
+(Ctr, control not fertilised; Ctr+N, control fertilised with ammonium sulphate; Org, soil amended with crop residues) in the absence (−AM) or presence (+AM) of arbuscular mycorrhizal fungal 
+inoculum
+–AM
+ +AM
+Ctr vs Ctr+N
+Ctr vs Org
+Ctr+N vs Org
+Ctr vs Ctr+N
+Ctr vs Org
+Ctr+N vs Org
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+AM fungi 
+colonization
+-
+-
+-
+-
+-
+-
+0.173  −4.18 (−10.5; 
+0)
+0.008 9.48 (3.41; 13.7)
+0.001 13.7 (9.98; 17.6)
+Aboveground 
+biomass
+0.207 0.23 (0.17; 0.31)
+0.002 0.55 (0.19; 0.74)
+0.069 0.31 (−0.06; 
+0.52)
+0.263 0.21 (−0.08; 
+0.5)
+0.029 0.37 (0.1; 0.65)
+0.444 0.16 (0.04; 0.27)
+Belowground 
+biomass
+0.088  −0.13 
+(−0.19; −0.03)
+0.002 0.23 (0.06; 0.36)
+ < 0.001 0.36 (0.19; 0.49)
+0.831  −0.03 (−0.12; 
+0.05)
+ < 0.001 0.28 (0.13; 0.46)
+ < 0.001 0.31 (0.19; 0.49)
+Nitrogen con-
+centration
+0.078 2.15 (1.17; 3.05)
+ < 0.001  −3.95 
+(−5.12; −255)
+ < 0.001  −6.1 
+(−6.88; −4.8)
+0.163 1.67 (−0.52; 
+3.67)
+ < 0.001  −5.55 
+(−7.6; −3.6)
+ < 0.001  −7.22 
+(−8.08; −6.45)
+Nitrogen 
+content
+ < 0.001 10.5 (8.22; 13)
+0.265  −2.06 (−4.92; 
+0.87)
+ < 0.001  −12.6 
+(−15.1; −10.2)
+ < 0.001 9.87 (6.93; 
+11.9)
+ < 0.001  −10.8 
+(−12; −9.59)
+ < 0.001  −20.7 
+(−22.7; −17.9)
+15Nitrogen 
+recovery
+-
+-
+-
+-
+ < 0.001  −52.8 (−55.4; 
+−50.4)
+-
+-
+-
+-
+ < 0.001  −61 
+(−62.8; −57.5)
+Phosphorus 
+concentra-
+tion
+0.933  −0.02 (−0.2; 
+0.08)
+0.012 0.2 (0.1; 0.3)
+0.006 0.23 (0.1; 0.39)
+0.999 0.0 (−0.01; 
+0.01)
+0.072  −0.15 
+(−0.23; −0.02)
+0.067  −0.15 
+(−0.23; −0.02)
+Phosphorus 
+content
+0.678 0.24 (−0.23; 
+0.57)
+0.001 1.37 (0.69; 1.85)
+0.003 1.13 (0.39; 1.74)
+0.415 0.37 (−0.1; 
+0.84)
+0.873 0.14 (−0.36; 
+0.78)
+0.705  −0.23 (−0.56; 
+0.29)
+N:P
+0.052 2.03 (0.57; 4.33)
+ < 0.001  −4.63 
+(−5.88; −2.99)
+ < 0.001  −6.66 
+(−8.76; −5.06)
+0.461 0.96 (−0.24; 
+2.08)
+0.019  −2.43 
+(−3.83; −1.29)
+0.002  −3.39 
+(−4.3; −2.81)
+Root length
+0.384  −5.25 
+(−8.75; −1.75)
+ < 0.001 21.5 (12.2; 30.8)
+ < 0.001 26.8 (17.2; 36)
+0.920 1.5 (−5; 8.25)
+0.001 19 (8.75; 29.5)
+0.001 17.5 (7.25; 26.5)
+Specific root 
+length
+0.228 5 (−0.25; 9.75)
+0.003 11.8 (5.75; 17.5)
+0.082 6.75 (2.5; 11.2)
+0.228 5 (1; 11)
+0.467 3.5 (0.5; 6.5)
+0.864  −1.5 (−7.93; 
+2.25)
+446
+Mycorrhiza (2021) 31:441–454
+1 3
+In the Ctr+N treatment, the percentage of 15N recov-
+ery was 61.5% on average, with no significant differences 
+by mycorrhization (Fig. 2   Aboveground and belowground biomass dry weight of durum 
+wheat in the different fertilisation treatments (Ctr control not ferti-
+lised, Ctr+N control fertilised with ammonium sulphate, Org soil 
+amended with  crop residues) in the absence (grey points) or pres-
+ence (coloured points) of arbuscular mycorrhizal (AM) fungal inocu-
+lum.",2
+33893547,"['Myc', 'treatments', 'control', 'absence']",biomass, ,,"Table 1   Analysis of variance: 
+F- and p-values for the effects 
+of the applied treatments 
+(Fertilisation, Fert (1); 
+Mycorrhization, Myc (2); and 
+their interaction (1 × 2)) on the 
+traits observed in durum wheat 
+plants
+Fert (1)
+Myc (2)
+1 × 2
+df
+F-values
+p-values
+df
+F-values
+p-values
+df
+F-values
+p-values
+AM fungi colonisation
+2
+24.46
+0.001
+-
+-
+-
+-
+-
+-
+Aboveground biomass
+2
+12.58
+ < 0.001
+1
+17.13
+ < 0.001
+2
+0.53
+0.601
+Belowground biomass
+2
+39.85
+ < 0.001
+1
+9.37
+0.008
+2
+0.73
+0.497
+Nitrogen concentration
+2
+73.66
+ < 0.001
+1
+2.23
+0.116
+2
+1.45
+0.261
+Nitrogen content
+2
+175.18
+ < 0.001
+1
+24.21
+ < 0.001
+2
+14.80
+ < 0.001
+15Nitrogen recovery
+1
+2915.12
+ < 0.001
+1
+0.61
+0.454
+1
+14.77
+0.004
+Phosphorus concentration
+2
+0.37
+0.693
+1
+64.77
+ < 0.001
+2
+11.21
+ < 0.001
+Phosphorus content
+2
+7.21
+0.007
+1
+65.79
+ < 0.001
+2
+7.00
+0.007
+N:P
+2
+42.95
+ < 0.001
+1
+49.12
+ < 0.001
+2
+4.48
+0.030
+Root length
+2
+40.56
+ < 0.001
+1
+12.67
+0.003
+2
+1.54
+0.246
+Specific root length
+2
+7.15
+0.007
+1
+6.45
+0.023
+2
+2.70
+0.099
+Fig. Data 
+are plotted with the mean depicted as a black circle ± SE (n = 4) rep-
+resented by the end of the vertical black line to the right of the raw 
+data
+445
+Mycorrhiza (2021) 31:441–454
+1 3
+Table 2   p-values for pairwise comparisons, effect size mean (unpaired means), and estimated 95% confidence intervals (Δ mean and CIs; in brackets) in the different fertilisation treatments 
+(Ctr, control not fertilised; Ctr+N, control fertilised with ammonium sulphate; Org, soil amended with crop residues) in the absence (−AM) or presence (+AM) of arbuscular mycorrhizal fungal 
+inoculum
+–AM
+ +AM
+Ctr vs Ctr+N
+Ctr vs Org
+Ctr+N vs Org
+Ctr vs Ctr+N
+Ctr vs Org
+Ctr+N vs Org
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+AM fungi 
+colonization
+-
+-
+-
+-
+-
+-
+0.173  −4.18 (−10.5; 
+0)
+0.008 9.48 (3.41; 13.7)
+0.001 13.7 (9.98; 17.6)
+Aboveground 
+biomass
+0.207 0.23 (0.17; 0.31)
+0.002 0.55 (0.19; 0.74)
+0.069 0.31 (−0.06; 
+0.52)
+0.263 0.21 (−0.08; 
+0.5)
+0.029 0.37 (0.1; 0.65)
+0.444 0.16 (0.04; 0.27)
+Belowground 
+biomass
+0.088  −0.13 
+(−0.19; −0.03)
+0.002 0.23 (0.06; 0.36)
+ < 0.001 0.36 (0.19; 0.49)
+0.831  −0.03 (−0.12; 
+0.05)
+ < 0.001 0.28 (0.13; 0.46)
+ < 0.001 0.31 (0.19; 0.49)
+Nitrogen con-
+centration
+0.078 2.15 (1.17; 3.05)
+ < 0.001  −3.95 
+(−5.12; −255)
+ < 0.001  −6.1 
+(−6.88; −4.8)
+0.163 1.67 (−0.52; 
+3.67)
+ < 0.001  −5.55 
+(−7.6; −3.6)
+ < 0.001  −7.22 
+(−8.08; −6.45)
+Nitrogen 
+content
+ < 0.001 10.5 (8.22; 13)
+0.265  −2.06 (−4.92; 
+0.87)
+ < 0.001  −12.6 
+(−15.1; −10.2)
+ < 0.001 9.87 (6.93; 
+11.9)
+ < 0.001  −10.8 
+(−12; −9.59)
+ < 0.001  −20.7 
+(−22.7; −17.9)
+15Nitrogen 
+recovery
+-
+-
+-
+-
+ < 0.001  −52.8 (−55.4; 
+−50.4)
+-
+-
+-
+-
+ < 0.001  −61 
+(−62.8; −57.5)
+Phosphorus 
+concentra-
+tion
+0.933  −0.02 (−0.2; 
+0.08)
+0.012 0.2 (0.1; 0.3)
+0.006 0.23 (0.1; 0.39)
+0.999 0.0 (−0.01; 
+0.01)
+0.072  −0.15 
+(−0.23; −0.02)
+0.067  −0.15 
+(−0.23; −0.02)
+Phosphorus 
+content
+0.678 0.24 (−0.23; 
+0.57)
+0.001 1.37 (0.69; 1.85)
+0.003 1.13 (0.39; 1.74)
+0.415 0.37 (−0.1; 
+0.84)
+0.873 0.14 (−0.36; 
+0.78)
+0.705  −0.23 (−0.56; 
+0.29)
+N:P
+0.052 2.03 (0.57; 4.33)
+ < 0.001  −4.63 
+(−5.88; −2.99)
+ < 0.001  −6.66 
+(−8.76; −5.06)
+0.461 0.96 (−0.24; 
+2.08)
+0.019  −2.43 
+(−3.83; −1.29)
+0.002  −3.39 
+(−4.3; −2.81)
+Root length
+0.384  −5.25 
+(−8.75; −1.75)
+ < 0.001 21.5 (12.2; 30.8)
+ < 0.001 26.8 (17.2; 36)
+0.920 1.5 (−5; 8.25)
+0.001 19 (8.75; 29.5)
+0.001 17.5 (7.25; 26.5)
+Specific root 
+length
+0.228 5 (−0.25; 9.75)
+0.003 11.8 (5.75; 17.5)
+0.082 6.75 (2.5; 11.2)
+0.228 5 (1; 11)
+0.467 3.5 (0.5; 6.5)
+0.864  −1.5 (−7.93; 
+2.25)
+446
+Mycorrhiza (2021) 31:441–454
+1 3
+In the Ctr+N treatment, the percentage of 15N recov-
+ery was 61.5% on average, with no significant differences 
+by mycorrhization (Fig. 2   Aboveground and belowground biomass dry weight of durum 
+wheat in the different fertilisation treatments (Ctr control not ferti-
+lised, Ctr+N control fertilised with ammonium sulphate, Org soil 
+amended with  crop residues) in the absence (grey points) or pres-
+ence (coloured points) of arbuscular mycorrhizal (AM) fungal inocu-
+lum.",2
+33893547,"['Myc', 'treatments', 'control', 'absence']",biomass,0.001,,"Table 1   Analysis of variance: 
+F- and p-values for the effects 
+of the applied treatments 
+(Fertilisation, Fert (1); 
+Mycorrhization, Myc (2); and 
+their interaction (1 × 2)) on the 
+traits observed in durum wheat 
+plants
+Fert (1)
+Myc (2)
+1 × 2
+df
+F-values
+p-values
+df
+F-values
+p-values
+df
+F-values
+p-values
+AM fungi colonisation
+2
+24.46
+0.001
+-
+-
+-
+-
+-
+-
+Aboveground biomass
+2
+12.58
+ < 0.001
+1
+17.13
+ < 0.001
+2
+0.53
+0.601
+Belowground biomass
+2
+39.85
+ < 0.001
+1
+9.37
+0.008
+2
+0.73
+0.497
+Nitrogen concentration
+2
+73.66
+ < 0.001
+1
+2.23
+0.116
+2
+1.45
+0.261
+Nitrogen content
+2
+175.18
+ < 0.001
+1
+24.21
+ < 0.001
+2
+14.80
+ < 0.001
+15Nitrogen recovery
+1
+2915.12
+ < 0.001
+1
+0.61
+0.454
+1
+14.77
+0.004
+Phosphorus concentration
+2
+0.37
+0.693
+1
+64.77
+ < 0.001
+2
+11.21
+ < 0.001
+Phosphorus content
+2
+7.21
+0.007
+1
+65.79
+ < 0.001
+2
+7.00
+0.007
+N:P
+2
+42.95
+ < 0.001
+1
+49.12
+ < 0.001
+2
+4.48
+0.030
+Root length
+2
+40.56
+ < 0.001
+1
+12.67
+0.003
+2
+1.54
+0.246
+Specific root length
+2
+7.15
+0.007
+1
+6.45
+0.023
+2
+2.70
+0.099
+Fig. Data 
+are plotted with the mean depicted as a black circle ± SE (n = 4) rep-
+resented by the end of the vertical black line to the right of the raw 
+data
+445
+Mycorrhiza (2021) 31:441–454
+1 3
+Table 2   p-values for pairwise comparisons, effect size mean (unpaired means), and estimated 95% confidence intervals (Δ mean and CIs; in brackets) in the different fertilisation treatments 
+(Ctr, control not fertilised; Ctr+N, control fertilised with ammonium sulphate; Org, soil amended with crop residues) in the absence (−AM) or presence (+AM) of arbuscular mycorrhizal fungal 
+inoculum
+–AM
+ +AM
+Ctr vs Ctr+N
+Ctr vs Org
+Ctr+N vs Org
+Ctr vs Ctr+N
+Ctr vs Org
+Ctr+N vs Org
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+AM fungi 
+colonization
+-
+-
+-
+-
+-
+-
+0.173  −4.18 (−10.5; 
+0)
+0.008 9.48 (3.41; 13.7)
+0.001 13.7 (9.98; 17.6)
+Aboveground 
+biomass
+0.207 0.23 (0.17; 0.31)
+0.002 0.55 (0.19; 0.74)
+0.069 0.31 (−0.06; 
+0.52)
+0.263 0.21 (−0.08; 
+0.5)
+0.029 0.37 (0.1; 0.65)
+0.444 0.16 (0.04; 0.27)
+Belowground 
+biomass
+0.088  −0.13 
+(−0.19; −0.03)
+0.002 0.23 (0.06; 0.36)
+ < 0.001 0.36 (0.19; 0.49)
+0.831  −0.03 (−0.12; 
+0.05)
+ < 0.001 0.28 (0.13; 0.46)
+ < 0.001 0.31 (0.19; 0.49)
+Nitrogen con-
+centration
+0.078 2.15 (1.17; 3.05)
+ < 0.001  −3.95 
+(−5.12; −255)
+ < 0.001  −6.1 
+(−6.88; −4.8)
+0.163 1.67 (−0.52; 
+3.67)
+ < 0.001  −5.55 
+(−7.6; −3.6)
+ < 0.001  −7.22 
+(−8.08; −6.45)
+Nitrogen 
+content
+ < 0.001 10.5 (8.22; 13)
+0.265  −2.06 (−4.92; 
+0.87)
+ < 0.001  −12.6 
+(−15.1; −10.2)
+ < 0.001 9.87 (6.93; 
+11.9)
+ < 0.001  −10.8 
+(−12; −9.59)
+ < 0.001  −20.7 
+(−22.7; −17.9)
+15Nitrogen 
+recovery
+-
+-
+-
+-
+ < 0.001  −52.8 (−55.4; 
+−50.4)
+-
+-
+-
+-
+ < 0.001  −61 
+(−62.8; −57.5)
+Phosphorus 
+concentra-
+tion
+0.933  −0.02 (−0.2; 
+0.08)
+0.012 0.2 (0.1; 0.3)
+0.006 0.23 (0.1; 0.39)
+0.999 0.0 (−0.01; 
+0.01)
+0.072  −0.15 
+(−0.23; −0.02)
+0.067  −0.15 
+(−0.23; −0.02)
+Phosphorus 
+content
+0.678 0.24 (−0.23; 
+0.57)
+0.001 1.37 (0.69; 1.85)
+0.003 1.13 (0.39; 1.74)
+0.415 0.37 (−0.1; 
+0.84)
+0.873 0.14 (−0.36; 
+0.78)
+0.705  −0.23 (−0.56; 
+0.29)
+N:P
+0.052 2.03 (0.57; 4.33)
+ < 0.001  −4.63 
+(−5.88; −2.99)
+ < 0.001  −6.66 
+(−8.76; −5.06)
+0.461 0.96 (−0.24; 
+2.08)
+0.019  −2.43 
+(−3.83; −1.29)
+0.002  −3.39 
+(−4.3; −2.81)
+Root length
+0.384  −5.25 
+(−8.75; −1.75)
+ < 0.001 21.5 (12.2; 30.8)
+ < 0.001 26.8 (17.2; 36)
+0.920 1.5 (−5; 8.25)
+0.001 19 (8.75; 29.5)
+0.001 17.5 (7.25; 26.5)
+Specific root 
+length
+0.228 5 (−0.25; 9.75)
+0.003 11.8 (5.75; 17.5)
+0.082 6.75 (2.5; 11.2)
+0.228 5 (1; 11)
+0.467 3.5 (0.5; 6.5)
+0.864  −1.5 (−7.93; 
+2.25)
+446
+Mycorrhiza (2021) 31:441–454
+1 3
+In the Ctr+N treatment, the percentage of 15N recov-
+ery was 61.5% on average, with no significant differences 
+by mycorrhization (Fig. 2   Aboveground and belowground biomass dry weight of durum 
+wheat in the different fertilisation treatments (Ctr control not ferti-
+lised, Ctr+N control fertilised with ammonium sulphate, Org soil 
+amended with  crop residues) in the absence (grey points) or pres-
+ence (coloured points) of arbuscular mycorrhizal (AM) fungal inocu-
+lum.",2
+33893547,"['Myc', 'treatments', 'control', 'absence']",biomass,2,,"Table 1   Analysis of variance: 
+F- and p-values for the effects 
+of the applied treatments 
+(Fertilisation, Fert (1); 
+Mycorrhization, Myc (2); and 
+their interaction (1 × 2)) on the 
+traits observed in durum wheat 
+plants
+Fert (1)
+Myc (2)
+1 × 2
+df
+F-values
+p-values
+df
+F-values
+p-values
+df
+F-values
+p-values
+AM fungi colonisation
+2
+24.46
+0.001
+-
+-
+-
+-
+-
+-
+Aboveground biomass
+2
+12.58
+ < 0.001
+1
+17.13
+ < 0.001
+2
+0.53
+0.601
+Belowground biomass
+2
+39.85
+ < 0.001
+1
+9.37
+0.008
+2
+0.73
+0.497
+Nitrogen concentration
+2
+73.66
+ < 0.001
+1
+2.23
+0.116
+2
+1.45
+0.261
+Nitrogen content
+2
+175.18
+ < 0.001
+1
+24.21
+ < 0.001
+2
+14.80
+ < 0.001
+15Nitrogen recovery
+1
+2915.12
+ < 0.001
+1
+0.61
+0.454
+1
+14.77
+0.004
+Phosphorus concentration
+2
+0.37
+0.693
+1
+64.77
+ < 0.001
+2
+11.21
+ < 0.001
+Phosphorus content
+2
+7.21
+0.007
+1
+65.79
+ < 0.001
+2
+7.00
+0.007
+N:P
+2
+42.95
+ < 0.001
+1
+49.12
+ < 0.001
+2
+4.48
+0.030
+Root length
+2
+40.56
+ < 0.001
+1
+12.67
+0.003
+2
+1.54
+0.246
+Specific root length
+2
+7.15
+0.007
+1
+6.45
+0.023
+2
+2.70
+0.099
+Fig. Data 
+are plotted with the mean depicted as a black circle ± SE (n = 4) rep-
+resented by the end of the vertical black line to the right of the raw 
+data
+445
+Mycorrhiza (2021) 31:441–454
+1 3
+Table 2   p-values for pairwise comparisons, effect size mean (unpaired means), and estimated 95% confidence intervals (Δ mean and CIs; in brackets) in the different fertilisation treatments 
+(Ctr, control not fertilised; Ctr+N, control fertilised with ammonium sulphate; Org, soil amended with crop residues) in the absence (−AM) or presence (+AM) of arbuscular mycorrhizal fungal 
+inoculum
+–AM
+ +AM
+Ctr vs Ctr+N
+Ctr vs Org
+Ctr+N vs Org
+Ctr vs Ctr+N
+Ctr vs Org
+Ctr+N vs Org
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+AM fungi 
+colonization
+-
+-
+-
+-
+-
+-
+0.173  −4.18 (−10.5; 
+0)
+0.008 9.48 (3.41; 13.7)
+0.001 13.7 (9.98; 17.6)
+Aboveground 
+biomass
+0.207 0.23 (0.17; 0.31)
+0.002 0.55 (0.19; 0.74)
+0.069 0.31 (−0.06; 
+0.52)
+0.263 0.21 (−0.08; 
+0.5)
+0.029 0.37 (0.1; 0.65)
+0.444 0.16 (0.04; 0.27)
+Belowground 
+biomass
+0.088  −0.13 
+(−0.19; −0.03)
+0.002 0.23 (0.06; 0.36)
+ < 0.001 0.36 (0.19; 0.49)
+0.831  −0.03 (−0.12; 
+0.05)
+ < 0.001 0.28 (0.13; 0.46)
+ < 0.001 0.31 (0.19; 0.49)
+Nitrogen con-
+centration
+0.078 2.15 (1.17; 3.05)
+ < 0.001  −3.95 
+(−5.12; −255)
+ < 0.001  −6.1 
+(−6.88; −4.8)
+0.163 1.67 (−0.52; 
+3.67)
+ < 0.001  −5.55 
+(−7.6; −3.6)
+ < 0.001  −7.22 
+(−8.08; −6.45)
+Nitrogen 
+content
+ < 0.001 10.5 (8.22; 13)
+0.265  −2.06 (−4.92; 
+0.87)
+ < 0.001  −12.6 
+(−15.1; −10.2)
+ < 0.001 9.87 (6.93; 
+11.9)
+ < 0.001  −10.8 
+(−12; −9.59)
+ < 0.001  −20.7 
+(−22.7; −17.9)
+15Nitrogen 
+recovery
+-
+-
+-
+-
+ < 0.001  −52.8 (−55.4; 
+−50.4)
+-
+-
+-
+-
+ < 0.001  −61 
+(−62.8; −57.5)
+Phosphorus 
+concentra-
+tion
+0.933  −0.02 (−0.2; 
+0.08)
+0.012 0.2 (0.1; 0.3)
+0.006 0.23 (0.1; 0.39)
+0.999 0.0 (−0.01; 
+0.01)
+0.072  −0.15 
+(−0.23; −0.02)
+0.067  −0.15 
+(−0.23; −0.02)
+Phosphorus 
+content
+0.678 0.24 (−0.23; 
+0.57)
+0.001 1.37 (0.69; 1.85)
+0.003 1.13 (0.39; 1.74)
+0.415 0.37 (−0.1; 
+0.84)
+0.873 0.14 (−0.36; 
+0.78)
+0.705  −0.23 (−0.56; 
+0.29)
+N:P
+0.052 2.03 (0.57; 4.33)
+ < 0.001  −4.63 
+(−5.88; −2.99)
+ < 0.001  −6.66 
+(−8.76; −5.06)
+0.461 0.96 (−0.24; 
+2.08)
+0.019  −2.43 
+(−3.83; −1.29)
+0.002  −3.39 
+(−4.3; −2.81)
+Root length
+0.384  −5.25 
+(−8.75; −1.75)
+ < 0.001 21.5 (12.2; 30.8)
+ < 0.001 26.8 (17.2; 36)
+0.920 1.5 (−5; 8.25)
+0.001 19 (8.75; 29.5)
+0.001 17.5 (7.25; 26.5)
+Specific root 
+length
+0.228 5 (−0.25; 9.75)
+0.003 11.8 (5.75; 17.5)
+0.082 6.75 (2.5; 11.2)
+0.228 5 (1; 11)
+0.467 3.5 (0.5; 6.5)
+0.864  −1.5 (−7.93; 
+2.25)
+446
+Mycorrhiza (2021) 31:441–454
+1 3
+In the Ctr+N treatment, the percentage of 15N recov-
+ery was 61.5% on average, with no significant differences 
+by mycorrhization (Fig. 2   Aboveground and belowground biomass dry weight of durum 
+wheat in the different fertilisation treatments (Ctr control not ferti-
+lised, Ctr+N control fertilised with ammonium sulphate, Org soil 
+amended with  crop residues) in the absence (grey points) or pres-
+ence (coloured points) of arbuscular mycorrhizal (AM) fungal inocu-
+lum.",2
+33893547,"['Myc', 'treatments', 'control', 'absence']",biomass,0.53,,"Table 1   Analysis of variance: 
+F- and p-values for the effects 
+of the applied treatments 
+(Fertilisation, Fert (1); 
+Mycorrhization, Myc (2); and 
+their interaction (1 × 2)) on the 
+traits observed in durum wheat 
+plants
+Fert (1)
+Myc (2)
+1 × 2
+df
+F-values
+p-values
+df
+F-values
+p-values
+df
+F-values
+p-values
+AM fungi colonisation
+2
+24.46
+0.001
+-
+-
+-
+-
+-
+-
+Aboveground biomass
+2
+12.58
+ < 0.001
+1
+17.13
+ < 0.001
+2
+0.53
+0.601
+Belowground biomass
+2
+39.85
+ < 0.001
+1
+9.37
+0.008
+2
+0.73
+0.497
+Nitrogen concentration
+2
+73.66
+ < 0.001
+1
+2.23
+0.116
+2
+1.45
+0.261
+Nitrogen content
+2
+175.18
+ < 0.001
+1
+24.21
+ < 0.001
+2
+14.80
+ < 0.001
+15Nitrogen recovery
+1
+2915.12
+ < 0.001
+1
+0.61
+0.454
+1
+14.77
+0.004
+Phosphorus concentration
+2
+0.37
+0.693
+1
+64.77
+ < 0.001
+2
+11.21
+ < 0.001
+Phosphorus content
+2
+7.21
+0.007
+1
+65.79
+ < 0.001
+2
+7.00
+0.007
+N:P
+2
+42.95
+ < 0.001
+1
+49.12
+ < 0.001
+2
+4.48
+0.030
+Root length
+2
+40.56
+ < 0.001
+1
+12.67
+0.003
+2
+1.54
+0.246
+Specific root length
+2
+7.15
+0.007
+1
+6.45
+0.023
+2
+2.70
+0.099
+Fig. Data 
+are plotted with the mean depicted as a black circle ± SE (n = 4) rep-
+resented by the end of the vertical black line to the right of the raw 
+data
+445
+Mycorrhiza (2021) 31:441–454
+1 3
+Table 2   p-values for pairwise comparisons, effect size mean (unpaired means), and estimated 95% confidence intervals (Δ mean and CIs; in brackets) in the different fertilisation treatments 
+(Ctr, control not fertilised; Ctr+N, control fertilised with ammonium sulphate; Org, soil amended with crop residues) in the absence (−AM) or presence (+AM) of arbuscular mycorrhizal fungal 
+inoculum
+–AM
+ +AM
+Ctr vs Ctr+N
+Ctr vs Org
+Ctr+N vs Org
+Ctr vs Ctr+N
+Ctr vs Org
+Ctr+N vs Org
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+AM fungi 
+colonization
+-
+-
+-
+-
+-
+-
+0.173  −4.18 (−10.5; 
+0)
+0.008 9.48 (3.41; 13.7)
+0.001 13.7 (9.98; 17.6)
+Aboveground 
+biomass
+0.207 0.23 (0.17; 0.31)
+0.002 0.55 (0.19; 0.74)
+0.069 0.31 (−0.06; 
+0.52)
+0.263 0.21 (−0.08; 
+0.5)
+0.029 0.37 (0.1; 0.65)
+0.444 0.16 (0.04; 0.27)
+Belowground 
+biomass
+0.088  −0.13 
+(−0.19; −0.03)
+0.002 0.23 (0.06; 0.36)
+ < 0.001 0.36 (0.19; 0.49)
+0.831  −0.03 (−0.12; 
+0.05)
+ < 0.001 0.28 (0.13; 0.46)
+ < 0.001 0.31 (0.19; 0.49)
+Nitrogen con-
+centration
+0.078 2.15 (1.17; 3.05)
+ < 0.001  −3.95 
+(−5.12; −255)
+ < 0.001  −6.1 
+(−6.88; −4.8)
+0.163 1.67 (−0.52; 
+3.67)
+ < 0.001  −5.55 
+(−7.6; −3.6)
+ < 0.001  −7.22 
+(−8.08; −6.45)
+Nitrogen 
+content
+ < 0.001 10.5 (8.22; 13)
+0.265  −2.06 (−4.92; 
+0.87)
+ < 0.001  −12.6 
+(−15.1; −10.2)
+ < 0.001 9.87 (6.93; 
+11.9)
+ < 0.001  −10.8 
+(−12; −9.59)
+ < 0.001  −20.7 
+(−22.7; −17.9)
+15Nitrogen 
+recovery
+-
+-
+-
+-
+ < 0.001  −52.8 (−55.4; 
+−50.4)
+-
+-
+-
+-
+ < 0.001  −61 
+(−62.8; −57.5)
+Phosphorus 
+concentra-
+tion
+0.933  −0.02 (−0.2; 
+0.08)
+0.012 0.2 (0.1; 0.3)
+0.006 0.23 (0.1; 0.39)
+0.999 0.0 (−0.01; 
+0.01)
+0.072  −0.15 
+(−0.23; −0.02)
+0.067  −0.15 
+(−0.23; −0.02)
+Phosphorus 
+content
+0.678 0.24 (−0.23; 
+0.57)
+0.001 1.37 (0.69; 1.85)
+0.003 1.13 (0.39; 1.74)
+0.415 0.37 (−0.1; 
+0.84)
+0.873 0.14 (−0.36; 
+0.78)
+0.705  −0.23 (−0.56; 
+0.29)
+N:P
+0.052 2.03 (0.57; 4.33)
+ < 0.001  −4.63 
+(−5.88; −2.99)
+ < 0.001  −6.66 
+(−8.76; −5.06)
+0.461 0.96 (−0.24; 
+2.08)
+0.019  −2.43 
+(−3.83; −1.29)
+0.002  −3.39 
+(−4.3; −2.81)
+Root length
+0.384  −5.25 
+(−8.75; −1.75)
+ < 0.001 21.5 (12.2; 30.8)
+ < 0.001 26.8 (17.2; 36)
+0.920 1.5 (−5; 8.25)
+0.001 19 (8.75; 29.5)
+0.001 17.5 (7.25; 26.5)
+Specific root 
+length
+0.228 5 (−0.25; 9.75)
+0.003 11.8 (5.75; 17.5)
+0.082 6.75 (2.5; 11.2)
+0.228 5 (1; 11)
+0.467 3.5 (0.5; 6.5)
+0.864  −1.5 (−7.93; 
+2.25)
+446
+Mycorrhiza (2021) 31:441–454
+1 3
+In the Ctr+N treatment, the percentage of 15N recov-
+ery was 61.5% on average, with no significant differences 
+by mycorrhization (Fig. 2   Aboveground and belowground biomass dry weight of durum 
+wheat in the different fertilisation treatments (Ctr control not ferti-
+lised, Ctr+N control fertilised with ammonium sulphate, Org soil 
+amended with  crop residues) in the absence (grey points) or pres-
+ence (coloured points) of arbuscular mycorrhizal (AM) fungal inocu-
+lum.",2
+33893547,"['Myc', 'treatments', 'control', 'absence']",biomass,2,,"Table 1   Analysis of variance: 
+F- and p-values for the effects 
+of the applied treatments 
+(Fertilisation, Fert (1); 
+Mycorrhization, Myc (2); and 
+their interaction (1 × 2)) on the 
+traits observed in durum wheat 
+plants
+Fert (1)
+Myc (2)
+1 × 2
+df
+F-values
+p-values
+df
+F-values
+p-values
+df
+F-values
+p-values
+AM fungi colonisation
+2
+24.46
+0.001
+-
+-
+-
+-
+-
+-
+Aboveground biomass
+2
+12.58
+ < 0.001
+1
+17.13
+ < 0.001
+2
+0.53
+0.601
+Belowground biomass
+2
+39.85
+ < 0.001
+1
+9.37
+0.008
+2
+0.73
+0.497
+Nitrogen concentration
+2
+73.66
+ < 0.001
+1
+2.23
+0.116
+2
+1.45
+0.261
+Nitrogen content
+2
+175.18
+ < 0.001
+1
+24.21
+ < 0.001
+2
+14.80
+ < 0.001
+15Nitrogen recovery
+1
+2915.12
+ < 0.001
+1
+0.61
+0.454
+1
+14.77
+0.004
+Phosphorus concentration
+2
+0.37
+0.693
+1
+64.77
+ < 0.001
+2
+11.21
+ < 0.001
+Phosphorus content
+2
+7.21
+0.007
+1
+65.79
+ < 0.001
+2
+7.00
+0.007
+N:P
+2
+42.95
+ < 0.001
+1
+49.12
+ < 0.001
+2
+4.48
+0.030
+Root length
+2
+40.56
+ < 0.001
+1
+12.67
+0.003
+2
+1.54
+0.246
+Specific root length
+2
+7.15
+0.007
+1
+6.45
+0.023
+2
+2.70
+0.099
+Fig. Data 
+are plotted with the mean depicted as a black circle ± SE (n = 4) rep-
+resented by the end of the vertical black line to the right of the raw 
+data
+445
+Mycorrhiza (2021) 31:441–454
+1 3
+Table 2   p-values for pairwise comparisons, effect size mean (unpaired means), and estimated 95% confidence intervals (Δ mean and CIs; in brackets) in the different fertilisation treatments 
+(Ctr, control not fertilised; Ctr+N, control fertilised with ammonium sulphate; Org, soil amended with crop residues) in the absence (−AM) or presence (+AM) of arbuscular mycorrhizal fungal 
+inoculum
+–AM
+ +AM
+Ctr vs Ctr+N
+Ctr vs Org
+Ctr+N vs Org
+Ctr vs Ctr+N
+Ctr vs Org
+Ctr+N vs Org
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+AM fungi 
+colonization
+-
+-
+-
+-
+-
+-
+0.173  −4.18 (−10.5; 
+0)
+0.008 9.48 (3.41; 13.7)
+0.001 13.7 (9.98; 17.6)
+Aboveground 
+biomass
+0.207 0.23 (0.17; 0.31)
+0.002 0.55 (0.19; 0.74)
+0.069 0.31 (−0.06; 
+0.52)
+0.263 0.21 (−0.08; 
+0.5)
+0.029 0.37 (0.1; 0.65)
+0.444 0.16 (0.04; 0.27)
+Belowground 
+biomass
+0.088  −0.13 
+(−0.19; −0.03)
+0.002 0.23 (0.06; 0.36)
+ < 0.001 0.36 (0.19; 0.49)
+0.831  −0.03 (−0.12; 
+0.05)
+ < 0.001 0.28 (0.13; 0.46)
+ < 0.001 0.31 (0.19; 0.49)
+Nitrogen con-
+centration
+0.078 2.15 (1.17; 3.05)
+ < 0.001  −3.95 
+(−5.12; −255)
+ < 0.001  −6.1 
+(−6.88; −4.8)
+0.163 1.67 (−0.52; 
+3.67)
+ < 0.001  −5.55 
+(−7.6; −3.6)
+ < 0.001  −7.22 
+(−8.08; −6.45)
+Nitrogen 
+content
+ < 0.001 10.5 (8.22; 13)
+0.265  −2.06 (−4.92; 
+0.87)
+ < 0.001  −12.6 
+(−15.1; −10.2)
+ < 0.001 9.87 (6.93; 
+11.9)
+ < 0.001  −10.8 
+(−12; −9.59)
+ < 0.001  −20.7 
+(−22.7; −17.9)
+15Nitrogen 
+recovery
+-
+-
+-
+-
+ < 0.001  −52.8 (−55.4; 
+−50.4)
+-
+-
+-
+-
+ < 0.001  −61 
+(−62.8; −57.5)
+Phosphorus 
+concentra-
+tion
+0.933  −0.02 (−0.2; 
+0.08)
+0.012 0.2 (0.1; 0.3)
+0.006 0.23 (0.1; 0.39)
+0.999 0.0 (−0.01; 
+0.01)
+0.072  −0.15 
+(−0.23; −0.02)
+0.067  −0.15 
+(−0.23; −0.02)
+Phosphorus 
+content
+0.678 0.24 (−0.23; 
+0.57)
+0.001 1.37 (0.69; 1.85)
+0.003 1.13 (0.39; 1.74)
+0.415 0.37 (−0.1; 
+0.84)
+0.873 0.14 (−0.36; 
+0.78)
+0.705  −0.23 (−0.56; 
+0.29)
+N:P
+0.052 2.03 (0.57; 4.33)
+ < 0.001  −4.63 
+(−5.88; −2.99)
+ < 0.001  −6.66 
+(−8.76; −5.06)
+0.461 0.96 (−0.24; 
+2.08)
+0.019  −2.43 
+(−3.83; −1.29)
+0.002  −3.39 
+(−4.3; −2.81)
+Root length
+0.384  −5.25 
+(−8.75; −1.75)
+ < 0.001 21.5 (12.2; 30.8)
+ < 0.001 26.8 (17.2; 36)
+0.920 1.5 (−5; 8.25)
+0.001 19 (8.75; 29.5)
+0.001 17.5 (7.25; 26.5)
+Specific root 
+length
+0.228 5 (−0.25; 9.75)
+0.003 11.8 (5.75; 17.5)
+0.082 6.75 (2.5; 11.2)
+0.228 5 (1; 11)
+0.467 3.5 (0.5; 6.5)
+0.864  −1.5 (−7.93; 
+2.25)
+446
+Mycorrhiza (2021) 31:441–454
+1 3
+In the Ctr+N treatment, the percentage of 15N recov-
+ery was 61.5% on average, with no significant differences 
+by mycorrhization (Fig. 2   Aboveground and belowground biomass dry weight of durum 
+wheat in the different fertilisation treatments (Ctr control not ferti-
+lised, Ctr+N control fertilised with ammonium sulphate, Org soil 
+amended with  crop residues) in the absence (grey points) or pres-
+ence (coloured points) of arbuscular mycorrhizal (AM) fungal inocu-
+lum.",2
+33893547,"['Myc', 'treatments', 'control', 'absence']",biomass,1,,"Table 1   Analysis of variance: 
+F- and p-values for the effects 
+of the applied treatments 
+(Fertilisation, Fert (1); 
+Mycorrhization, Myc (2); and 
+their interaction (1 × 2)) on the 
+traits observed in durum wheat 
+plants
+Fert (1)
+Myc (2)
+1 × 2
+df
+F-values
+p-values
+df
+F-values
+p-values
+df
+F-values
+p-values
+AM fungi colonisation
+2
+24.46
+0.001
+-
+-
+-
+-
+-
+-
+Aboveground biomass
+2
+12.58
+ < 0.001
+1
+17.13
+ < 0.001
+2
+0.53
+0.601
+Belowground biomass
+2
+39.85
+ < 0.001
+1
+9.37
+0.008
+2
+0.73
+0.497
+Nitrogen concentration
+2
+73.66
+ < 0.001
+1
+2.23
+0.116
+2
+1.45
+0.261
+Nitrogen content
+2
+175.18
+ < 0.001
+1
+24.21
+ < 0.001
+2
+14.80
+ < 0.001
+15Nitrogen recovery
+1
+2915.12
+ < 0.001
+1
+0.61
+0.454
+1
+14.77
+0.004
+Phosphorus concentration
+2
+0.37
+0.693
+1
+64.77
+ < 0.001
+2
+11.21
+ < 0.001
+Phosphorus content
+2
+7.21
+0.007
+1
+65.79
+ < 0.001
+2
+7.00
+0.007
+N:P
+2
+42.95
+ < 0.001
+1
+49.12
+ < 0.001
+2
+4.48
+0.030
+Root length
+2
+40.56
+ < 0.001
+1
+12.67
+0.003
+2
+1.54
+0.246
+Specific root length
+2
+7.15
+0.007
+1
+6.45
+0.023
+2
+2.70
+0.099
+Fig. Data 
+are plotted with the mean depicted as a black circle ± SE (n = 4) rep-
+resented by the end of the vertical black line to the right of the raw 
+data
+445
+Mycorrhiza (2021) 31:441–454
+1 3
+Table 2   p-values for pairwise comparisons, effect size mean (unpaired means), and estimated 95% confidence intervals (Δ mean and CIs; in brackets) in the different fertilisation treatments 
+(Ctr, control not fertilised; Ctr+N, control fertilised with ammonium sulphate; Org, soil amended with crop residues) in the absence (−AM) or presence (+AM) of arbuscular mycorrhizal fungal 
+inoculum
+–AM
+ +AM
+Ctr vs Ctr+N
+Ctr vs Org
+Ctr+N vs Org
+Ctr vs Ctr+N
+Ctr vs Org
+Ctr+N vs Org
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+AM fungi 
+colonization
+-
+-
+-
+-
+-
+-
+0.173  −4.18 (−10.5; 
+0)
+0.008 9.48 (3.41; 13.7)
+0.001 13.7 (9.98; 17.6)
+Aboveground 
+biomass
+0.207 0.23 (0.17; 0.31)
+0.002 0.55 (0.19; 0.74)
+0.069 0.31 (−0.06; 
+0.52)
+0.263 0.21 (−0.08; 
+0.5)
+0.029 0.37 (0.1; 0.65)
+0.444 0.16 (0.04; 0.27)
+Belowground 
+biomass
+0.088  −0.13 
+(−0.19; −0.03)
+0.002 0.23 (0.06; 0.36)
+ < 0.001 0.36 (0.19; 0.49)
+0.831  −0.03 (−0.12; 
+0.05)
+ < 0.001 0.28 (0.13; 0.46)
+ < 0.001 0.31 (0.19; 0.49)
+Nitrogen con-
+centration
+0.078 2.15 (1.17; 3.05)
+ < 0.001  −3.95 
+(−5.12; −255)
+ < 0.001  −6.1 
+(−6.88; −4.8)
+0.163 1.67 (−0.52; 
+3.67)
+ < 0.001  −5.55 
+(−7.6; −3.6)
+ < 0.001  −7.22 
+(−8.08; −6.45)
+Nitrogen 
+content
+ < 0.001 10.5 (8.22; 13)
+0.265  −2.06 (−4.92; 
+0.87)
+ < 0.001  −12.6 
+(−15.1; −10.2)
+ < 0.001 9.87 (6.93; 
+11.9)
+ < 0.001  −10.8 
+(−12; −9.59)
+ < 0.001  −20.7 
+(−22.7; −17.9)
+15Nitrogen 
+recovery
+-
+-
+-
+-
+ < 0.001  −52.8 (−55.4; 
+−50.4)
+-
+-
+-
+-
+ < 0.001  −61 
+(−62.8; −57.5)
+Phosphorus 
+concentra-
+tion
+0.933  −0.02 (−0.2; 
+0.08)
+0.012 0.2 (0.1; 0.3)
+0.006 0.23 (0.1; 0.39)
+0.999 0.0 (−0.01; 
+0.01)
+0.072  −0.15 
+(−0.23; −0.02)
+0.067  −0.15 
+(−0.23; −0.02)
+Phosphorus 
+content
+0.678 0.24 (−0.23; 
+0.57)
+0.001 1.37 (0.69; 1.85)
+0.003 1.13 (0.39; 1.74)
+0.415 0.37 (−0.1; 
+0.84)
+0.873 0.14 (−0.36; 
+0.78)
+0.705  −0.23 (−0.56; 
+0.29)
+N:P
+0.052 2.03 (0.57; 4.33)
+ < 0.001  −4.63 
+(−5.88; −2.99)
+ < 0.001  −6.66 
+(−8.76; −5.06)
+0.461 0.96 (−0.24; 
+2.08)
+0.019  −2.43 
+(−3.83; −1.29)
+0.002  −3.39 
+(−4.3; −2.81)
+Root length
+0.384  −5.25 
+(−8.75; −1.75)
+ < 0.001 21.5 (12.2; 30.8)
+ < 0.001 26.8 (17.2; 36)
+0.920 1.5 (−5; 8.25)
+0.001 19 (8.75; 29.5)
+0.001 17.5 (7.25; 26.5)
+Specific root 
+length
+0.228 5 (−0.25; 9.75)
+0.003 11.8 (5.75; 17.5)
+0.082 6.75 (2.5; 11.2)
+0.228 5 (1; 11)
+0.467 3.5 (0.5; 6.5)
+0.864  −1.5 (−7.93; 
+2.25)
+446
+Mycorrhiza (2021) 31:441–454
+1 3
+In the Ctr+N treatment, the percentage of 15N recov-
+ery was 61.5% on average, with no significant differences 
+by mycorrhization (Fig. 2   Aboveground and belowground biomass dry weight of durum 
+wheat in the different fertilisation treatments (Ctr control not ferti-
+lised, Ctr+N control fertilised with ammonium sulphate, Org soil 
+amended with  crop residues) in the absence (grey points) or pres-
+ence (coloured points) of arbuscular mycorrhizal (AM) fungal inocu-
+lum.",2
+33893547,"['Myc', 'treatments', 'control', 'absence']",biomass,9.37,,"Table 1   Analysis of variance: 
+F- and p-values for the effects 
+of the applied treatments 
+(Fertilisation, Fert (1); 
+Mycorrhization, Myc (2); and 
+their interaction (1 × 2)) on the 
+traits observed in durum wheat 
+plants
+Fert (1)
+Myc (2)
+1 × 2
+df
+F-values
+p-values
+df
+F-values
+p-values
+df
+F-values
+p-values
+AM fungi colonisation
+2
+24.46
+0.001
+-
+-
+-
+-
+-
+-
+Aboveground biomass
+2
+12.58
+ < 0.001
+1
+17.13
+ < 0.001
+2
+0.53
+0.601
+Belowground biomass
+2
+39.85
+ < 0.001
+1
+9.37
+0.008
+2
+0.73
+0.497
+Nitrogen concentration
+2
+73.66
+ < 0.001
+1
+2.23
+0.116
+2
+1.45
+0.261
+Nitrogen content
+2
+175.18
+ < 0.001
+1
+24.21
+ < 0.001
+2
+14.80
+ < 0.001
+15Nitrogen recovery
+1
+2915.12
+ < 0.001
+1
+0.61
+0.454
+1
+14.77
+0.004
+Phosphorus concentration
+2
+0.37
+0.693
+1
+64.77
+ < 0.001
+2
+11.21
+ < 0.001
+Phosphorus content
+2
+7.21
+0.007
+1
+65.79
+ < 0.001
+2
+7.00
+0.007
+N:P
+2
+42.95
+ < 0.001
+1
+49.12
+ < 0.001
+2
+4.48
+0.030
+Root length
+2
+40.56
+ < 0.001
+1
+12.67
+0.003
+2
+1.54
+0.246
+Specific root length
+2
+7.15
+0.007
+1
+6.45
+0.023
+2
+2.70
+0.099
+Fig. Data 
+are plotted with the mean depicted as a black circle ± SE (n = 4) rep-
+resented by the end of the vertical black line to the right of the raw 
+data
+445
+Mycorrhiza (2021) 31:441–454
+1 3
+Table 2   p-values for pairwise comparisons, effect size mean (unpaired means), and estimated 95% confidence intervals (Δ mean and CIs; in brackets) in the different fertilisation treatments 
+(Ctr, control not fertilised; Ctr+N, control fertilised with ammonium sulphate; Org, soil amended with crop residues) in the absence (−AM) or presence (+AM) of arbuscular mycorrhizal fungal 
+inoculum
+–AM
+ +AM
+Ctr vs Ctr+N
+Ctr vs Org
+Ctr+N vs Org
+Ctr vs Ctr+N
+Ctr vs Org
+Ctr+N vs Org
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+AM fungi 
+colonization
+-
+-
+-
+-
+-
+-
+0.173  −4.18 (−10.5; 
+0)
+0.008 9.48 (3.41; 13.7)
+0.001 13.7 (9.98; 17.6)
+Aboveground 
+biomass
+0.207 0.23 (0.17; 0.31)
+0.002 0.55 (0.19; 0.74)
+0.069 0.31 (−0.06; 
+0.52)
+0.263 0.21 (−0.08; 
+0.5)
+0.029 0.37 (0.1; 0.65)
+0.444 0.16 (0.04; 0.27)
+Belowground 
+biomass
+0.088  −0.13 
+(−0.19; −0.03)
+0.002 0.23 (0.06; 0.36)
+ < 0.001 0.36 (0.19; 0.49)
+0.831  −0.03 (−0.12; 
+0.05)
+ < 0.001 0.28 (0.13; 0.46)
+ < 0.001 0.31 (0.19; 0.49)
+Nitrogen con-
+centration
+0.078 2.15 (1.17; 3.05)
+ < 0.001  −3.95 
+(−5.12; −255)
+ < 0.001  −6.1 
+(−6.88; −4.8)
+0.163 1.67 (−0.52; 
+3.67)
+ < 0.001  −5.55 
+(−7.6; −3.6)
+ < 0.001  −7.22 
+(−8.08; −6.45)
+Nitrogen 
+content
+ < 0.001 10.5 (8.22; 13)
+0.265  −2.06 (−4.92; 
+0.87)
+ < 0.001  −12.6 
+(−15.1; −10.2)
+ < 0.001 9.87 (6.93; 
+11.9)
+ < 0.001  −10.8 
+(−12; −9.59)
+ < 0.001  −20.7 
+(−22.7; −17.9)
+15Nitrogen 
+recovery
+-
+-
+-
+-
+ < 0.001  −52.8 (−55.4; 
+−50.4)
+-
+-
+-
+-
+ < 0.001  −61 
+(−62.8; −57.5)
+Phosphorus 
+concentra-
+tion
+0.933  −0.02 (−0.2; 
+0.08)
+0.012 0.2 (0.1; 0.3)
+0.006 0.23 (0.1; 0.39)
+0.999 0.0 (−0.01; 
+0.01)
+0.072  −0.15 
+(−0.23; −0.02)
+0.067  −0.15 
+(−0.23; −0.02)
+Phosphorus 
+content
+0.678 0.24 (−0.23; 
+0.57)
+0.001 1.37 (0.69; 1.85)
+0.003 1.13 (0.39; 1.74)
+0.415 0.37 (−0.1; 
+0.84)
+0.873 0.14 (−0.36; 
+0.78)
+0.705  −0.23 (−0.56; 
+0.29)
+N:P
+0.052 2.03 (0.57; 4.33)
+ < 0.001  −4.63 
+(−5.88; −2.99)
+ < 0.001  −6.66 
+(−8.76; −5.06)
+0.461 0.96 (−0.24; 
+2.08)
+0.019  −2.43 
+(−3.83; −1.29)
+0.002  −3.39 
+(−4.3; −2.81)
+Root length
+0.384  −5.25 
+(−8.75; −1.75)
+ < 0.001 21.5 (12.2; 30.8)
+ < 0.001 26.8 (17.2; 36)
+0.920 1.5 (−5; 8.25)
+0.001 19 (8.75; 29.5)
+0.001 17.5 (7.25; 26.5)
+Specific root 
+length
+0.228 5 (−0.25; 9.75)
+0.003 11.8 (5.75; 17.5)
+0.082 6.75 (2.5; 11.2)
+0.228 5 (1; 11)
+0.467 3.5 (0.5; 6.5)
+0.864  −1.5 (−7.93; 
+2.25)
+446
+Mycorrhiza (2021) 31:441–454
+1 3
+In the Ctr+N treatment, the percentage of 15N recov-
+ery was 61.5% on average, with no significant differences 
+by mycorrhization (Fig. 2   Aboveground and belowground biomass dry weight of durum 
+wheat in the different fertilisation treatments (Ctr control not ferti-
+lised, Ctr+N control fertilised with ammonium sulphate, Org soil 
+amended with  crop residues) in the absence (grey points) or pres-
+ence (coloured points) of arbuscular mycorrhizal (AM) fungal inocu-
+lum.",2
+33893547,"['Myc', 'treatments', 'control', 'absence']",biomass,"
+",,"Table 1   Analysis of variance: 
+F- and p-values for the effects 
+of the applied treatments 
+(Fertilisation, Fert (1); 
+Mycorrhization, Myc (2); and 
+their interaction (1 × 2)) on the 
+traits observed in durum wheat 
+plants
+Fert (1)
+Myc (2)
+1 × 2
+df
+F-values
+p-values
+df
+F-values
+p-values
+df
+F-values
+p-values
+AM fungi colonisation
+2
+24.46
+0.001
+-
+-
+-
+-
+-
+-
+Aboveground biomass
+2
+12.58
+ < 0.001
+1
+17.13
+ < 0.001
+2
+0.53
+0.601
+Belowground biomass
+2
+39.85
+ < 0.001
+1
+9.37
+0.008
+2
+0.73
+0.497
+Nitrogen concentration
+2
+73.66
+ < 0.001
+1
+2.23
+0.116
+2
+1.45
+0.261
+Nitrogen content
+2
+175.18
+ < 0.001
+1
+24.21
+ < 0.001
+2
+14.80
+ < 0.001
+15Nitrogen recovery
+1
+2915.12
+ < 0.001
+1
+0.61
+0.454
+1
+14.77
+0.004
+Phosphorus concentration
+2
+0.37
+0.693
+1
+64.77
+ < 0.001
+2
+11.21
+ < 0.001
+Phosphorus content
+2
+7.21
+0.007
+1
+65.79
+ < 0.001
+2
+7.00
+0.007
+N:P
+2
+42.95
+ < 0.001
+1
+49.12
+ < 0.001
+2
+4.48
+0.030
+Root length
+2
+40.56
+ < 0.001
+1
+12.67
+0.003
+2
+1.54
+0.246
+Specific root length
+2
+7.15
+0.007
+1
+6.45
+0.023
+2
+2.70
+0.099
+Fig. Data 
+are plotted with the mean depicted as a black circle ± SE (n = 4) rep-
+resented by the end of the vertical black line to the right of the raw 
+data
+445
+Mycorrhiza (2021) 31:441–454
+1 3
+Table 2   p-values for pairwise comparisons, effect size mean (unpaired means), and estimated 95% confidence intervals (Δ mean and CIs; in brackets) in the different fertilisation treatments 
+(Ctr, control not fertilised; Ctr+N, control fertilised with ammonium sulphate; Org, soil amended with crop residues) in the absence (−AM) or presence (+AM) of arbuscular mycorrhizal fungal 
+inoculum
+–AM
+ +AM
+Ctr vs Ctr+N
+Ctr vs Org
+Ctr+N vs Org
+Ctr vs Ctr+N
+Ctr vs Org
+Ctr+N vs Org
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+AM fungi 
+colonization
+-
+-
+-
+-
+-
+-
+0.173  −4.18 (−10.5; 
+0)
+0.008 9.48 (3.41; 13.7)
+0.001 13.7 (9.98; 17.6)
+Aboveground 
+biomass
+0.207 0.23 (0.17; 0.31)
+0.002 0.55 (0.19; 0.74)
+0.069 0.31 (−0.06; 
+0.52)
+0.263 0.21 (−0.08; 
+0.5)
+0.029 0.37 (0.1; 0.65)
+0.444 0.16 (0.04; 0.27)
+Belowground 
+biomass
+0.088  −0.13 
+(−0.19; −0.03)
+0.002 0.23 (0.06; 0.36)
+ < 0.001 0.36 (0.19; 0.49)
+0.831  −0.03 (−0.12; 
+0.05)
+ < 0.001 0.28 (0.13; 0.46)
+ < 0.001 0.31 (0.19; 0.49)
+Nitrogen con-
+centration
+0.078 2.15 (1.17; 3.05)
+ < 0.001  −3.95 
+(−5.12; −255)
+ < 0.001  −6.1 
+(−6.88; −4.8)
+0.163 1.67 (−0.52; 
+3.67)
+ < 0.001  −5.55 
+(−7.6; −3.6)
+ < 0.001  −7.22 
+(−8.08; −6.45)
+Nitrogen 
+content
+ < 0.001 10.5 (8.22; 13)
+0.265  −2.06 (−4.92; 
+0.87)
+ < 0.001  −12.6 
+(−15.1; −10.2)
+ < 0.001 9.87 (6.93; 
+11.9)
+ < 0.001  −10.8 
+(−12; −9.59)
+ < 0.001  −20.7 
+(−22.7; −17.9)
+15Nitrogen 
+recovery
+-
+-
+-
+-
+ < 0.001  −52.8 (−55.4; 
+−50.4)
+-
+-
+-
+-
+ < 0.001  −61 
+(−62.8; −57.5)
+Phosphorus 
+concentra-
+tion
+0.933  −0.02 (−0.2; 
+0.08)
+0.012 0.2 (0.1; 0.3)
+0.006 0.23 (0.1; 0.39)
+0.999 0.0 (−0.01; 
+0.01)
+0.072  −0.15 
+(−0.23; −0.02)
+0.067  −0.15 
+(−0.23; −0.02)
+Phosphorus 
+content
+0.678 0.24 (−0.23; 
+0.57)
+0.001 1.37 (0.69; 1.85)
+0.003 1.13 (0.39; 1.74)
+0.415 0.37 (−0.1; 
+0.84)
+0.873 0.14 (−0.36; 
+0.78)
+0.705  −0.23 (−0.56; 
+0.29)
+N:P
+0.052 2.03 (0.57; 4.33)
+ < 0.001  −4.63 
+(−5.88; −2.99)
+ < 0.001  −6.66 
+(−8.76; −5.06)
+0.461 0.96 (−0.24; 
+2.08)
+0.019  −2.43 
+(−3.83; −1.29)
+0.002  −3.39 
+(−4.3; −2.81)
+Root length
+0.384  −5.25 
+(−8.75; −1.75)
+ < 0.001 21.5 (12.2; 30.8)
+ < 0.001 26.8 (17.2; 36)
+0.920 1.5 (−5; 8.25)
+0.001 19 (8.75; 29.5)
+0.001 17.5 (7.25; 26.5)
+Specific root 
+length
+0.228 5 (−0.25; 9.75)
+0.003 11.8 (5.75; 17.5)
+0.082 6.75 (2.5; 11.2)
+0.228 5 (1; 11)
+0.467 3.5 (0.5; 6.5)
+0.864  −1.5 (−7.93; 
+2.25)
+446
+Mycorrhiza (2021) 31:441–454
+1 3
+In the Ctr+N treatment, the percentage of 15N recov-
+ery was 61.5% on average, with no significant differences 
+by mycorrhization (Fig. 2   Aboveground and belowground biomass dry weight of durum 
+wheat in the different fertilisation treatments (Ctr control not ferti-
+lised, Ctr+N control fertilised with ammonium sulphate, Org soil 
+amended with  crop residues) in the absence (grey points) or pres-
+ence (coloured points) of arbuscular mycorrhizal (AM) fungal inocu-
+lum.",2
+33893547,"['Myc', 'treatments', 'control', 'absence']",biomass,0.008,,"Table 1   Analysis of variance: 
+F- and p-values for the effects 
+of the applied treatments 
+(Fertilisation, Fert (1); 
+Mycorrhization, Myc (2); and 
+their interaction (1 × 2)) on the 
+traits observed in durum wheat 
+plants
+Fert (1)
+Myc (2)
+1 × 2
+df
+F-values
+p-values
+df
+F-values
+p-values
+df
+F-values
+p-values
+AM fungi colonisation
+2
+24.46
+0.001
+-
+-
+-
+-
+-
+-
+Aboveground biomass
+2
+12.58
+ < 0.001
+1
+17.13
+ < 0.001
+2
+0.53
+0.601
+Belowground biomass
+2
+39.85
+ < 0.001
+1
+9.37
+0.008
+2
+0.73
+0.497
+Nitrogen concentration
+2
+73.66
+ < 0.001
+1
+2.23
+0.116
+2
+1.45
+0.261
+Nitrogen content
+2
+175.18
+ < 0.001
+1
+24.21
+ < 0.001
+2
+14.80
+ < 0.001
+15Nitrogen recovery
+1
+2915.12
+ < 0.001
+1
+0.61
+0.454
+1
+14.77
+0.004
+Phosphorus concentration
+2
+0.37
+0.693
+1
+64.77
+ < 0.001
+2
+11.21
+ < 0.001
+Phosphorus content
+2
+7.21
+0.007
+1
+65.79
+ < 0.001
+2
+7.00
+0.007
+N:P
+2
+42.95
+ < 0.001
+1
+49.12
+ < 0.001
+2
+4.48
+0.030
+Root length
+2
+40.56
+ < 0.001
+1
+12.67
+0.003
+2
+1.54
+0.246
+Specific root length
+2
+7.15
+0.007
+1
+6.45
+0.023
+2
+2.70
+0.099
+Fig. Data 
+are plotted with the mean depicted as a black circle ± SE (n = 4) rep-
+resented by the end of the vertical black line to the right of the raw 
+data
+445
+Mycorrhiza (2021) 31:441–454
+1 3
+Table 2   p-values for pairwise comparisons, effect size mean (unpaired means), and estimated 95% confidence intervals (Δ mean and CIs; in brackets) in the different fertilisation treatments 
+(Ctr, control not fertilised; Ctr+N, control fertilised with ammonium sulphate; Org, soil amended with crop residues) in the absence (−AM) or presence (+AM) of arbuscular mycorrhizal fungal 
+inoculum
+–AM
+ +AM
+Ctr vs Ctr+N
+Ctr vs Org
+Ctr+N vs Org
+Ctr vs Ctr+N
+Ctr vs Org
+Ctr+N vs Org
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+AM fungi 
+colonization
+-
+-
+-
+-
+-
+-
+0.173  −4.18 (−10.5; 
+0)
+0.008 9.48 (3.41; 13.7)
+0.001 13.7 (9.98; 17.6)
+Aboveground 
+biomass
+0.207 0.23 (0.17; 0.31)
+0.002 0.55 (0.19; 0.74)
+0.069 0.31 (−0.06; 
+0.52)
+0.263 0.21 (−0.08; 
+0.5)
+0.029 0.37 (0.1; 0.65)
+0.444 0.16 (0.04; 0.27)
+Belowground 
+biomass
+0.088  −0.13 
+(−0.19; −0.03)
+0.002 0.23 (0.06; 0.36)
+ < 0.001 0.36 (0.19; 0.49)
+0.831  −0.03 (−0.12; 
+0.05)
+ < 0.001 0.28 (0.13; 0.46)
+ < 0.001 0.31 (0.19; 0.49)
+Nitrogen con-
+centration
+0.078 2.15 (1.17; 3.05)
+ < 0.001  −3.95 
+(−5.12; −255)
+ < 0.001  −6.1 
+(−6.88; −4.8)
+0.163 1.67 (−0.52; 
+3.67)
+ < 0.001  −5.55 
+(−7.6; −3.6)
+ < 0.001  −7.22 
+(−8.08; −6.45)
+Nitrogen 
+content
+ < 0.001 10.5 (8.22; 13)
+0.265  −2.06 (−4.92; 
+0.87)
+ < 0.001  −12.6 
+(−15.1; −10.2)
+ < 0.001 9.87 (6.93; 
+11.9)
+ < 0.001  −10.8 
+(−12; −9.59)
+ < 0.001  −20.7 
+(−22.7; −17.9)
+15Nitrogen 
+recovery
+-
+-
+-
+-
+ < 0.001  −52.8 (−55.4; 
+−50.4)
+-
+-
+-
+-
+ < 0.001  −61 
+(−62.8; −57.5)
+Phosphorus 
+concentra-
+tion
+0.933  −0.02 (−0.2; 
+0.08)
+0.012 0.2 (0.1; 0.3)
+0.006 0.23 (0.1; 0.39)
+0.999 0.0 (−0.01; 
+0.01)
+0.072  −0.15 
+(−0.23; −0.02)
+0.067  −0.15 
+(−0.23; −0.02)
+Phosphorus 
+content
+0.678 0.24 (−0.23; 
+0.57)
+0.001 1.37 (0.69; 1.85)
+0.003 1.13 (0.39; 1.74)
+0.415 0.37 (−0.1; 
+0.84)
+0.873 0.14 (−0.36; 
+0.78)
+0.705  −0.23 (−0.56; 
+0.29)
+N:P
+0.052 2.03 (0.57; 4.33)
+ < 0.001  −4.63 
+(−5.88; −2.99)
+ < 0.001  −6.66 
+(−8.76; −5.06)
+0.461 0.96 (−0.24; 
+2.08)
+0.019  −2.43 
+(−3.83; −1.29)
+0.002  −3.39 
+(−4.3; −2.81)
+Root length
+0.384  −5.25 
+(−8.75; −1.75)
+ < 0.001 21.5 (12.2; 30.8)
+ < 0.001 26.8 (17.2; 36)
+0.920 1.5 (−5; 8.25)
+0.001 19 (8.75; 29.5)
+0.001 17.5 (7.25; 26.5)
+Specific root 
+length
+0.228 5 (−0.25; 9.75)
+0.003 11.8 (5.75; 17.5)
+0.082 6.75 (2.5; 11.2)
+0.228 5 (1; 11)
+0.467 3.5 (0.5; 6.5)
+0.864  −1.5 (−7.93; 
+2.25)
+446
+Mycorrhiza (2021) 31:441–454
+1 3
+In the Ctr+N treatment, the percentage of 15N recov-
+ery was 61.5% on average, with no significant differences 
+by mycorrhization (Fig. 2   Aboveground and belowground biomass dry weight of durum 
+wheat in the different fertilisation treatments (Ctr control not ferti-
+lised, Ctr+N control fertilised with ammonium sulphate, Org soil 
+amended with  crop residues) in the absence (grey points) or pres-
+ence (coloured points) of arbuscular mycorrhizal (AM) fungal inocu-
+lum.",2
+33893547,"['Myc', 'treatments', 'control', 'absence']",biomass,2,,"Table 1   Analysis of variance: 
+F- and p-values for the effects 
+of the applied treatments 
+(Fertilisation, Fert (1); 
+Mycorrhization, Myc (2); and 
+their interaction (1 × 2)) on the 
+traits observed in durum wheat 
+plants
+Fert (1)
+Myc (2)
+1 × 2
+df
+F-values
+p-values
+df
+F-values
+p-values
+df
+F-values
+p-values
+AM fungi colonisation
+2
+24.46
+0.001
+-
+-
+-
+-
+-
+-
+Aboveground biomass
+2
+12.58
+ < 0.001
+1
+17.13
+ < 0.001
+2
+0.53
+0.601
+Belowground biomass
+2
+39.85
+ < 0.001
+1
+9.37
+0.008
+2
+0.73
+0.497
+Nitrogen concentration
+2
+73.66
+ < 0.001
+1
+2.23
+0.116
+2
+1.45
+0.261
+Nitrogen content
+2
+175.18
+ < 0.001
+1
+24.21
+ < 0.001
+2
+14.80
+ < 0.001
+15Nitrogen recovery
+1
+2915.12
+ < 0.001
+1
+0.61
+0.454
+1
+14.77
+0.004
+Phosphorus concentration
+2
+0.37
+0.693
+1
+64.77
+ < 0.001
+2
+11.21
+ < 0.001
+Phosphorus content
+2
+7.21
+0.007
+1
+65.79
+ < 0.001
+2
+7.00
+0.007
+N:P
+2
+42.95
+ < 0.001
+1
+49.12
+ < 0.001
+2
+4.48
+0.030
+Root length
+2
+40.56
+ < 0.001
+1
+12.67
+0.003
+2
+1.54
+0.246
+Specific root length
+2
+7.15
+0.007
+1
+6.45
+0.023
+2
+2.70
+0.099
+Fig. Data 
+are plotted with the mean depicted as a black circle ± SE (n = 4) rep-
+resented by the end of the vertical black line to the right of the raw 
+data
+445
+Mycorrhiza (2021) 31:441–454
+1 3
+Table 2   p-values for pairwise comparisons, effect size mean (unpaired means), and estimated 95% confidence intervals (Δ mean and CIs; in brackets) in the different fertilisation treatments 
+(Ctr, control not fertilised; Ctr+N, control fertilised with ammonium sulphate; Org, soil amended with crop residues) in the absence (−AM) or presence (+AM) of arbuscular mycorrhizal fungal 
+inoculum
+–AM
+ +AM
+Ctr vs Ctr+N
+Ctr vs Org
+Ctr+N vs Org
+Ctr vs Ctr+N
+Ctr vs Org
+Ctr+N vs Org
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+AM fungi 
+colonization
+-
+-
+-
+-
+-
+-
+0.173  −4.18 (−10.5; 
+0)
+0.008 9.48 (3.41; 13.7)
+0.001 13.7 (9.98; 17.6)
+Aboveground 
+biomass
+0.207 0.23 (0.17; 0.31)
+0.002 0.55 (0.19; 0.74)
+0.069 0.31 (−0.06; 
+0.52)
+0.263 0.21 (−0.08; 
+0.5)
+0.029 0.37 (0.1; 0.65)
+0.444 0.16 (0.04; 0.27)
+Belowground 
+biomass
+0.088  −0.13 
+(−0.19; −0.03)
+0.002 0.23 (0.06; 0.36)
+ < 0.001 0.36 (0.19; 0.49)
+0.831  −0.03 (−0.12; 
+0.05)
+ < 0.001 0.28 (0.13; 0.46)
+ < 0.001 0.31 (0.19; 0.49)
+Nitrogen con-
+centration
+0.078 2.15 (1.17; 3.05)
+ < 0.001  −3.95 
+(−5.12; −255)
+ < 0.001  −6.1 
+(−6.88; −4.8)
+0.163 1.67 (−0.52; 
+3.67)
+ < 0.001  −5.55 
+(−7.6; −3.6)
+ < 0.001  −7.22 
+(−8.08; −6.45)
+Nitrogen 
+content
+ < 0.001 10.5 (8.22; 13)
+0.265  −2.06 (−4.92; 
+0.87)
+ < 0.001  −12.6 
+(−15.1; −10.2)
+ < 0.001 9.87 (6.93; 
+11.9)
+ < 0.001  −10.8 
+(−12; −9.59)
+ < 0.001  −20.7 
+(−22.7; −17.9)
+15Nitrogen 
+recovery
+-
+-
+-
+-
+ < 0.001  −52.8 (−55.4; 
+−50.4)
+-
+-
+-
+-
+ < 0.001  −61 
+(−62.8; −57.5)
+Phosphorus 
+concentra-
+tion
+0.933  −0.02 (−0.2; 
+0.08)
+0.012 0.2 (0.1; 0.3)
+0.006 0.23 (0.1; 0.39)
+0.999 0.0 (−0.01; 
+0.01)
+0.072  −0.15 
+(−0.23; −0.02)
+0.067  −0.15 
+(−0.23; −0.02)
+Phosphorus 
+content
+0.678 0.24 (−0.23; 
+0.57)
+0.001 1.37 (0.69; 1.85)
+0.003 1.13 (0.39; 1.74)
+0.415 0.37 (−0.1; 
+0.84)
+0.873 0.14 (−0.36; 
+0.78)
+0.705  −0.23 (−0.56; 
+0.29)
+N:P
+0.052 2.03 (0.57; 4.33)
+ < 0.001  −4.63 
+(−5.88; −2.99)
+ < 0.001  −6.66 
+(−8.76; −5.06)
+0.461 0.96 (−0.24; 
+2.08)
+0.019  −2.43 
+(−3.83; −1.29)
+0.002  −3.39 
+(−4.3; −2.81)
+Root length
+0.384  −5.25 
+(−8.75; −1.75)
+ < 0.001 21.5 (12.2; 30.8)
+ < 0.001 26.8 (17.2; 36)
+0.920 1.5 (−5; 8.25)
+0.001 19 (8.75; 29.5)
+0.001 17.5 (7.25; 26.5)
+Specific root 
+length
+0.228 5 (−0.25; 9.75)
+0.003 11.8 (5.75; 17.5)
+0.082 6.75 (2.5; 11.2)
+0.228 5 (1; 11)
+0.467 3.5 (0.5; 6.5)
+0.864  −1.5 (−7.93; 
+2.25)
+446
+Mycorrhiza (2021) 31:441–454
+1 3
+In the Ctr+N treatment, the percentage of 15N recov-
+ery was 61.5% on average, with no significant differences 
+by mycorrhization (Fig. 2   Aboveground and belowground biomass dry weight of durum 
+wheat in the different fertilisation treatments (Ctr control not ferti-
+lised, Ctr+N control fertilised with ammonium sulphate, Org soil 
+amended with  crop residues) in the absence (grey points) or pres-
+ence (coloured points) of arbuscular mycorrhizal (AM) fungal inocu-
+lum.",2
+33893547,"['Myc', 'treatments', 'control', 'absence']",biomass,0.73,,"Table 1   Analysis of variance: 
+F- and p-values for the effects 
+of the applied treatments 
+(Fertilisation, Fert (1); 
+Mycorrhization, Myc (2); and 
+their interaction (1 × 2)) on the 
+traits observed in durum wheat 
+plants
+Fert (1)
+Myc (2)
+1 × 2
+df
+F-values
+p-values
+df
+F-values
+p-values
+df
+F-values
+p-values
+AM fungi colonisation
+2
+24.46
+0.001
+-
+-
+-
+-
+-
+-
+Aboveground biomass
+2
+12.58
+ < 0.001
+1
+17.13
+ < 0.001
+2
+0.53
+0.601
+Belowground biomass
+2
+39.85
+ < 0.001
+1
+9.37
+0.008
+2
+0.73
+0.497
+Nitrogen concentration
+2
+73.66
+ < 0.001
+1
+2.23
+0.116
+2
+1.45
+0.261
+Nitrogen content
+2
+175.18
+ < 0.001
+1
+24.21
+ < 0.001
+2
+14.80
+ < 0.001
+15Nitrogen recovery
+1
+2915.12
+ < 0.001
+1
+0.61
+0.454
+1
+14.77
+0.004
+Phosphorus concentration
+2
+0.37
+0.693
+1
+64.77
+ < 0.001
+2
+11.21
+ < 0.001
+Phosphorus content
+2
+7.21
+0.007
+1
+65.79
+ < 0.001
+2
+7.00
+0.007
+N:P
+2
+42.95
+ < 0.001
+1
+49.12
+ < 0.001
+2
+4.48
+0.030
+Root length
+2
+40.56
+ < 0.001
+1
+12.67
+0.003
+2
+1.54
+0.246
+Specific root length
+2
+7.15
+0.007
+1
+6.45
+0.023
+2
+2.70
+0.099
+Fig. Data 
+are plotted with the mean depicted as a black circle ± SE (n = 4) rep-
+resented by the end of the vertical black line to the right of the raw 
+data
+445
+Mycorrhiza (2021) 31:441–454
+1 3
+Table 2   p-values for pairwise comparisons, effect size mean (unpaired means), and estimated 95% confidence intervals (Δ mean and CIs; in brackets) in the different fertilisation treatments 
+(Ctr, control not fertilised; Ctr+N, control fertilised with ammonium sulphate; Org, soil amended with crop residues) in the absence (−AM) or presence (+AM) of arbuscular mycorrhizal fungal 
+inoculum
+–AM
+ +AM
+Ctr vs Ctr+N
+Ctr vs Org
+Ctr+N vs Org
+Ctr vs Ctr+N
+Ctr vs Org
+Ctr+N vs Org
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+AM fungi 
+colonization
+-
+-
+-
+-
+-
+-
+0.173  −4.18 (−10.5; 
+0)
+0.008 9.48 (3.41; 13.7)
+0.001 13.7 (9.98; 17.6)
+Aboveground 
+biomass
+0.207 0.23 (0.17; 0.31)
+0.002 0.55 (0.19; 0.74)
+0.069 0.31 (−0.06; 
+0.52)
+0.263 0.21 (−0.08; 
+0.5)
+0.029 0.37 (0.1; 0.65)
+0.444 0.16 (0.04; 0.27)
+Belowground 
+biomass
+0.088  −0.13 
+(−0.19; −0.03)
+0.002 0.23 (0.06; 0.36)
+ < 0.001 0.36 (0.19; 0.49)
+0.831  −0.03 (−0.12; 
+0.05)
+ < 0.001 0.28 (0.13; 0.46)
+ < 0.001 0.31 (0.19; 0.49)
+Nitrogen con-
+centration
+0.078 2.15 (1.17; 3.05)
+ < 0.001  −3.95 
+(−5.12; −255)
+ < 0.001  −6.1 
+(−6.88; −4.8)
+0.163 1.67 (−0.52; 
+3.67)
+ < 0.001  −5.55 
+(−7.6; −3.6)
+ < 0.001  −7.22 
+(−8.08; −6.45)
+Nitrogen 
+content
+ < 0.001 10.5 (8.22; 13)
+0.265  −2.06 (−4.92; 
+0.87)
+ < 0.001  −12.6 
+(−15.1; −10.2)
+ < 0.001 9.87 (6.93; 
+11.9)
+ < 0.001  −10.8 
+(−12; −9.59)
+ < 0.001  −20.7 
+(−22.7; −17.9)
+15Nitrogen 
+recovery
+-
+-
+-
+-
+ < 0.001  −52.8 (−55.4; 
+−50.4)
+-
+-
+-
+-
+ < 0.001  −61 
+(−62.8; −57.5)
+Phosphorus 
+concentra-
+tion
+0.933  −0.02 (−0.2; 
+0.08)
+0.012 0.2 (0.1; 0.3)
+0.006 0.23 (0.1; 0.39)
+0.999 0.0 (−0.01; 
+0.01)
+0.072  −0.15 
+(−0.23; −0.02)
+0.067  −0.15 
+(−0.23; −0.02)
+Phosphorus 
+content
+0.678 0.24 (−0.23; 
+0.57)
+0.001 1.37 (0.69; 1.85)
+0.003 1.13 (0.39; 1.74)
+0.415 0.37 (−0.1; 
+0.84)
+0.873 0.14 (−0.36; 
+0.78)
+0.705  −0.23 (−0.56; 
+0.29)
+N:P
+0.052 2.03 (0.57; 4.33)
+ < 0.001  −4.63 
+(−5.88; −2.99)
+ < 0.001  −6.66 
+(−8.76; −5.06)
+0.461 0.96 (−0.24; 
+2.08)
+0.019  −2.43 
+(−3.83; −1.29)
+0.002  −3.39 
+(−4.3; −2.81)
+Root length
+0.384  −5.25 
+(−8.75; −1.75)
+ < 0.001 21.5 (12.2; 30.8)
+ < 0.001 26.8 (17.2; 36)
+0.920 1.5 (−5; 8.25)
+0.001 19 (8.75; 29.5)
+0.001 17.5 (7.25; 26.5)
+Specific root 
+length
+0.228 5 (−0.25; 9.75)
+0.003 11.8 (5.75; 17.5)
+0.082 6.75 (2.5; 11.2)
+0.228 5 (1; 11)
+0.467 3.5 (0.5; 6.5)
+0.864  −1.5 (−7.93; 
+2.25)
+446
+Mycorrhiza (2021) 31:441–454
+1 3
+In the Ctr+N treatment, the percentage of 15N recov-
+ery was 61.5% on average, with no significant differences 
+by mycorrhization (Fig. 2   Aboveground and belowground biomass dry weight of durum 
+wheat in the different fertilisation treatments (Ctr control not ferti-
+lised, Ctr+N control fertilised with ammonium sulphate, Org soil 
+amended with  crop residues) in the absence (grey points) or pres-
+ence (coloured points) of arbuscular mycorrhizal (AM) fungal inocu-
+lum.",2
+33893547,"['Myc', 'treatments', 'control', 'absence']",biomass,0.497,,"Table 1   Analysis of variance: 
+F- and p-values for the effects 
+of the applied treatments 
+(Fertilisation, Fert (1); 
+Mycorrhization, Myc (2); and 
+their interaction (1 × 2)) on the 
+traits observed in durum wheat 
+plants
+Fert (1)
+Myc (2)
+1 × 2
+df
+F-values
+p-values
+df
+F-values
+p-values
+df
+F-values
+p-values
+AM fungi colonisation
+2
+24.46
+0.001
+-
+-
+-
+-
+-
+-
+Aboveground biomass
+2
+12.58
+ < 0.001
+1
+17.13
+ < 0.001
+2
+0.53
+0.601
+Belowground biomass
+2
+39.85
+ < 0.001
+1
+9.37
+0.008
+2
+0.73
+0.497
+Nitrogen concentration
+2
+73.66
+ < 0.001
+1
+2.23
+0.116
+2
+1.45
+0.261
+Nitrogen content
+2
+175.18
+ < 0.001
+1
+24.21
+ < 0.001
+2
+14.80
+ < 0.001
+15Nitrogen recovery
+1
+2915.12
+ < 0.001
+1
+0.61
+0.454
+1
+14.77
+0.004
+Phosphorus concentration
+2
+0.37
+0.693
+1
+64.77
+ < 0.001
+2
+11.21
+ < 0.001
+Phosphorus content
+2
+7.21
+0.007
+1
+65.79
+ < 0.001
+2
+7.00
+0.007
+N:P
+2
+42.95
+ < 0.001
+1
+49.12
+ < 0.001
+2
+4.48
+0.030
+Root length
+2
+40.56
+ < 0.001
+1
+12.67
+0.003
+2
+1.54
+0.246
+Specific root length
+2
+7.15
+0.007
+1
+6.45
+0.023
+2
+2.70
+0.099
+Fig. Data 
+are plotted with the mean depicted as a black circle ± SE (n = 4) rep-
+resented by the end of the vertical black line to the right of the raw 
+data
+445
+Mycorrhiza (2021) 31:441–454
+1 3
+Table 2   p-values for pairwise comparisons, effect size mean (unpaired means), and estimated 95% confidence intervals (Δ mean and CIs; in brackets) in the different fertilisation treatments 
+(Ctr, control not fertilised; Ctr+N, control fertilised with ammonium sulphate; Org, soil amended with crop residues) in the absence (−AM) or presence (+AM) of arbuscular mycorrhizal fungal 
+inoculum
+–AM
+ +AM
+Ctr vs Ctr+N
+Ctr vs Org
+Ctr+N vs Org
+Ctr vs Ctr+N
+Ctr vs Org
+Ctr+N vs Org
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+AM fungi 
+colonization
+-
+-
+-
+-
+-
+-
+0.173  −4.18 (−10.5; 
+0)
+0.008 9.48 (3.41; 13.7)
+0.001 13.7 (9.98; 17.6)
+Aboveground 
+biomass
+0.207 0.23 (0.17; 0.31)
+0.002 0.55 (0.19; 0.74)
+0.069 0.31 (−0.06; 
+0.52)
+0.263 0.21 (−0.08; 
+0.5)
+0.029 0.37 (0.1; 0.65)
+0.444 0.16 (0.04; 0.27)
+Belowground 
+biomass
+0.088  −0.13 
+(−0.19; −0.03)
+0.002 0.23 (0.06; 0.36)
+ < 0.001 0.36 (0.19; 0.49)
+0.831  −0.03 (−0.12; 
+0.05)
+ < 0.001 0.28 (0.13; 0.46)
+ < 0.001 0.31 (0.19; 0.49)
+Nitrogen con-
+centration
+0.078 2.15 (1.17; 3.05)
+ < 0.001  −3.95 
+(−5.12; −255)
+ < 0.001  −6.1 
+(−6.88; −4.8)
+0.163 1.67 (−0.52; 
+3.67)
+ < 0.001  −5.55 
+(−7.6; −3.6)
+ < 0.001  −7.22 
+(−8.08; −6.45)
+Nitrogen 
+content
+ < 0.001 10.5 (8.22; 13)
+0.265  −2.06 (−4.92; 
+0.87)
+ < 0.001  −12.6 
+(−15.1; −10.2)
+ < 0.001 9.87 (6.93; 
+11.9)
+ < 0.001  −10.8 
+(−12; −9.59)
+ < 0.001  −20.7 
+(−22.7; −17.9)
+15Nitrogen 
+recovery
+-
+-
+-
+-
+ < 0.001  −52.8 (−55.4; 
+−50.4)
+-
+-
+-
+-
+ < 0.001  −61 
+(−62.8; −57.5)
+Phosphorus 
+concentra-
+tion
+0.933  −0.02 (−0.2; 
+0.08)
+0.012 0.2 (0.1; 0.3)
+0.006 0.23 (0.1; 0.39)
+0.999 0.0 (−0.01; 
+0.01)
+0.072  −0.15 
+(−0.23; −0.02)
+0.067  −0.15 
+(−0.23; −0.02)
+Phosphorus 
+content
+0.678 0.24 (−0.23; 
+0.57)
+0.001 1.37 (0.69; 1.85)
+0.003 1.13 (0.39; 1.74)
+0.415 0.37 (−0.1; 
+0.84)
+0.873 0.14 (−0.36; 
+0.78)
+0.705  −0.23 (−0.56; 
+0.29)
+N:P
+0.052 2.03 (0.57; 4.33)
+ < 0.001  −4.63 
+(−5.88; −2.99)
+ < 0.001  −6.66 
+(−8.76; −5.06)
+0.461 0.96 (−0.24; 
+2.08)
+0.019  −2.43 
+(−3.83; −1.29)
+0.002  −3.39 
+(−4.3; −2.81)
+Root length
+0.384  −5.25 
+(−8.75; −1.75)
+ < 0.001 21.5 (12.2; 30.8)
+ < 0.001 26.8 (17.2; 36)
+0.920 1.5 (−5; 8.25)
+0.001 19 (8.75; 29.5)
+0.001 17.5 (7.25; 26.5)
+Specific root 
+length
+0.228 5 (−0.25; 9.75)
+0.003 11.8 (5.75; 17.5)
+0.082 6.75 (2.5; 11.2)
+0.228 5 (1; 11)
+0.467 3.5 (0.5; 6.5)
+0.864  −1.5 (−7.93; 
+2.25)
+446
+Mycorrhiza (2021) 31:441–454
+1 3
+In the Ctr+N treatment, the percentage of 15N recov-
+ery was 61.5% on average, with no significant differences 
+by mycorrhization (Fig. 2   Aboveground and belowground biomass dry weight of durum 
+wheat in the different fertilisation treatments (Ctr control not ferti-
+lised, Ctr+N control fertilised with ammonium sulphate, Org soil 
+amended with  crop residues) in the absence (grey points) or pres-
+ence (coloured points) of arbuscular mycorrhizal (AM) fungal inocu-
+lum.",2
+33893547,"['−1.5', 'treatment', 'treatments', 'control', 'absence']",biomass,17.6,,"Table 1   Analysis of variance: 
+F- and p-values for the effects 
+of the applied treatments 
+(Fertilisation, Fert (1); 
+Mycorrhization, Myc (2); and 
+their interaction (1 × 2)) on the 
+traits observed in durum wheat 
+plants
+Fert (1)
+Myc (2)
+1 × 2
+df
+F-values
+p-values
+df
+F-values
+p-values
+df
+F-values
+p-values
+AM fungi colonisation
+2
+24.46
+0.001
+-
+-
+-
+-
+-
+-
+Aboveground biomass
+2
+12.58
+ < 0.001
+1
+17.13
+ < 0.001
+2
+0.53
+0.601
+Belowground biomass
+2
+39.85
+ < 0.001
+1
+9.37
+0.008
+2
+0.73
+0.497
+Nitrogen concentration
+2
+73.66
+ < 0.001
+1
+2.23
+0.116
+2
+1.45
+0.261
+Nitrogen content
+2
+175.18
+ < 0.001
+1
+24.21
+ < 0.001
+2
+14.80
+ < 0.001
+15Nitrogen recovery
+1
+2915.12
+ < 0.001
+1
+0.61
+0.454
+1
+14.77
+0.004
+Phosphorus concentration
+2
+0.37
+0.693
+1
+64.77
+ < 0.001
+2
+11.21
+ < 0.001
+Phosphorus content
+2
+7.21
+0.007
+1
+65.79
+ < 0.001
+2
+7.00
+0.007
+N:P
+2
+42.95
+ < 0.001
+1
+49.12
+ < 0.001
+2
+4.48
+0.030
+Root length
+2
+40.56
+ < 0.001
+1
+12.67
+0.003
+2
+1.54
+0.246
+Specific root length
+2
+7.15
+0.007
+1
+6.45
+0.023
+2
+2.70
+0.099
+Fig. Data 
+are plotted with the mean depicted as a black circle ± SE (n = 4) rep-
+resented by the end of the vertical black line to the right of the raw 
+data
+445
+Mycorrhiza (2021) 31:441–454
+1 3
+Table 2   p-values for pairwise comparisons, effect size mean (unpaired means), and estimated 95% confidence intervals (Δ mean and CIs; in brackets) in the different fertilisation treatments 
+(Ctr, control not fertilised; Ctr+N, control fertilised with ammonium sulphate; Org, soil amended with crop residues) in the absence (−AM) or presence (+AM) of arbuscular mycorrhizal fungal 
+inoculum
+–AM
+ +AM
+Ctr vs Ctr+N
+Ctr vs Org
+Ctr+N vs Org
+Ctr vs Ctr+N
+Ctr vs Org
+Ctr+N vs Org
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+AM fungi 
+colonization
+-
+-
+-
+-
+-
+-
+0.173  −4.18 (−10.5; 
+0)
+0.008 9.48 (3.41; 13.7)
+0.001 13.7 (9.98; 17.6)
+Aboveground 
+biomass
+0.207 0.23 (0.17; 0.31)
+0.002 0.55 (0.19; 0.74)
+0.069 0.31 (−0.06; 
+0.52)
+0.263 0.21 (−0.08; 
+0.5)
+0.029 0.37 (0.1; 0.65)
+0.444 0.16 (0.04; 0.27)
+Belowground 
+biomass
+0.088  −0.13 
+(−0.19; −0.03)
+0.002 0.23 (0.06; 0.36)
+ < 0.001 0.36 (0.19; 0.49)
+0.831  −0.03 (−0.12; 
+0.05)
+ < 0.001 0.28 (0.13; 0.46)
+ < 0.001 0.31 (0.19; 0.49)
+Nitrogen con-
+centration
+0.078 2.15 (1.17; 3.05)
+ < 0.001  −3.95 
+(−5.12; −255)
+ < 0.001  −6.1 
+(−6.88; −4.8)
+0.163 1.67 (−0.52; 
+3.67)
+ < 0.001  −5.55 
+(−7.6; −3.6)
+ < 0.001  −7.22 
+(−8.08; −6.45)
+Nitrogen 
+content
+ < 0.001 10.5 (8.22; 13)
+0.265  −2.06 (−4.92; 
+0.87)
+ < 0.001  −12.6 
+(−15.1; −10.2)
+ < 0.001 9.87 (6.93; 
+11.9)
+ < 0.001  −10.8 
+(−12; −9.59)
+ < 0.001  −20.7 
+(−22.7; −17.9)
+15Nitrogen 
+recovery
+-
+-
+-
+-
+ < 0.001  −52.8 (−55.4; 
+−50.4)
+-
+-
+-
+-
+ < 0.001  −61 
+(−62.8; −57.5)
+Phosphorus 
+concentra-
+tion
+0.933  −0.02 (−0.2; 
+0.08)
+0.012 0.2 (0.1; 0.3)
+0.006 0.23 (0.1; 0.39)
+0.999 0.0 (−0.01; 
+0.01)
+0.072  −0.15 
+(−0.23; −0.02)
+0.067  −0.15 
+(−0.23; −0.02)
+Phosphorus 
+content
+0.678 0.24 (−0.23; 
+0.57)
+0.001 1.37 (0.69; 1.85)
+0.003 1.13 (0.39; 1.74)
+0.415 0.37 (−0.1; 
+0.84)
+0.873 0.14 (−0.36; 
+0.78)
+0.705  −0.23 (−0.56; 
+0.29)
+N:P
+0.052 2.03 (0.57; 4.33)
+ < 0.001  −4.63 
+(−5.88; −2.99)
+ < 0.001  −6.66 
+(−8.76; −5.06)
+0.461 0.96 (−0.24; 
+2.08)
+0.019  −2.43 
+(−3.83; −1.29)
+0.002  −3.39 
+(−4.3; −2.81)
+Root length
+0.384  −5.25 
+(−8.75; −1.75)
+ < 0.001 21.5 (12.2; 30.8)
+ < 0.001 26.8 (17.2; 36)
+0.920 1.5 (−5; 8.25)
+0.001 19 (8.75; 29.5)
+0.001 17.5 (7.25; 26.5)
+Specific root 
+length
+0.228 5 (−0.25; 9.75)
+0.003 11.8 (5.75; 17.5)
+0.082 6.75 (2.5; 11.2)
+0.228 5 (1; 11)
+0.467 3.5 (0.5; 6.5)
+0.864  −1.5 (−7.93; 
+2.25)
+446
+Mycorrhiza (2021) 31:441–454
+1 3
+In the Ctr+N treatment, the percentage of 15N recov-
+ery was 61.5% on average, with no significant differences 
+by mycorrhization (Fig. 2   Aboveground and belowground biomass dry weight of durum 
+wheat in the different fertilisation treatments (Ctr control not ferti-
+lised, Ctr+N control fertilised with ammonium sulphate, Org soil 
+amended with  crop residues) in the absence (grey points) or pres-
+ence (coloured points) of arbuscular mycorrhizal (AM) fungal inocu-
+lum.",2
+33893547,"['−1.5', 'treatment', 'treatments', 'control', 'absence']",biomass,0.207,,"Table 1   Analysis of variance: 
+F- and p-values for the effects 
+of the applied treatments 
+(Fertilisation, Fert (1); 
+Mycorrhization, Myc (2); and 
+their interaction (1 × 2)) on the 
+traits observed in durum wheat 
+plants
+Fert (1)
+Myc (2)
+1 × 2
+df
+F-values
+p-values
+df
+F-values
+p-values
+df
+F-values
+p-values
+AM fungi colonisation
+2
+24.46
+0.001
+-
+-
+-
+-
+-
+-
+Aboveground biomass
+2
+12.58
+ < 0.001
+1
+17.13
+ < 0.001
+2
+0.53
+0.601
+Belowground biomass
+2
+39.85
+ < 0.001
+1
+9.37
+0.008
+2
+0.73
+0.497
+Nitrogen concentration
+2
+73.66
+ < 0.001
+1
+2.23
+0.116
+2
+1.45
+0.261
+Nitrogen content
+2
+175.18
+ < 0.001
+1
+24.21
+ < 0.001
+2
+14.80
+ < 0.001
+15Nitrogen recovery
+1
+2915.12
+ < 0.001
+1
+0.61
+0.454
+1
+14.77
+0.004
+Phosphorus concentration
+2
+0.37
+0.693
+1
+64.77
+ < 0.001
+2
+11.21
+ < 0.001
+Phosphorus content
+2
+7.21
+0.007
+1
+65.79
+ < 0.001
+2
+7.00
+0.007
+N:P
+2
+42.95
+ < 0.001
+1
+49.12
+ < 0.001
+2
+4.48
+0.030
+Root length
+2
+40.56
+ < 0.001
+1
+12.67
+0.003
+2
+1.54
+0.246
+Specific root length
+2
+7.15
+0.007
+1
+6.45
+0.023
+2
+2.70
+0.099
+Fig. Data 
+are plotted with the mean depicted as a black circle ± SE (n = 4) rep-
+resented by the end of the vertical black line to the right of the raw 
+data
+445
+Mycorrhiza (2021) 31:441–454
+1 3
+Table 2   p-values for pairwise comparisons, effect size mean (unpaired means), and estimated 95% confidence intervals (Δ mean and CIs; in brackets) in the different fertilisation treatments 
+(Ctr, control not fertilised; Ctr+N, control fertilised with ammonium sulphate; Org, soil amended with crop residues) in the absence (−AM) or presence (+AM) of arbuscular mycorrhizal fungal 
+inoculum
+–AM
+ +AM
+Ctr vs Ctr+N
+Ctr vs Org
+Ctr+N vs Org
+Ctr vs Ctr+N
+Ctr vs Org
+Ctr+N vs Org
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+AM fungi 
+colonization
+-
+-
+-
+-
+-
+-
+0.173  −4.18 (−10.5; 
+0)
+0.008 9.48 (3.41; 13.7)
+0.001 13.7 (9.98; 17.6)
+Aboveground 
+biomass
+0.207 0.23 (0.17; 0.31)
+0.002 0.55 (0.19; 0.74)
+0.069 0.31 (−0.06; 
+0.52)
+0.263 0.21 (−0.08; 
+0.5)
+0.029 0.37 (0.1; 0.65)
+0.444 0.16 (0.04; 0.27)
+Belowground 
+biomass
+0.088  −0.13 
+(−0.19; −0.03)
+0.002 0.23 (0.06; 0.36)
+ < 0.001 0.36 (0.19; 0.49)
+0.831  −0.03 (−0.12; 
+0.05)
+ < 0.001 0.28 (0.13; 0.46)
+ < 0.001 0.31 (0.19; 0.49)
+Nitrogen con-
+centration
+0.078 2.15 (1.17; 3.05)
+ < 0.001  −3.95 
+(−5.12; −255)
+ < 0.001  −6.1 
+(−6.88; −4.8)
+0.163 1.67 (−0.52; 
+3.67)
+ < 0.001  −5.55 
+(−7.6; −3.6)
+ < 0.001  −7.22 
+(−8.08; −6.45)
+Nitrogen 
+content
+ < 0.001 10.5 (8.22; 13)
+0.265  −2.06 (−4.92; 
+0.87)
+ < 0.001  −12.6 
+(−15.1; −10.2)
+ < 0.001 9.87 (6.93; 
+11.9)
+ < 0.001  −10.8 
+(−12; −9.59)
+ < 0.001  −20.7 
+(−22.7; −17.9)
+15Nitrogen 
+recovery
+-
+-
+-
+-
+ < 0.001  −52.8 (−55.4; 
+−50.4)
+-
+-
+-
+-
+ < 0.001  −61 
+(−62.8; −57.5)
+Phosphorus 
+concentra-
+tion
+0.933  −0.02 (−0.2; 
+0.08)
+0.012 0.2 (0.1; 0.3)
+0.006 0.23 (0.1; 0.39)
+0.999 0.0 (−0.01; 
+0.01)
+0.072  −0.15 
+(−0.23; −0.02)
+0.067  −0.15 
+(−0.23; −0.02)
+Phosphorus 
+content
+0.678 0.24 (−0.23; 
+0.57)
+0.001 1.37 (0.69; 1.85)
+0.003 1.13 (0.39; 1.74)
+0.415 0.37 (−0.1; 
+0.84)
+0.873 0.14 (−0.36; 
+0.78)
+0.705  −0.23 (−0.56; 
+0.29)
+N:P
+0.052 2.03 (0.57; 4.33)
+ < 0.001  −4.63 
+(−5.88; −2.99)
+ < 0.001  −6.66 
+(−8.76; −5.06)
+0.461 0.96 (−0.24; 
+2.08)
+0.019  −2.43 
+(−3.83; −1.29)
+0.002  −3.39 
+(−4.3; −2.81)
+Root length
+0.384  −5.25 
+(−8.75; −1.75)
+ < 0.001 21.5 (12.2; 30.8)
+ < 0.001 26.8 (17.2; 36)
+0.920 1.5 (−5; 8.25)
+0.001 19 (8.75; 29.5)
+0.001 17.5 (7.25; 26.5)
+Specific root 
+length
+0.228 5 (−0.25; 9.75)
+0.003 11.8 (5.75; 17.5)
+0.082 6.75 (2.5; 11.2)
+0.228 5 (1; 11)
+0.467 3.5 (0.5; 6.5)
+0.864  −1.5 (−7.93; 
+2.25)
+446
+Mycorrhiza (2021) 31:441–454
+1 3
+In the Ctr+N treatment, the percentage of 15N recov-
+ery was 61.5% on average, with no significant differences 
+by mycorrhization (Fig. 2   Aboveground and belowground biomass dry weight of durum 
+wheat in the different fertilisation treatments (Ctr control not ferti-
+lised, Ctr+N control fertilised with ammonium sulphate, Org soil 
+amended with  crop residues) in the absence (grey points) or pres-
+ence (coloured points) of arbuscular mycorrhizal (AM) fungal inocu-
+lum.",2
+33893547,"['−1.5', 'treatment', 'treatments', 'control', 'absence']",biomass,0.23,,"Table 1   Analysis of variance: 
+F- and p-values for the effects 
+of the applied treatments 
+(Fertilisation, Fert (1); 
+Mycorrhization, Myc (2); and 
+their interaction (1 × 2)) on the 
+traits observed in durum wheat 
+plants
+Fert (1)
+Myc (2)
+1 × 2
+df
+F-values
+p-values
+df
+F-values
+p-values
+df
+F-values
+p-values
+AM fungi colonisation
+2
+24.46
+0.001
+-
+-
+-
+-
+-
+-
+Aboveground biomass
+2
+12.58
+ < 0.001
+1
+17.13
+ < 0.001
+2
+0.53
+0.601
+Belowground biomass
+2
+39.85
+ < 0.001
+1
+9.37
+0.008
+2
+0.73
+0.497
+Nitrogen concentration
+2
+73.66
+ < 0.001
+1
+2.23
+0.116
+2
+1.45
+0.261
+Nitrogen content
+2
+175.18
+ < 0.001
+1
+24.21
+ < 0.001
+2
+14.80
+ < 0.001
+15Nitrogen recovery
+1
+2915.12
+ < 0.001
+1
+0.61
+0.454
+1
+14.77
+0.004
+Phosphorus concentration
+2
+0.37
+0.693
+1
+64.77
+ < 0.001
+2
+11.21
+ < 0.001
+Phosphorus content
+2
+7.21
+0.007
+1
+65.79
+ < 0.001
+2
+7.00
+0.007
+N:P
+2
+42.95
+ < 0.001
+1
+49.12
+ < 0.001
+2
+4.48
+0.030
+Root length
+2
+40.56
+ < 0.001
+1
+12.67
+0.003
+2
+1.54
+0.246
+Specific root length
+2
+7.15
+0.007
+1
+6.45
+0.023
+2
+2.70
+0.099
+Fig. Data 
+are plotted with the mean depicted as a black circle ± SE (n = 4) rep-
+resented by the end of the vertical black line to the right of the raw 
+data
+445
+Mycorrhiza (2021) 31:441–454
+1 3
+Table 2   p-values for pairwise comparisons, effect size mean (unpaired means), and estimated 95% confidence intervals (Δ mean and CIs; in brackets) in the different fertilisation treatments 
+(Ctr, control not fertilised; Ctr+N, control fertilised with ammonium sulphate; Org, soil amended with crop residues) in the absence (−AM) or presence (+AM) of arbuscular mycorrhizal fungal 
+inoculum
+–AM
+ +AM
+Ctr vs Ctr+N
+Ctr vs Org
+Ctr+N vs Org
+Ctr vs Ctr+N
+Ctr vs Org
+Ctr+N vs Org
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+AM fungi 
+colonization
+-
+-
+-
+-
+-
+-
+0.173  −4.18 (−10.5; 
+0)
+0.008 9.48 (3.41; 13.7)
+0.001 13.7 (9.98; 17.6)
+Aboveground 
+biomass
+0.207 0.23 (0.17; 0.31)
+0.002 0.55 (0.19; 0.74)
+0.069 0.31 (−0.06; 
+0.52)
+0.263 0.21 (−0.08; 
+0.5)
+0.029 0.37 (0.1; 0.65)
+0.444 0.16 (0.04; 0.27)
+Belowground 
+biomass
+0.088  −0.13 
+(−0.19; −0.03)
+0.002 0.23 (0.06; 0.36)
+ < 0.001 0.36 (0.19; 0.49)
+0.831  −0.03 (−0.12; 
+0.05)
+ < 0.001 0.28 (0.13; 0.46)
+ < 0.001 0.31 (0.19; 0.49)
+Nitrogen con-
+centration
+0.078 2.15 (1.17; 3.05)
+ < 0.001  −3.95 
+(−5.12; −255)
+ < 0.001  −6.1 
+(−6.88; −4.8)
+0.163 1.67 (−0.52; 
+3.67)
+ < 0.001  −5.55 
+(−7.6; −3.6)
+ < 0.001  −7.22 
+(−8.08; −6.45)
+Nitrogen 
+content
+ < 0.001 10.5 (8.22; 13)
+0.265  −2.06 (−4.92; 
+0.87)
+ < 0.001  −12.6 
+(−15.1; −10.2)
+ < 0.001 9.87 (6.93; 
+11.9)
+ < 0.001  −10.8 
+(−12; −9.59)
+ < 0.001  −20.7 
+(−22.7; −17.9)
+15Nitrogen 
+recovery
+-
+-
+-
+-
+ < 0.001  −52.8 (−55.4; 
+−50.4)
+-
+-
+-
+-
+ < 0.001  −61 
+(−62.8; −57.5)
+Phosphorus 
+concentra-
+tion
+0.933  −0.02 (−0.2; 
+0.08)
+0.012 0.2 (0.1; 0.3)
+0.006 0.23 (0.1; 0.39)
+0.999 0.0 (−0.01; 
+0.01)
+0.072  −0.15 
+(−0.23; −0.02)
+0.067  −0.15 
+(−0.23; −0.02)
+Phosphorus 
+content
+0.678 0.24 (−0.23; 
+0.57)
+0.001 1.37 (0.69; 1.85)
+0.003 1.13 (0.39; 1.74)
+0.415 0.37 (−0.1; 
+0.84)
+0.873 0.14 (−0.36; 
+0.78)
+0.705  −0.23 (−0.56; 
+0.29)
+N:P
+0.052 2.03 (0.57; 4.33)
+ < 0.001  −4.63 
+(−5.88; −2.99)
+ < 0.001  −6.66 
+(−8.76; −5.06)
+0.461 0.96 (−0.24; 
+2.08)
+0.019  −2.43 
+(−3.83; −1.29)
+0.002  −3.39 
+(−4.3; −2.81)
+Root length
+0.384  −5.25 
+(−8.75; −1.75)
+ < 0.001 21.5 (12.2; 30.8)
+ < 0.001 26.8 (17.2; 36)
+0.920 1.5 (−5; 8.25)
+0.001 19 (8.75; 29.5)
+0.001 17.5 (7.25; 26.5)
+Specific root 
+length
+0.228 5 (−0.25; 9.75)
+0.003 11.8 (5.75; 17.5)
+0.082 6.75 (2.5; 11.2)
+0.228 5 (1; 11)
+0.467 3.5 (0.5; 6.5)
+0.864  −1.5 (−7.93; 
+2.25)
+446
+Mycorrhiza (2021) 31:441–454
+1 3
+In the Ctr+N treatment, the percentage of 15N recov-
+ery was 61.5% on average, with no significant differences 
+by mycorrhization (Fig. 2   Aboveground and belowground biomass dry weight of durum 
+wheat in the different fertilisation treatments (Ctr control not ferti-
+lised, Ctr+N control fertilised with ammonium sulphate, Org soil 
+amended with  crop residues) in the absence (grey points) or pres-
+ence (coloured points) of arbuscular mycorrhizal (AM) fungal inocu-
+lum.",2
+33893547,"['−1.5', 'treatment', 'treatments', 'control', 'absence']",biomass,0.04,,"Table 1   Analysis of variance: 
+F- and p-values for the effects 
+of the applied treatments 
+(Fertilisation, Fert (1); 
+Mycorrhization, Myc (2); and 
+their interaction (1 × 2)) on the 
+traits observed in durum wheat 
+plants
+Fert (1)
+Myc (2)
+1 × 2
+df
+F-values
+p-values
+df
+F-values
+p-values
+df
+F-values
+p-values
+AM fungi colonisation
+2
+24.46
+0.001
+-
+-
+-
+-
+-
+-
+Aboveground biomass
+2
+12.58
+ < 0.001
+1
+17.13
+ < 0.001
+2
+0.53
+0.601
+Belowground biomass
+2
+39.85
+ < 0.001
+1
+9.37
+0.008
+2
+0.73
+0.497
+Nitrogen concentration
+2
+73.66
+ < 0.001
+1
+2.23
+0.116
+2
+1.45
+0.261
+Nitrogen content
+2
+175.18
+ < 0.001
+1
+24.21
+ < 0.001
+2
+14.80
+ < 0.001
+15Nitrogen recovery
+1
+2915.12
+ < 0.001
+1
+0.61
+0.454
+1
+14.77
+0.004
+Phosphorus concentration
+2
+0.37
+0.693
+1
+64.77
+ < 0.001
+2
+11.21
+ < 0.001
+Phosphorus content
+2
+7.21
+0.007
+1
+65.79
+ < 0.001
+2
+7.00
+0.007
+N:P
+2
+42.95
+ < 0.001
+1
+49.12
+ < 0.001
+2
+4.48
+0.030
+Root length
+2
+40.56
+ < 0.001
+1
+12.67
+0.003
+2
+1.54
+0.246
+Specific root length
+2
+7.15
+0.007
+1
+6.45
+0.023
+2
+2.70
+0.099
+Fig. Data 
+are plotted with the mean depicted as a black circle ± SE (n = 4) rep-
+resented by the end of the vertical black line to the right of the raw 
+data
+445
+Mycorrhiza (2021) 31:441–454
+1 3
+Table 2   p-values for pairwise comparisons, effect size mean (unpaired means), and estimated 95% confidence intervals (Δ mean and CIs; in brackets) in the different fertilisation treatments 
+(Ctr, control not fertilised; Ctr+N, control fertilised with ammonium sulphate; Org, soil amended with crop residues) in the absence (−AM) or presence (+AM) of arbuscular mycorrhizal fungal 
+inoculum
+–AM
+ +AM
+Ctr vs Ctr+N
+Ctr vs Org
+Ctr+N vs Org
+Ctr vs Ctr+N
+Ctr vs Org
+Ctr+N vs Org
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+AM fungi 
+colonization
+-
+-
+-
+-
+-
+-
+0.173  −4.18 (−10.5; 
+0)
+0.008 9.48 (3.41; 13.7)
+0.001 13.7 (9.98; 17.6)
+Aboveground 
+biomass
+0.207 0.23 (0.17; 0.31)
+0.002 0.55 (0.19; 0.74)
+0.069 0.31 (−0.06; 
+0.52)
+0.263 0.21 (−0.08; 
+0.5)
+0.029 0.37 (0.1; 0.65)
+0.444 0.16 (0.04; 0.27)
+Belowground 
+biomass
+0.088  −0.13 
+(−0.19; −0.03)
+0.002 0.23 (0.06; 0.36)
+ < 0.001 0.36 (0.19; 0.49)
+0.831  −0.03 (−0.12; 
+0.05)
+ < 0.001 0.28 (0.13; 0.46)
+ < 0.001 0.31 (0.19; 0.49)
+Nitrogen con-
+centration
+0.078 2.15 (1.17; 3.05)
+ < 0.001  −3.95 
+(−5.12; −255)
+ < 0.001  −6.1 
+(−6.88; −4.8)
+0.163 1.67 (−0.52; 
+3.67)
+ < 0.001  −5.55 
+(−7.6; −3.6)
+ < 0.001  −7.22 
+(−8.08; −6.45)
+Nitrogen 
+content
+ < 0.001 10.5 (8.22; 13)
+0.265  −2.06 (−4.92; 
+0.87)
+ < 0.001  −12.6 
+(−15.1; −10.2)
+ < 0.001 9.87 (6.93; 
+11.9)
+ < 0.001  −10.8 
+(−12; −9.59)
+ < 0.001  −20.7 
+(−22.7; −17.9)
+15Nitrogen 
+recovery
+-
+-
+-
+-
+ < 0.001  −52.8 (−55.4; 
+−50.4)
+-
+-
+-
+-
+ < 0.001  −61 
+(−62.8; −57.5)
+Phosphorus 
+concentra-
+tion
+0.933  −0.02 (−0.2; 
+0.08)
+0.012 0.2 (0.1; 0.3)
+0.006 0.23 (0.1; 0.39)
+0.999 0.0 (−0.01; 
+0.01)
+0.072  −0.15 
+(−0.23; −0.02)
+0.067  −0.15 
+(−0.23; −0.02)
+Phosphorus 
+content
+0.678 0.24 (−0.23; 
+0.57)
+0.001 1.37 (0.69; 1.85)
+0.003 1.13 (0.39; 1.74)
+0.415 0.37 (−0.1; 
+0.84)
+0.873 0.14 (−0.36; 
+0.78)
+0.705  −0.23 (−0.56; 
+0.29)
+N:P
+0.052 2.03 (0.57; 4.33)
+ < 0.001  −4.63 
+(−5.88; −2.99)
+ < 0.001  −6.66 
+(−8.76; −5.06)
+0.461 0.96 (−0.24; 
+2.08)
+0.019  −2.43 
+(−3.83; −1.29)
+0.002  −3.39 
+(−4.3; −2.81)
+Root length
+0.384  −5.25 
+(−8.75; −1.75)
+ < 0.001 21.5 (12.2; 30.8)
+ < 0.001 26.8 (17.2; 36)
+0.920 1.5 (−5; 8.25)
+0.001 19 (8.75; 29.5)
+0.001 17.5 (7.25; 26.5)
+Specific root 
+length
+0.228 5 (−0.25; 9.75)
+0.003 11.8 (5.75; 17.5)
+0.082 6.75 (2.5; 11.2)
+0.228 5 (1; 11)
+0.467 3.5 (0.5; 6.5)
+0.864  −1.5 (−7.93; 
+2.25)
+446
+Mycorrhiza (2021) 31:441–454
+1 3
+In the Ctr+N treatment, the percentage of 15N recov-
+ery was 61.5% on average, with no significant differences 
+by mycorrhization (Fig. 2   Aboveground and belowground biomass dry weight of durum 
+wheat in the different fertilisation treatments (Ctr control not ferti-
+lised, Ctr+N control fertilised with ammonium sulphate, Org soil 
+amended with  crop residues) in the absence (grey points) or pres-
+ence (coloured points) of arbuscular mycorrhizal (AM) fungal inocu-
+lum.",2
+33893547,"['−1.5', 'treatment', 'treatments', 'control', 'absence']",biomass,0.27,,"Table 1   Analysis of variance: 
+F- and p-values for the effects 
+of the applied treatments 
+(Fertilisation, Fert (1); 
+Mycorrhization, Myc (2); and 
+their interaction (1 × 2)) on the 
+traits observed in durum wheat 
+plants
+Fert (1)
+Myc (2)
+1 × 2
+df
+F-values
+p-values
+df
+F-values
+p-values
+df
+F-values
+p-values
+AM fungi colonisation
+2
+24.46
+0.001
+-
+-
+-
+-
+-
+-
+Aboveground biomass
+2
+12.58
+ < 0.001
+1
+17.13
+ < 0.001
+2
+0.53
+0.601
+Belowground biomass
+2
+39.85
+ < 0.001
+1
+9.37
+0.008
+2
+0.73
+0.497
+Nitrogen concentration
+2
+73.66
+ < 0.001
+1
+2.23
+0.116
+2
+1.45
+0.261
+Nitrogen content
+2
+175.18
+ < 0.001
+1
+24.21
+ < 0.001
+2
+14.80
+ < 0.001
+15Nitrogen recovery
+1
+2915.12
+ < 0.001
+1
+0.61
+0.454
+1
+14.77
+0.004
+Phosphorus concentration
+2
+0.37
+0.693
+1
+64.77
+ < 0.001
+2
+11.21
+ < 0.001
+Phosphorus content
+2
+7.21
+0.007
+1
+65.79
+ < 0.001
+2
+7.00
+0.007
+N:P
+2
+42.95
+ < 0.001
+1
+49.12
+ < 0.001
+2
+4.48
+0.030
+Root length
+2
+40.56
+ < 0.001
+1
+12.67
+0.003
+2
+1.54
+0.246
+Specific root length
+2
+7.15
+0.007
+1
+6.45
+0.023
+2
+2.70
+0.099
+Fig. Data 
+are plotted with the mean depicted as a black circle ± SE (n = 4) rep-
+resented by the end of the vertical black line to the right of the raw 
+data
+445
+Mycorrhiza (2021) 31:441–454
+1 3
+Table 2   p-values for pairwise comparisons, effect size mean (unpaired means), and estimated 95% confidence intervals (Δ mean and CIs; in brackets) in the different fertilisation treatments 
+(Ctr, control not fertilised; Ctr+N, control fertilised with ammonium sulphate; Org, soil amended with crop residues) in the absence (−AM) or presence (+AM) of arbuscular mycorrhizal fungal 
+inoculum
+–AM
+ +AM
+Ctr vs Ctr+N
+Ctr vs Org
+Ctr+N vs Org
+Ctr vs Ctr+N
+Ctr vs Org
+Ctr+N vs Org
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+AM fungi 
+colonization
+-
+-
+-
+-
+-
+-
+0.173  −4.18 (−10.5; 
+0)
+0.008 9.48 (3.41; 13.7)
+0.001 13.7 (9.98; 17.6)
+Aboveground 
+biomass
+0.207 0.23 (0.17; 0.31)
+0.002 0.55 (0.19; 0.74)
+0.069 0.31 (−0.06; 
+0.52)
+0.263 0.21 (−0.08; 
+0.5)
+0.029 0.37 (0.1; 0.65)
+0.444 0.16 (0.04; 0.27)
+Belowground 
+biomass
+0.088  −0.13 
+(−0.19; −0.03)
+0.002 0.23 (0.06; 0.36)
+ < 0.001 0.36 (0.19; 0.49)
+0.831  −0.03 (−0.12; 
+0.05)
+ < 0.001 0.28 (0.13; 0.46)
+ < 0.001 0.31 (0.19; 0.49)
+Nitrogen con-
+centration
+0.078 2.15 (1.17; 3.05)
+ < 0.001  −3.95 
+(−5.12; −255)
+ < 0.001  −6.1 
+(−6.88; −4.8)
+0.163 1.67 (−0.52; 
+3.67)
+ < 0.001  −5.55 
+(−7.6; −3.6)
+ < 0.001  −7.22 
+(−8.08; −6.45)
+Nitrogen 
+content
+ < 0.001 10.5 (8.22; 13)
+0.265  −2.06 (−4.92; 
+0.87)
+ < 0.001  −12.6 
+(−15.1; −10.2)
+ < 0.001 9.87 (6.93; 
+11.9)
+ < 0.001  −10.8 
+(−12; −9.59)
+ < 0.001  −20.7 
+(−22.7; −17.9)
+15Nitrogen 
+recovery
+-
+-
+-
+-
+ < 0.001  −52.8 (−55.4; 
+−50.4)
+-
+-
+-
+-
+ < 0.001  −61 
+(−62.8; −57.5)
+Phosphorus 
+concentra-
+tion
+0.933  −0.02 (−0.2; 
+0.08)
+0.012 0.2 (0.1; 0.3)
+0.006 0.23 (0.1; 0.39)
+0.999 0.0 (−0.01; 
+0.01)
+0.072  −0.15 
+(−0.23; −0.02)
+0.067  −0.15 
+(−0.23; −0.02)
+Phosphorus 
+content
+0.678 0.24 (−0.23; 
+0.57)
+0.001 1.37 (0.69; 1.85)
+0.003 1.13 (0.39; 1.74)
+0.415 0.37 (−0.1; 
+0.84)
+0.873 0.14 (−0.36; 
+0.78)
+0.705  −0.23 (−0.56; 
+0.29)
+N:P
+0.052 2.03 (0.57; 4.33)
+ < 0.001  −4.63 
+(−5.88; −2.99)
+ < 0.001  −6.66 
+(−8.76; −5.06)
+0.461 0.96 (−0.24; 
+2.08)
+0.019  −2.43 
+(−3.83; −1.29)
+0.002  −3.39 
+(−4.3; −2.81)
+Root length
+0.384  −5.25 
+(−8.75; −1.75)
+ < 0.001 21.5 (12.2; 30.8)
+ < 0.001 26.8 (17.2; 36)
+0.920 1.5 (−5; 8.25)
+0.001 19 (8.75; 29.5)
+0.001 17.5 (7.25; 26.5)
+Specific root 
+length
+0.228 5 (−0.25; 9.75)
+0.003 11.8 (5.75; 17.5)
+0.082 6.75 (2.5; 11.2)
+0.228 5 (1; 11)
+0.467 3.5 (0.5; 6.5)
+0.864  −1.5 (−7.93; 
+2.25)
+446
+Mycorrhiza (2021) 31:441–454
+1 3
+In the Ctr+N treatment, the percentage of 15N recov-
+ery was 61.5% on average, with no significant differences 
+by mycorrhization (Fig. 2   Aboveground and belowground biomass dry weight of durum 
+wheat in the different fertilisation treatments (Ctr control not ferti-
+lised, Ctr+N control fertilised with ammonium sulphate, Org soil 
+amended with  crop residues) in the absence (grey points) or pres-
+ence (coloured points) of arbuscular mycorrhizal (AM) fungal inocu-
+lum.",2
+33893547,"['−1.5', 'treatment', 'treatments', 'control', 'absence']",biomass,0.088,,"Table 1   Analysis of variance: 
+F- and p-values for the effects 
+of the applied treatments 
+(Fertilisation, Fert (1); 
+Mycorrhization, Myc (2); and 
+their interaction (1 × 2)) on the 
+traits observed in durum wheat 
+plants
+Fert (1)
+Myc (2)
+1 × 2
+df
+F-values
+p-values
+df
+F-values
+p-values
+df
+F-values
+p-values
+AM fungi colonisation
+2
+24.46
+0.001
+-
+-
+-
+-
+-
+-
+Aboveground biomass
+2
+12.58
+ < 0.001
+1
+17.13
+ < 0.001
+2
+0.53
+0.601
+Belowground biomass
+2
+39.85
+ < 0.001
+1
+9.37
+0.008
+2
+0.73
+0.497
+Nitrogen concentration
+2
+73.66
+ < 0.001
+1
+2.23
+0.116
+2
+1.45
+0.261
+Nitrogen content
+2
+175.18
+ < 0.001
+1
+24.21
+ < 0.001
+2
+14.80
+ < 0.001
+15Nitrogen recovery
+1
+2915.12
+ < 0.001
+1
+0.61
+0.454
+1
+14.77
+0.004
+Phosphorus concentration
+2
+0.37
+0.693
+1
+64.77
+ < 0.001
+2
+11.21
+ < 0.001
+Phosphorus content
+2
+7.21
+0.007
+1
+65.79
+ < 0.001
+2
+7.00
+0.007
+N:P
+2
+42.95
+ < 0.001
+1
+49.12
+ < 0.001
+2
+4.48
+0.030
+Root length
+2
+40.56
+ < 0.001
+1
+12.67
+0.003
+2
+1.54
+0.246
+Specific root length
+2
+7.15
+0.007
+1
+6.45
+0.023
+2
+2.70
+0.099
+Fig. Data 
+are plotted with the mean depicted as a black circle ± SE (n = 4) rep-
+resented by the end of the vertical black line to the right of the raw 
+data
+445
+Mycorrhiza (2021) 31:441–454
+1 3
+Table 2   p-values for pairwise comparisons, effect size mean (unpaired means), and estimated 95% confidence intervals (Δ mean and CIs; in brackets) in the different fertilisation treatments 
+(Ctr, control not fertilised; Ctr+N, control fertilised with ammonium sulphate; Org, soil amended with crop residues) in the absence (−AM) or presence (+AM) of arbuscular mycorrhizal fungal 
+inoculum
+–AM
+ +AM
+Ctr vs Ctr+N
+Ctr vs Org
+Ctr+N vs Org
+Ctr vs Ctr+N
+Ctr vs Org
+Ctr+N vs Org
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+AM fungi 
+colonization
+-
+-
+-
+-
+-
+-
+0.173  −4.18 (−10.5; 
+0)
+0.008 9.48 (3.41; 13.7)
+0.001 13.7 (9.98; 17.6)
+Aboveground 
+biomass
+0.207 0.23 (0.17; 0.31)
+0.002 0.55 (0.19; 0.74)
+0.069 0.31 (−0.06; 
+0.52)
+0.263 0.21 (−0.08; 
+0.5)
+0.029 0.37 (0.1; 0.65)
+0.444 0.16 (0.04; 0.27)
+Belowground 
+biomass
+0.088  −0.13 
+(−0.19; −0.03)
+0.002 0.23 (0.06; 0.36)
+ < 0.001 0.36 (0.19; 0.49)
+0.831  −0.03 (−0.12; 
+0.05)
+ < 0.001 0.28 (0.13; 0.46)
+ < 0.001 0.31 (0.19; 0.49)
+Nitrogen con-
+centration
+0.078 2.15 (1.17; 3.05)
+ < 0.001  −3.95 
+(−5.12; −255)
+ < 0.001  −6.1 
+(−6.88; −4.8)
+0.163 1.67 (−0.52; 
+3.67)
+ < 0.001  −5.55 
+(−7.6; −3.6)
+ < 0.001  −7.22 
+(−8.08; −6.45)
+Nitrogen 
+content
+ < 0.001 10.5 (8.22; 13)
+0.265  −2.06 (−4.92; 
+0.87)
+ < 0.001  −12.6 
+(−15.1; −10.2)
+ < 0.001 9.87 (6.93; 
+11.9)
+ < 0.001  −10.8 
+(−12; −9.59)
+ < 0.001  −20.7 
+(−22.7; −17.9)
+15Nitrogen 
+recovery
+-
+-
+-
+-
+ < 0.001  −52.8 (−55.4; 
+−50.4)
+-
+-
+-
+-
+ < 0.001  −61 
+(−62.8; −57.5)
+Phosphorus 
+concentra-
+tion
+0.933  −0.02 (−0.2; 
+0.08)
+0.012 0.2 (0.1; 0.3)
+0.006 0.23 (0.1; 0.39)
+0.999 0.0 (−0.01; 
+0.01)
+0.072  −0.15 
+(−0.23; −0.02)
+0.067  −0.15 
+(−0.23; −0.02)
+Phosphorus 
+content
+0.678 0.24 (−0.23; 
+0.57)
+0.001 1.37 (0.69; 1.85)
+0.003 1.13 (0.39; 1.74)
+0.415 0.37 (−0.1; 
+0.84)
+0.873 0.14 (−0.36; 
+0.78)
+0.705  −0.23 (−0.56; 
+0.29)
+N:P
+0.052 2.03 (0.57; 4.33)
+ < 0.001  −4.63 
+(−5.88; −2.99)
+ < 0.001  −6.66 
+(−8.76; −5.06)
+0.461 0.96 (−0.24; 
+2.08)
+0.019  −2.43 
+(−3.83; −1.29)
+0.002  −3.39 
+(−4.3; −2.81)
+Root length
+0.384  −5.25 
+(−8.75; −1.75)
+ < 0.001 21.5 (12.2; 30.8)
+ < 0.001 26.8 (17.2; 36)
+0.920 1.5 (−5; 8.25)
+0.001 19 (8.75; 29.5)
+0.001 17.5 (7.25; 26.5)
+Specific root 
+length
+0.228 5 (−0.25; 9.75)
+0.003 11.8 (5.75; 17.5)
+0.082 6.75 (2.5; 11.2)
+0.228 5 (1; 11)
+0.467 3.5 (0.5; 6.5)
+0.864  −1.5 (−7.93; 
+2.25)
+446
+Mycorrhiza (2021) 31:441–454
+1 3
+In the Ctr+N treatment, the percentage of 15N recov-
+ery was 61.5% on average, with no significant differences 
+by mycorrhization (Fig. 2   Aboveground and belowground biomass dry weight of durum 
+wheat in the different fertilisation treatments (Ctr control not ferti-
+lised, Ctr+N control fertilised with ammonium sulphate, Org soil 
+amended with  crop residues) in the absence (grey points) or pres-
+ence (coloured points) of arbuscular mycorrhizal (AM) fungal inocu-
+lum.",2
+33893547,"['−1.5', 'treatment', 'treatments', 'control', 'absence']",biomass,−0.19,,"Table 1   Analysis of variance: 
+F- and p-values for the effects 
+of the applied treatments 
+(Fertilisation, Fert (1); 
+Mycorrhization, Myc (2); and 
+their interaction (1 × 2)) on the 
+traits observed in durum wheat 
+plants
+Fert (1)
+Myc (2)
+1 × 2
+df
+F-values
+p-values
+df
+F-values
+p-values
+df
+F-values
+p-values
+AM fungi colonisation
+2
+24.46
+0.001
+-
+-
+-
+-
+-
+-
+Aboveground biomass
+2
+12.58
+ < 0.001
+1
+17.13
+ < 0.001
+2
+0.53
+0.601
+Belowground biomass
+2
+39.85
+ < 0.001
+1
+9.37
+0.008
+2
+0.73
+0.497
+Nitrogen concentration
+2
+73.66
+ < 0.001
+1
+2.23
+0.116
+2
+1.45
+0.261
+Nitrogen content
+2
+175.18
+ < 0.001
+1
+24.21
+ < 0.001
+2
+14.80
+ < 0.001
+15Nitrogen recovery
+1
+2915.12
+ < 0.001
+1
+0.61
+0.454
+1
+14.77
+0.004
+Phosphorus concentration
+2
+0.37
+0.693
+1
+64.77
+ < 0.001
+2
+11.21
+ < 0.001
+Phosphorus content
+2
+7.21
+0.007
+1
+65.79
+ < 0.001
+2
+7.00
+0.007
+N:P
+2
+42.95
+ < 0.001
+1
+49.12
+ < 0.001
+2
+4.48
+0.030
+Root length
+2
+40.56
+ < 0.001
+1
+12.67
+0.003
+2
+1.54
+0.246
+Specific root length
+2
+7.15
+0.007
+1
+6.45
+0.023
+2
+2.70
+0.099
+Fig. Data 
+are plotted with the mean depicted as a black circle ± SE (n = 4) rep-
+resented by the end of the vertical black line to the right of the raw 
+data
+445
+Mycorrhiza (2021) 31:441–454
+1 3
+Table 2   p-values for pairwise comparisons, effect size mean (unpaired means), and estimated 95% confidence intervals (Δ mean and CIs; in brackets) in the different fertilisation treatments 
+(Ctr, control not fertilised; Ctr+N, control fertilised with ammonium sulphate; Org, soil amended with crop residues) in the absence (−AM) or presence (+AM) of arbuscular mycorrhizal fungal 
+inoculum
+–AM
+ +AM
+Ctr vs Ctr+N
+Ctr vs Org
+Ctr+N vs Org
+Ctr vs Ctr+N
+Ctr vs Org
+Ctr+N vs Org
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+AM fungi 
+colonization
+-
+-
+-
+-
+-
+-
+0.173  −4.18 (−10.5; 
+0)
+0.008 9.48 (3.41; 13.7)
+0.001 13.7 (9.98; 17.6)
+Aboveground 
+biomass
+0.207 0.23 (0.17; 0.31)
+0.002 0.55 (0.19; 0.74)
+0.069 0.31 (−0.06; 
+0.52)
+0.263 0.21 (−0.08; 
+0.5)
+0.029 0.37 (0.1; 0.65)
+0.444 0.16 (0.04; 0.27)
+Belowground 
+biomass
+0.088  −0.13 
+(−0.19; −0.03)
+0.002 0.23 (0.06; 0.36)
+ < 0.001 0.36 (0.19; 0.49)
+0.831  −0.03 (−0.12; 
+0.05)
+ < 0.001 0.28 (0.13; 0.46)
+ < 0.001 0.31 (0.19; 0.49)
+Nitrogen con-
+centration
+0.078 2.15 (1.17; 3.05)
+ < 0.001  −3.95 
+(−5.12; −255)
+ < 0.001  −6.1 
+(−6.88; −4.8)
+0.163 1.67 (−0.52; 
+3.67)
+ < 0.001  −5.55 
+(−7.6; −3.6)
+ < 0.001  −7.22 
+(−8.08; −6.45)
+Nitrogen 
+content
+ < 0.001 10.5 (8.22; 13)
+0.265  −2.06 (−4.92; 
+0.87)
+ < 0.001  −12.6 
+(−15.1; −10.2)
+ < 0.001 9.87 (6.93; 
+11.9)
+ < 0.001  −10.8 
+(−12; −9.59)
+ < 0.001  −20.7 
+(−22.7; −17.9)
+15Nitrogen 
+recovery
+-
+-
+-
+-
+ < 0.001  −52.8 (−55.4; 
+−50.4)
+-
+-
+-
+-
+ < 0.001  −61 
+(−62.8; −57.5)
+Phosphorus 
+concentra-
+tion
+0.933  −0.02 (−0.2; 
+0.08)
+0.012 0.2 (0.1; 0.3)
+0.006 0.23 (0.1; 0.39)
+0.999 0.0 (−0.01; 
+0.01)
+0.072  −0.15 
+(−0.23; −0.02)
+0.067  −0.15 
+(−0.23; −0.02)
+Phosphorus 
+content
+0.678 0.24 (−0.23; 
+0.57)
+0.001 1.37 (0.69; 1.85)
+0.003 1.13 (0.39; 1.74)
+0.415 0.37 (−0.1; 
+0.84)
+0.873 0.14 (−0.36; 
+0.78)
+0.705  −0.23 (−0.56; 
+0.29)
+N:P
+0.052 2.03 (0.57; 4.33)
+ < 0.001  −4.63 
+(−5.88; −2.99)
+ < 0.001  −6.66 
+(−8.76; −5.06)
+0.461 0.96 (−0.24; 
+2.08)
+0.019  −2.43 
+(−3.83; −1.29)
+0.002  −3.39 
+(−4.3; −2.81)
+Root length
+0.384  −5.25 
+(−8.75; −1.75)
+ < 0.001 21.5 (12.2; 30.8)
+ < 0.001 26.8 (17.2; 36)
+0.920 1.5 (−5; 8.25)
+0.001 19 (8.75; 29.5)
+0.001 17.5 (7.25; 26.5)
+Specific root 
+length
+0.228 5 (−0.25; 9.75)
+0.003 11.8 (5.75; 17.5)
+0.082 6.75 (2.5; 11.2)
+0.228 5 (1; 11)
+0.467 3.5 (0.5; 6.5)
+0.864  −1.5 (−7.93; 
+2.25)
+446
+Mycorrhiza (2021) 31:441–454
+1 3
+In the Ctr+N treatment, the percentage of 15N recov-
+ery was 61.5% on average, with no significant differences 
+by mycorrhization (Fig. 2   Aboveground and belowground biomass dry weight of durum 
+wheat in the different fertilisation treatments (Ctr control not ferti-
+lised, Ctr+N control fertilised with ammonium sulphate, Org soil 
+amended with  crop residues) in the absence (grey points) or pres-
+ence (coloured points) of arbuscular mycorrhizal (AM) fungal inocu-
+lum.",2
+33893547,"['−1.5', 'treatment', 'treatments', 'control', 'absence']",biomass,0.002,,"Table 1   Analysis of variance: 
+F- and p-values for the effects 
+of the applied treatments 
+(Fertilisation, Fert (1); 
+Mycorrhization, Myc (2); and 
+their interaction (1 × 2)) on the 
+traits observed in durum wheat 
+plants
+Fert (1)
+Myc (2)
+1 × 2
+df
+F-values
+p-values
+df
+F-values
+p-values
+df
+F-values
+p-values
+AM fungi colonisation
+2
+24.46
+0.001
+-
+-
+-
+-
+-
+-
+Aboveground biomass
+2
+12.58
+ < 0.001
+1
+17.13
+ < 0.001
+2
+0.53
+0.601
+Belowground biomass
+2
+39.85
+ < 0.001
+1
+9.37
+0.008
+2
+0.73
+0.497
+Nitrogen concentration
+2
+73.66
+ < 0.001
+1
+2.23
+0.116
+2
+1.45
+0.261
+Nitrogen content
+2
+175.18
+ < 0.001
+1
+24.21
+ < 0.001
+2
+14.80
+ < 0.001
+15Nitrogen recovery
+1
+2915.12
+ < 0.001
+1
+0.61
+0.454
+1
+14.77
+0.004
+Phosphorus concentration
+2
+0.37
+0.693
+1
+64.77
+ < 0.001
+2
+11.21
+ < 0.001
+Phosphorus content
+2
+7.21
+0.007
+1
+65.79
+ < 0.001
+2
+7.00
+0.007
+N:P
+2
+42.95
+ < 0.001
+1
+49.12
+ < 0.001
+2
+4.48
+0.030
+Root length
+2
+40.56
+ < 0.001
+1
+12.67
+0.003
+2
+1.54
+0.246
+Specific root length
+2
+7.15
+0.007
+1
+6.45
+0.023
+2
+2.70
+0.099
+Fig. Data 
+are plotted with the mean depicted as a black circle ± SE (n = 4) rep-
+resented by the end of the vertical black line to the right of the raw 
+data
+445
+Mycorrhiza (2021) 31:441–454
+1 3
+Table 2   p-values for pairwise comparisons, effect size mean (unpaired means), and estimated 95% confidence intervals (Δ mean and CIs; in brackets) in the different fertilisation treatments 
+(Ctr, control not fertilised; Ctr+N, control fertilised with ammonium sulphate; Org, soil amended with crop residues) in the absence (−AM) or presence (+AM) of arbuscular mycorrhizal fungal 
+inoculum
+–AM
+ +AM
+Ctr vs Ctr+N
+Ctr vs Org
+Ctr+N vs Org
+Ctr vs Ctr+N
+Ctr vs Org
+Ctr+N vs Org
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+AM fungi 
+colonization
+-
+-
+-
+-
+-
+-
+0.173  −4.18 (−10.5; 
+0)
+0.008 9.48 (3.41; 13.7)
+0.001 13.7 (9.98; 17.6)
+Aboveground 
+biomass
+0.207 0.23 (0.17; 0.31)
+0.002 0.55 (0.19; 0.74)
+0.069 0.31 (−0.06; 
+0.52)
+0.263 0.21 (−0.08; 
+0.5)
+0.029 0.37 (0.1; 0.65)
+0.444 0.16 (0.04; 0.27)
+Belowground 
+biomass
+0.088  −0.13 
+(−0.19; −0.03)
+0.002 0.23 (0.06; 0.36)
+ < 0.001 0.36 (0.19; 0.49)
+0.831  −0.03 (−0.12; 
+0.05)
+ < 0.001 0.28 (0.13; 0.46)
+ < 0.001 0.31 (0.19; 0.49)
+Nitrogen con-
+centration
+0.078 2.15 (1.17; 3.05)
+ < 0.001  −3.95 
+(−5.12; −255)
+ < 0.001  −6.1 
+(−6.88; −4.8)
+0.163 1.67 (−0.52; 
+3.67)
+ < 0.001  −5.55 
+(−7.6; −3.6)
+ < 0.001  −7.22 
+(−8.08; −6.45)
+Nitrogen 
+content
+ < 0.001 10.5 (8.22; 13)
+0.265  −2.06 (−4.92; 
+0.87)
+ < 0.001  −12.6 
+(−15.1; −10.2)
+ < 0.001 9.87 (6.93; 
+11.9)
+ < 0.001  −10.8 
+(−12; −9.59)
+ < 0.001  −20.7 
+(−22.7; −17.9)
+15Nitrogen 
+recovery
+-
+-
+-
+-
+ < 0.001  −52.8 (−55.4; 
+−50.4)
+-
+-
+-
+-
+ < 0.001  −61 
+(−62.8; −57.5)
+Phosphorus 
+concentra-
+tion
+0.933  −0.02 (−0.2; 
+0.08)
+0.012 0.2 (0.1; 0.3)
+0.006 0.23 (0.1; 0.39)
+0.999 0.0 (−0.01; 
+0.01)
+0.072  −0.15 
+(−0.23; −0.02)
+0.067  −0.15 
+(−0.23; −0.02)
+Phosphorus 
+content
+0.678 0.24 (−0.23; 
+0.57)
+0.001 1.37 (0.69; 1.85)
+0.003 1.13 (0.39; 1.74)
+0.415 0.37 (−0.1; 
+0.84)
+0.873 0.14 (−0.36; 
+0.78)
+0.705  −0.23 (−0.56; 
+0.29)
+N:P
+0.052 2.03 (0.57; 4.33)
+ < 0.001  −4.63 
+(−5.88; −2.99)
+ < 0.001  −6.66 
+(−8.76; −5.06)
+0.461 0.96 (−0.24; 
+2.08)
+0.019  −2.43 
+(−3.83; −1.29)
+0.002  −3.39 
+(−4.3; −2.81)
+Root length
+0.384  −5.25 
+(−8.75; −1.75)
+ < 0.001 21.5 (12.2; 30.8)
+ < 0.001 26.8 (17.2; 36)
+0.920 1.5 (−5; 8.25)
+0.001 19 (8.75; 29.5)
+0.001 17.5 (7.25; 26.5)
+Specific root 
+length
+0.228 5 (−0.25; 9.75)
+0.003 11.8 (5.75; 17.5)
+0.082 6.75 (2.5; 11.2)
+0.228 5 (1; 11)
+0.467 3.5 (0.5; 6.5)
+0.864  −1.5 (−7.93; 
+2.25)
+446
+Mycorrhiza (2021) 31:441–454
+1 3
+In the Ctr+N treatment, the percentage of 15N recov-
+ery was 61.5% on average, with no significant differences 
+by mycorrhization (Fig. 2   Aboveground and belowground biomass dry weight of durum 
+wheat in the different fertilisation treatments (Ctr control not ferti-
+lised, Ctr+N control fertilised with ammonium sulphate, Org soil 
+amended with  crop residues) in the absence (grey points) or pres-
+ence (coloured points) of arbuscular mycorrhizal (AM) fungal inocu-
+lum.",2
+33893547,"['−1.5', 'treatment', 'treatments', 'control', 'absence']",biomass,0.23,,"Table 1   Analysis of variance: 
+F- and p-values for the effects 
+of the applied treatments 
+(Fertilisation, Fert (1); 
+Mycorrhization, Myc (2); and 
+their interaction (1 × 2)) on the 
+traits observed in durum wheat 
+plants
+Fert (1)
+Myc (2)
+1 × 2
+df
+F-values
+p-values
+df
+F-values
+p-values
+df
+F-values
+p-values
+AM fungi colonisation
+2
+24.46
+0.001
+-
+-
+-
+-
+-
+-
+Aboveground biomass
+2
+12.58
+ < 0.001
+1
+17.13
+ < 0.001
+2
+0.53
+0.601
+Belowground biomass
+2
+39.85
+ < 0.001
+1
+9.37
+0.008
+2
+0.73
+0.497
+Nitrogen concentration
+2
+73.66
+ < 0.001
+1
+2.23
+0.116
+2
+1.45
+0.261
+Nitrogen content
+2
+175.18
+ < 0.001
+1
+24.21
+ < 0.001
+2
+14.80
+ < 0.001
+15Nitrogen recovery
+1
+2915.12
+ < 0.001
+1
+0.61
+0.454
+1
+14.77
+0.004
+Phosphorus concentration
+2
+0.37
+0.693
+1
+64.77
+ < 0.001
+2
+11.21
+ < 0.001
+Phosphorus content
+2
+7.21
+0.007
+1
+65.79
+ < 0.001
+2
+7.00
+0.007
+N:P
+2
+42.95
+ < 0.001
+1
+49.12
+ < 0.001
+2
+4.48
+0.030
+Root length
+2
+40.56
+ < 0.001
+1
+12.67
+0.003
+2
+1.54
+0.246
+Specific root length
+2
+7.15
+0.007
+1
+6.45
+0.023
+2
+2.70
+0.099
+Fig. Data 
+are plotted with the mean depicted as a black circle ± SE (n = 4) rep-
+resented by the end of the vertical black line to the right of the raw 
+data
+445
+Mycorrhiza (2021) 31:441–454
+1 3
+Table 2   p-values for pairwise comparisons, effect size mean (unpaired means), and estimated 95% confidence intervals (Δ mean and CIs; in brackets) in the different fertilisation treatments 
+(Ctr, control not fertilised; Ctr+N, control fertilised with ammonium sulphate; Org, soil amended with crop residues) in the absence (−AM) or presence (+AM) of arbuscular mycorrhizal fungal 
+inoculum
+–AM
+ +AM
+Ctr vs Ctr+N
+Ctr vs Org
+Ctr+N vs Org
+Ctr vs Ctr+N
+Ctr vs Org
+Ctr+N vs Org
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+AM fungi 
+colonization
+-
+-
+-
+-
+-
+-
+0.173  −4.18 (−10.5; 
+0)
+0.008 9.48 (3.41; 13.7)
+0.001 13.7 (9.98; 17.6)
+Aboveground 
+biomass
+0.207 0.23 (0.17; 0.31)
+0.002 0.55 (0.19; 0.74)
+0.069 0.31 (−0.06; 
+0.52)
+0.263 0.21 (−0.08; 
+0.5)
+0.029 0.37 (0.1; 0.65)
+0.444 0.16 (0.04; 0.27)
+Belowground 
+biomass
+0.088  −0.13 
+(−0.19; −0.03)
+0.002 0.23 (0.06; 0.36)
+ < 0.001 0.36 (0.19; 0.49)
+0.831  −0.03 (−0.12; 
+0.05)
+ < 0.001 0.28 (0.13; 0.46)
+ < 0.001 0.31 (0.19; 0.49)
+Nitrogen con-
+centration
+0.078 2.15 (1.17; 3.05)
+ < 0.001  −3.95 
+(−5.12; −255)
+ < 0.001  −6.1 
+(−6.88; −4.8)
+0.163 1.67 (−0.52; 
+3.67)
+ < 0.001  −5.55 
+(−7.6; −3.6)
+ < 0.001  −7.22 
+(−8.08; −6.45)
+Nitrogen 
+content
+ < 0.001 10.5 (8.22; 13)
+0.265  −2.06 (−4.92; 
+0.87)
+ < 0.001  −12.6 
+(−15.1; −10.2)
+ < 0.001 9.87 (6.93; 
+11.9)
+ < 0.001  −10.8 
+(−12; −9.59)
+ < 0.001  −20.7 
+(−22.7; −17.9)
+15Nitrogen 
+recovery
+-
+-
+-
+-
+ < 0.001  −52.8 (−55.4; 
+−50.4)
+-
+-
+-
+-
+ < 0.001  −61 
+(−62.8; −57.5)
+Phosphorus 
+concentra-
+tion
+0.933  −0.02 (−0.2; 
+0.08)
+0.012 0.2 (0.1; 0.3)
+0.006 0.23 (0.1; 0.39)
+0.999 0.0 (−0.01; 
+0.01)
+0.072  −0.15 
+(−0.23; −0.02)
+0.067  −0.15 
+(−0.23; −0.02)
+Phosphorus 
+content
+0.678 0.24 (−0.23; 
+0.57)
+0.001 1.37 (0.69; 1.85)
+0.003 1.13 (0.39; 1.74)
+0.415 0.37 (−0.1; 
+0.84)
+0.873 0.14 (−0.36; 
+0.78)
+0.705  −0.23 (−0.56; 
+0.29)
+N:P
+0.052 2.03 (0.57; 4.33)
+ < 0.001  −4.63 
+(−5.88; −2.99)
+ < 0.001  −6.66 
+(−8.76; −5.06)
+0.461 0.96 (−0.24; 
+2.08)
+0.019  −2.43 
+(−3.83; −1.29)
+0.002  −3.39 
+(−4.3; −2.81)
+Root length
+0.384  −5.25 
+(−8.75; −1.75)
+ < 0.001 21.5 (12.2; 30.8)
+ < 0.001 26.8 (17.2; 36)
+0.920 1.5 (−5; 8.25)
+0.001 19 (8.75; 29.5)
+0.001 17.5 (7.25; 26.5)
+Specific root 
+length
+0.228 5 (−0.25; 9.75)
+0.003 11.8 (5.75; 17.5)
+0.082 6.75 (2.5; 11.2)
+0.228 5 (1; 11)
+0.467 3.5 (0.5; 6.5)
+0.864  −1.5 (−7.93; 
+2.25)
+446
+Mycorrhiza (2021) 31:441–454
+1 3
+In the Ctr+N treatment, the percentage of 15N recov-
+ery was 61.5% on average, with no significant differences 
+by mycorrhization (Fig. 2   Aboveground and belowground biomass dry weight of durum 
+wheat in the different fertilisation treatments (Ctr control not ferti-
+lised, Ctr+N control fertilised with ammonium sulphate, Org soil 
+amended with  crop residues) in the absence (grey points) or pres-
+ence (coloured points) of arbuscular mycorrhizal (AM) fungal inocu-
+lum.",2
+33893547,"['−1.5', 'treatment', 'treatments', 'control', 'absence']",biomass,0.06,,"Table 1   Analysis of variance: 
+F- and p-values for the effects 
+of the applied treatments 
+(Fertilisation, Fert (1); 
+Mycorrhization, Myc (2); and 
+their interaction (1 × 2)) on the 
+traits observed in durum wheat 
+plants
+Fert (1)
+Myc (2)
+1 × 2
+df
+F-values
+p-values
+df
+F-values
+p-values
+df
+F-values
+p-values
+AM fungi colonisation
+2
+24.46
+0.001
+-
+-
+-
+-
+-
+-
+Aboveground biomass
+2
+12.58
+ < 0.001
+1
+17.13
+ < 0.001
+2
+0.53
+0.601
+Belowground biomass
+2
+39.85
+ < 0.001
+1
+9.37
+0.008
+2
+0.73
+0.497
+Nitrogen concentration
+2
+73.66
+ < 0.001
+1
+2.23
+0.116
+2
+1.45
+0.261
+Nitrogen content
+2
+175.18
+ < 0.001
+1
+24.21
+ < 0.001
+2
+14.80
+ < 0.001
+15Nitrogen recovery
+1
+2915.12
+ < 0.001
+1
+0.61
+0.454
+1
+14.77
+0.004
+Phosphorus concentration
+2
+0.37
+0.693
+1
+64.77
+ < 0.001
+2
+11.21
+ < 0.001
+Phosphorus content
+2
+7.21
+0.007
+1
+65.79
+ < 0.001
+2
+7.00
+0.007
+N:P
+2
+42.95
+ < 0.001
+1
+49.12
+ < 0.001
+2
+4.48
+0.030
+Root length
+2
+40.56
+ < 0.001
+1
+12.67
+0.003
+2
+1.54
+0.246
+Specific root length
+2
+7.15
+0.007
+1
+6.45
+0.023
+2
+2.70
+0.099
+Fig. Data 
+are plotted with the mean depicted as a black circle ± SE (n = 4) rep-
+resented by the end of the vertical black line to the right of the raw 
+data
+445
+Mycorrhiza (2021) 31:441–454
+1 3
+Table 2   p-values for pairwise comparisons, effect size mean (unpaired means), and estimated 95% confidence intervals (Δ mean and CIs; in brackets) in the different fertilisation treatments 
+(Ctr, control not fertilised; Ctr+N, control fertilised with ammonium sulphate; Org, soil amended with crop residues) in the absence (−AM) or presence (+AM) of arbuscular mycorrhizal fungal 
+inoculum
+–AM
+ +AM
+Ctr vs Ctr+N
+Ctr vs Org
+Ctr+N vs Org
+Ctr vs Ctr+N
+Ctr vs Org
+Ctr+N vs Org
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+AM fungi 
+colonization
+-
+-
+-
+-
+-
+-
+0.173  −4.18 (−10.5; 
+0)
+0.008 9.48 (3.41; 13.7)
+0.001 13.7 (9.98; 17.6)
+Aboveground 
+biomass
+0.207 0.23 (0.17; 0.31)
+0.002 0.55 (0.19; 0.74)
+0.069 0.31 (−0.06; 
+0.52)
+0.263 0.21 (−0.08; 
+0.5)
+0.029 0.37 (0.1; 0.65)
+0.444 0.16 (0.04; 0.27)
+Belowground 
+biomass
+0.088  −0.13 
+(−0.19; −0.03)
+0.002 0.23 (0.06; 0.36)
+ < 0.001 0.36 (0.19; 0.49)
+0.831  −0.03 (−0.12; 
+0.05)
+ < 0.001 0.28 (0.13; 0.46)
+ < 0.001 0.31 (0.19; 0.49)
+Nitrogen con-
+centration
+0.078 2.15 (1.17; 3.05)
+ < 0.001  −3.95 
+(−5.12; −255)
+ < 0.001  −6.1 
+(−6.88; −4.8)
+0.163 1.67 (−0.52; 
+3.67)
+ < 0.001  −5.55 
+(−7.6; −3.6)
+ < 0.001  −7.22 
+(−8.08; −6.45)
+Nitrogen 
+content
+ < 0.001 10.5 (8.22; 13)
+0.265  −2.06 (−4.92; 
+0.87)
+ < 0.001  −12.6 
+(−15.1; −10.2)
+ < 0.001 9.87 (6.93; 
+11.9)
+ < 0.001  −10.8 
+(−12; −9.59)
+ < 0.001  −20.7 
+(−22.7; −17.9)
+15Nitrogen 
+recovery
+-
+-
+-
+-
+ < 0.001  −52.8 (−55.4; 
+−50.4)
+-
+-
+-
+-
+ < 0.001  −61 
+(−62.8; −57.5)
+Phosphorus 
+concentra-
+tion
+0.933  −0.02 (−0.2; 
+0.08)
+0.012 0.2 (0.1; 0.3)
+0.006 0.23 (0.1; 0.39)
+0.999 0.0 (−0.01; 
+0.01)
+0.072  −0.15 
+(−0.23; −0.02)
+0.067  −0.15 
+(−0.23; −0.02)
+Phosphorus 
+content
+0.678 0.24 (−0.23; 
+0.57)
+0.001 1.37 (0.69; 1.85)
+0.003 1.13 (0.39; 1.74)
+0.415 0.37 (−0.1; 
+0.84)
+0.873 0.14 (−0.36; 
+0.78)
+0.705  −0.23 (−0.56; 
+0.29)
+N:P
+0.052 2.03 (0.57; 4.33)
+ < 0.001  −4.63 
+(−5.88; −2.99)
+ < 0.001  −6.66 
+(−8.76; −5.06)
+0.461 0.96 (−0.24; 
+2.08)
+0.019  −2.43 
+(−3.83; −1.29)
+0.002  −3.39 
+(−4.3; −2.81)
+Root length
+0.384  −5.25 
+(−8.75; −1.75)
+ < 0.001 21.5 (12.2; 30.8)
+ < 0.001 26.8 (17.2; 36)
+0.920 1.5 (−5; 8.25)
+0.001 19 (8.75; 29.5)
+0.001 17.5 (7.25; 26.5)
+Specific root 
+length
+0.228 5 (−0.25; 9.75)
+0.003 11.8 (5.75; 17.5)
+0.082 6.75 (2.5; 11.2)
+0.228 5 (1; 11)
+0.467 3.5 (0.5; 6.5)
+0.864  −1.5 (−7.93; 
+2.25)
+446
+Mycorrhiza (2021) 31:441–454
+1 3
+In the Ctr+N treatment, the percentage of 15N recov-
+ery was 61.5% on average, with no significant differences 
+by mycorrhization (Fig. 2   Aboveground and belowground biomass dry weight of durum 
+wheat in the different fertilisation treatments (Ctr control not ferti-
+lised, Ctr+N control fertilised with ammonium sulphate, Org soil 
+amended with  crop residues) in the absence (grey points) or pres-
+ence (coloured points) of arbuscular mycorrhizal (AM) fungal inocu-
+lum.",2
+33893547,"['−1.5', 'treatment', 'treatments', 'control', 'absence']",biomass,0.36,,"Table 1   Analysis of variance: 
+F- and p-values for the effects 
+of the applied treatments 
+(Fertilisation, Fert (1); 
+Mycorrhization, Myc (2); and 
+their interaction (1 × 2)) on the 
+traits observed in durum wheat 
+plants
+Fert (1)
+Myc (2)
+1 × 2
+df
+F-values
+p-values
+df
+F-values
+p-values
+df
+F-values
+p-values
+AM fungi colonisation
+2
+24.46
+0.001
+-
+-
+-
+-
+-
+-
+Aboveground biomass
+2
+12.58
+ < 0.001
+1
+17.13
+ < 0.001
+2
+0.53
+0.601
+Belowground biomass
+2
+39.85
+ < 0.001
+1
+9.37
+0.008
+2
+0.73
+0.497
+Nitrogen concentration
+2
+73.66
+ < 0.001
+1
+2.23
+0.116
+2
+1.45
+0.261
+Nitrogen content
+2
+175.18
+ < 0.001
+1
+24.21
+ < 0.001
+2
+14.80
+ < 0.001
+15Nitrogen recovery
+1
+2915.12
+ < 0.001
+1
+0.61
+0.454
+1
+14.77
+0.004
+Phosphorus concentration
+2
+0.37
+0.693
+1
+64.77
+ < 0.001
+2
+11.21
+ < 0.001
+Phosphorus content
+2
+7.21
+0.007
+1
+65.79
+ < 0.001
+2
+7.00
+0.007
+N:P
+2
+42.95
+ < 0.001
+1
+49.12
+ < 0.001
+2
+4.48
+0.030
+Root length
+2
+40.56
+ < 0.001
+1
+12.67
+0.003
+2
+1.54
+0.246
+Specific root length
+2
+7.15
+0.007
+1
+6.45
+0.023
+2
+2.70
+0.099
+Fig. Data 
+are plotted with the mean depicted as a black circle ± SE (n = 4) rep-
+resented by the end of the vertical black line to the right of the raw 
+data
+445
+Mycorrhiza (2021) 31:441–454
+1 3
+Table 2   p-values for pairwise comparisons, effect size mean (unpaired means), and estimated 95% confidence intervals (Δ mean and CIs; in brackets) in the different fertilisation treatments 
+(Ctr, control not fertilised; Ctr+N, control fertilised with ammonium sulphate; Org, soil amended with crop residues) in the absence (−AM) or presence (+AM) of arbuscular mycorrhizal fungal 
+inoculum
+–AM
+ +AM
+Ctr vs Ctr+N
+Ctr vs Org
+Ctr+N vs Org
+Ctr vs Ctr+N
+Ctr vs Org
+Ctr+N vs Org
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+p-values
+Δ mean ± 95% 
+CIs
+AM fungi 
+colonization
+-
+-
+-
+-
+-
+-
+0.173  −4.18 (−10.5; 
+0)
+0.008 9.48 (3.41; 13.7)
+0.001 13.7 (9.98; 17.6)
+Aboveground 
+biomass
+0.207 0.23 (0.17; 0.31)
+0.002 0.55 (0.19; 0.74)
+0.069 0.31 (−0.06; 
+0.52)
+0.263 0.21 (−0.08; 
+0.5)
+0.029 0.37 (0.1; 0.65)
+0.444 0.16 (0.04; 0.27)
+Belowground 
+biomass
+0.088  −0.13 
+(−0.19; −0.03)
+0.002 0.23 (0.06; 0.36)
+ < 0.001 0.36 (0.19; 0.49)
+0.831  −0.03 (−0.12; 
+0.05)
+ < 0.001 0.28 (0.13; 0.46)
+ < 0.001 0.31 (0.19; 0.49)
+Nitrogen con-
+centration
+0.078 2.15 (1.17; 3.05)
+ < 0.001  −3.95 
+(−5.12; −255)
+ < 0.001  −6.1 
+(−6.88; −4.8)
+0.163 1.67 (−0.52; 
+3.67)
+ < 0.001  −5.55 
+(−7.6; −3.6)
+ < 0.001  −7.22 
+(−8.08; −6.45)
+Nitrogen 
+content
+ < 0.001 10.5 (8.22; 13)
+0.265  −2.06 (−4.92; 
+0.87)
+ < 0.001  −12.6 
+(−15.1; −10.2)
+ < 0.001 9.87 (6.93; 
+11.9)
+ < 0.001  −10.8 
+(−12; −9.59)
+ < 0.001  −20.7 
+(−22.7; −17.9)
+15Nitrogen 
+recovery
+-
+-
+-
+-
+ < 0.001  −52.8 (−55.4; 
+−50.4)
+-
+-
+-
+-
+ < 0.001  −61 
+(−62.8; −57.5)
+Phosphorus 
+concentra-
+tion
+0.933  −0.02 (−0.2; 
+0.08)
+0.012 0.2 (0.1; 0.3)
+0.006 0.23 (0.1; 0.39)
+0.999 0.0 (−0.01; 
+0.01)
+0.072  −0.15 
+(−0.23; −0.02)
+0.067  −0.15 
+(−0.23; −0.02)
+Phosphorus 
+content
+0.678 0.24 (−0.23; 
+0.57)
+0.001 1.37 (0.69; 1.85)
+0.003 1.13 (0.39; 1.74)
+0.415 0.37 (−0.1; 
+0.84)
+0.873 0.14 (−0.36; 
+0.78)
+0.705  −0.23 (−0.56; 
+0.29)
+N:P
+0.052 2.03 (0.57; 4.33)
+ < 0.001  −4.63 
+(−5.88; −2.99)
+ < 0.001  −6.66 
+(−8.76; −5.06)
+0.461 0.96 (−0.24; 
+2.08)
+0.019  −2.43 
+(−3.83; −1.29)
+0.002  −3.39 
+(−4.3; −2.81)
+Root length
+0.384  −5.25 
+(−8.75; −1.75)
+ < 0.001 21.5 (12.2; 30.8)
+ < 0.001 26.8 (17.2; 36)
+0.920 1.5 (−5; 8.25)
+0.001 19 (8.75; 29.5)
+0.001 17.5 (7.25; 26.5)
+Specific root 
+length
+0.228 5 (−0.25; 9.75)
+0.003 11.8 (5.75; 17.5)
+0.082 6.75 (2.5; 11.2)
+0.228 5 (1; 11)
+0.467 3.5 (0.5; 6.5)
+0.864  −1.5 (−7.93; 
+2.25)
+446
+Mycorrhiza (2021) 31:441–454
+1 3
+In the Ctr+N treatment, the percentage of 15N recov-
+ery was 61.5% on average, with no significant differences 
+by mycorrhization (Fig. 2   Aboveground and belowground biomass dry weight of durum 
+wheat in the different fertilisation treatments (Ctr control not ferti-
+lised, Ctr+N control fertilised with ammonium sulphate, Org soil 
+amended with  crop residues) in the absence (grey points) or pres-
+ence (coloured points) of arbuscular mycorrhizal (AM) fungal inocu-
+lum.",2
+33893547,['treatments'],biomass,,70,"In the present study, some of the experimental 
+conditions imposed (soil maintained above 70% of the water 
+holding capacity essentially over the entire duration of the 
+experiment; oat biomass incorporated in soil after being 
+chopped to very small pieces; temperatures quite high and 
+constantly increasing over the experimental period) were 
+certainly favourable for microbial growth and activity in 
+the Org treatments, and consequently, for decomposition of 
+the OM (both the added crop residues and the soil native 
+OM).",0
+Semchenko2019,[],biomass,3.3,,"3.3 | Below‐ground biomass and root traits
+The application of activated carbon significantly reduced root pro-
+duction in communities composed of local genotypes but not in 
+communities composed of mixed genotypes (interaction between 
+the effects of community type and activated carbon F1,228  =  8.4, 
+p = 0.004; Table 3, Figure 4a).",0
+Semchenko2019,[],biomass,227,,"Degrees of freedom are 1 and 228 for numerator and denominator, respectively, except for graminoid biomass in the second and third year of the 
+experiment where it was 227 and 226.",0
+Semchenko2019,[],biomass,226,,"Degrees of freedom are 1 and 228 for numerator and denominator, respectively, except for graminoid biomass in the second and third year of the 
+experiment where it was 227 and 226.",0
+27287440,"['AM', 'COMPLEXITY']",biomass,7.11,,"First, the effect of
+AM inoculation on plant biomass was higher when the
+plant, AM fungal partner, and soil were all sympatric
+compared to when they were all allopatric (Fig. Finally, the relationship of either the fungi or
+the plant to the soil was important for explaining the ef-
+fect of AM inoculation on plant biomass (Fig. Furthermore, the effect
+of inoculation on plant biomass did not differ when 1)
+the plant, AM fungal partner, and soil were all from the
+same origin (sympatric), 2) only the plant and soil were
+from the same origin (and allopatric to the fungus), and
+3) only the fungal partner and soil were sympatric (allo-
+patric to the plant; Fig. Finally, for analyses when multiple species of fungi were
+used as inocula, INOCULUM COMPLEXITY (single spe-
+cies, multiple species, or whole soil inoculum) was signifi-
+cant for explaining plant biomass response to AM
+inoculation for the Full Dataset (QM (df2) = 7.11, p =
+0.027) and tended to be important for Lab Studies (QM
+(df2) = 5.35, p = 0.069, Table 2).",1
+27287440,"['AM', 'inoculation']",biomass,1,,"Across data-
+sets, geographic origin was always a significant predictor
+in describing plant biomass response to AM inoculation
+(Table 1) and sympatric pairings tended to produce
+more positive host plant responses than allopatric pair-
+ings across all datasets (Fig. These
+explorations indicated that the relationship of either the
+fungi or the plant to the soil is important in explaining
+the effect of AM inoculation on plant biomass (Fig. While plants from the low nutrient region had higher
+AM colonization levels in both environments, empha-
+sizing their dependence on mycorrhizas [11], plants
+from the high nutrient region had lower aboveground
+biomass with lower AM colonization, suggesting maladap-
+tation of the plant to its local AM fungi [10, 11].",1
+27287440,[],biomass,Xctl,,"For
+Analysis Group 1, the effect size of inoculation was
+quantified using a standardized, unitless measure of
+performance in inoculated treatments relative to non-
+inoculated controls [23], the log response ratio of inocu-
+lated to non-inoculated plant biomass: ln(Xinoc/Xctl)
+where Xinoc is the mean biomass in an inoculated treat-
+ment and Xctl is the mean biomass in a non-inoculated
+control.",0
+27287440,[],biomass,Xctl,,"For
+Analysis Group 1, the effect size of inoculation was
+quantified using a standardized, unitless measure of
+performance in inoculated treatments relative to non-
+inoculated controls [23], the log response ratio of inocu-
+lated to non-inoculated plant biomass: ln(Xinoc/Xctl)
+where Xinoc is the mean biomass in an inoculated treat-
+ment and Xctl is the mean biomass in a non-inoculated
+control.",0
+27287440,[],biomass,Xctl,,"For
+Analysis Group 1, the effect size of inoculation was
+quantified using a standardized, unitless measure of
+performance in inoculated treatments relative to non-
+inoculated controls [23], the log response ratio of inocu-
+lated to non-inoculated plant biomass: ln(Xinoc/Xctl)
+where Xinoc is the mean biomass in an inoculated treat-
+ment and Xctl is the mean biomass in a non-inoculated
+control.",0
+21624119,[],biomass,2,,2) The highest concentrations of stilbenes were found in the belowground biomass of F. japonica.,0
+21624119,[],biomass,3,,"3) Leaf damage increased the resveratrol and emodin contents in the
+belowground biomass of the non-inoculated knotweed plants.",1
+21624119,[],biomass,1,,"Results
+The biomass and chemical characteristics measured and
+tested by ANOVA are shown in Table 1.",0
+21624119,[],biomass,2011,,"BMC Plant Biology 2011, 11:98
+http://www.biomedcentral.com/1471-2229/11/98
+Page 4 of 14
+to 0.062%) content in belowground biomass of the non-
+inoculated knotweed plants.",0
+21624119,[],biomass,4,,"BMC Plant Biology 2011, 11:98
+http://www.biomedcentral.com/1471-2229/11/98
+Page 4 of 14
+to 0.062%) content in belowground biomass of the non-
+inoculated knotweed plants.",0
+21624119,[],biomass,14,,"BMC Plant Biology 2011, 11:98
+http://www.biomedcentral.com/1471-2229/11/98
+Page 4 of 14
+to 0.062%) content in belowground biomass of the non-
+inoculated knotweed plants.",0
+21624119,[],biomass,,0.062,"BMC Plant Biology 2011, 11:98
+http://www.biomedcentral.com/1471-2229/11/98
+Page 4 of 14
+to 0.062%) content in belowground biomass of the non-
+inoculated knotweed plants.",0
+21624119,[],biomass,2007,,"Nitrogen
+contents (± S.E) in the belowground biomass of control plants of
+the four clones at the two soil N levels in 2007.",0
+21624119,['plants'],biomass,2007,,"Stilbene
+contents (± S.E) in the belowground biomass of the control plants
+of three clones at the two soil N levels in 2007, expressed as
+resveratrol including resveratrol contained in all its derivatives
+measured.",0
+21624119,['plants'],biomass,2007,,"Effect
+of the soil N level on the emodin content (± S.E) in the
+belowground biomass of the control plants of three clones in 2007.",0
+38698306,"['AMF', 'inoculation']",dry weight,1,,"For details, 
+as shown in Table 1, compared to the CK, the AMF and 
+Se + AMF treatments remarkably increased wheat bio-
+mass, while Se treatment decreased wheat biomass, the 
+shoot dry weight was enhanced by 72.54% and 67.61% 
+with the inoculation of Fm and Ri, respectively.",0
+38698306,['inoculation'],dry weight,,72.54,"For details, 
+as shown in Table 1, compared to the CK, the AMF and 
+Se + AMF treatments remarkably increased wheat bio-
+mass, while Se treatment decreased wheat biomass, the 
+shoot dry weight was enhanced by 72.54% and 67.61% 
+with the inoculation of Fm and Ri, respectively.",0
+38698306,['inoculation'],dry weight,,67.61,"For details, 
+as shown in Table 1, compared to the CK, the AMF and 
+Se + AMF treatments remarkably increased wheat bio-
+mass, while Se treatment decreased wheat biomass, the 
+shoot dry weight was enhanced by 72.54% and 67.61% 
+with the inoculation of Fm and Ri, respectively.",0
+38698306,[],dry weight,0.05,,"(P < 0.05) 
+The root dry weight also showed a significant increase 
+of 92.68% and 121.95% in the respective treatments.",0
+38698306,['treatments'],dry weight,,92.68,"(P < 0.05) 
+The root dry weight also showed a significant increase 
+of 92.68% and 121.95% in the respective treatments.",0
+38698306,['treatments'],dry weight,,121.95,"(P < 0.05) 
+The root dry weight also showed a significant increase 
+of 92.68% and 121.95% in the respective treatments.",0
+38948452,[],biomass,,40,"We can increase the biomass and plant height by 
+using 40% of the normal soil (1.50 g/cm3).",1
+38948452,[],biomass,1.50,,"We can increase the biomass and plant height by 
+using 40% of the normal soil (1.50 g/cm3).",1

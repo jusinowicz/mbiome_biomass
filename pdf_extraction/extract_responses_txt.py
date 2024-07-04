@@ -55,9 +55,12 @@ def extract_text_from_pdf(pdf_path):
 # Download NLTK data files
 nltk.download('punkt')
 
+#|Acknowledgments|References|Bibliography
 def preprocess_text(text):
-    # Remove References section
+    # Remove References/Bibliography and Acknowledgements sections
     text = re.sub(r'\bREFERENCES\b.*', '', text, flags=re.DOTALL | re.IGNORECASE)
+	text = re.sub(r'\bACKNOWLEDGEMENTS\b.*', '', text, flags=re.DOTALL | re.IGNORECASE)
+	text = re.sub(r'\bBIBLIOGRAPHY\b.*', '', text, flags=re.DOTALL | re.IGNORECASE)
     # Tokenize text into sentences
     sentences = sent_tokenize(text)
     return sentences
@@ -80,13 +83,13 @@ section_mapping = {
 }
 
 def identify_sections(sentences):
-    sections = {'abstract','introduction','methods','results','discussion' }
+    sections = {'abstract','introduction','methods','results','discussion','acknowledgments' }
     # Initialize the sections dictionary with each section name as a key and an empty list as the value
     sections = {section: [] for section in sections}
     current_section = None
     
     # Enhanced regex to match section headers
-    section_header_pattern = re.compile(r'\b(Abstract|Introduction|Methods|Materials and Methods|Results|Discussion|Conclusion|Background|Summary|Acknowledgments|References|Bibliography)\b', re.IGNORECASE)
+    section_header_pattern = re.compile(r'\b(Abstract|Introduction|Methods|Materials and Methods|Results|Discussion|Conclusion|Background|Summary)\b', re.IGNORECASE)
     for sentence in sentences:
         # Check if the sentence is a section header
         header_match = section_header_pattern.search(sentence)
