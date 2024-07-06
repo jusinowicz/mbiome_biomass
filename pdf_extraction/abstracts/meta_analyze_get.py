@@ -39,7 +39,7 @@ fetcher = PubMedFetcher(cachedir='./papers/')
 #query = '(mycorrhiz*) AND ((soil inocul*) OR (whole soil inocul*) OR (soil transplant*) OR (whole community transplant*))'
 
 #Modified to be more specific: 
-#query = '(mycorrhiz*) AND ((soil inocul*) OR (whole soil inocul*) OR (soil transplant*) OR (whole community transplant*)) AND biomass NOT review'
+query = '(mycorrhiz*) AND ((soil inocul*) OR (whole soil inocul*) OR (soil transplant*) OR (whole community transplant*)) AND biomass NOT review'
 #(mycorrhiz*) AND ((soil inocul*) OR (whole soil inocul*) OR (soil transplant*) OR (whole community transplant*)) AND biomass AND (control OR non-inoculate* OR non inoculate* OR uninoculate* OR steril* OR noncondition* OR uncondition* OR non condition*) NOT review
 # Use the fetcher to get PMIDs for the query
 pmids = fetcher.pmids_for_query(query,retmax = 10000)
@@ -52,25 +52,6 @@ for pmid in pmids:
     article = fetcher.article_by_pmid(pmid)
     articles.append(article)
 
-#Save the articles 
-# Custom function to prepare articles for serialization
-def prepare_articles(articles):
-    articles_copy = copy.deepcopy(articles)
-    for article in articles_copy:
-        if hasattr(article, 'xml_element'):  # Replace 'xml_element' with the actual attribute name
-            article.xml_element = ET.tostring(article.xml_element, encoding='unicode')
-    return articles_copy
-
-# Custom function to restore articles after deserialization
-def restore_articles(articles):
-    for article in articles:
-        if hasattr(article, 'xml_element'):  # Replace 'xml_element' with the actual attribute name
-            article.xml_element = ET.fromstring(article.xml_element)
-    return articles
-
-articles_out = prepare_articles(articles)
-with open('articles.pkl', 'wb') as file:
-    dill.dump(articles_out, file)
 #==============================================================================
 # Create project to fine-tune an NER to pull useful info from abstracts
 # 1. First, link to Label Studio to label text
@@ -185,7 +166,7 @@ predictions = []
 # Process the e.g. first 20 [:20] incomplete tasks
 # Make sure the model is being hosted! 
 # py -3.10 model_abstract_app.py
-for task in incomplete_tasks:
+for task in incomplete_tasks[:50]:
     text = task['data']['text']  # Adjust this key based on your data format
     response = requests.post('http://localhost:5000/predict', json={'text': text})
     predictions_response = response.json()
