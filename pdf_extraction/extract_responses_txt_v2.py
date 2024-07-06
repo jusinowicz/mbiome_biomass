@@ -5,12 +5,34 @@
 # Use NLP and a custom NER model to extract the TREATMENTs and RESPONSEs from 
 # the text of the Methods and Results sections in scientfic papers. 
 #
+# This is meant to be the 1st step in paper parsing, trying to glean info from 
+# the text before trying more complex table-extraction and figure-extraction
+# methods. 
+# 
 # Current NER: custom_web_ner_abs_v382
 #
-# Each entry in the spreadsheet will be...
+# The final output is a df/CSV with columns STUDY, TREATMENT, RESPONSE, CARDINAL,
+# PERCENTAGE, SENTENCE, ISTABLE. 
+# There are separate columns for CARDINAL (a numeric)
+# response) and PERCENTAGE because the NER recognizes them separately. This is 
+# useful because it helps determine whether actual units of biomass response are 
+# being identified or the ratio of response (percentage). 
+#
+# SENTENCE is the sentence that was parsed for the information in the table 
+# ISTABLE is a numeric ranking from 0-2 which suggests how likely it is that the
+# the parsed information came from a table that the pdf-parsing grabbed. In this
+# case, the results are most definitely not to be trusted. 
+#
+# This table is meant to help determine what information is available in the paper
+# and indicate whether further downstream extraction is necessary. 
 #
 # See extrat_abstract_dat for installation notes.  
 #
+# This code works fairly well now, but further downstream processing coul be 
+# implemented to help human eyes interpret and sift through the useful information.
+# In partiular, removing (or at least flagging) entries that appear to be numbers 
+# grabbed from summary statistics (e.g. p-values, F-values, AIC, etc.). This seems 
+# to happen frequently. 
 #==============================================================================
 py -3.8
 
@@ -315,7 +337,7 @@ flattened_data = [item for sublist in data for item in sublist]
 df = pd.DataFrame(flattened_data)
 
 # Export DataFrame to a CSV file
-df.to_csv('extract_from_text1.csv', index=False)
+df.to_csv('./output/extract_from_text2.csv', index=False)
 
 # Export DataFrame to a CSV file
 new_df = df[df["ISTABLE"] == 0] 
@@ -343,7 +365,7 @@ for token in sentence:
 # Save the syntacticdependency visualization to an HTML file
 from spacy import displacy
 html = displacy.render(sentence, style="dep", page=True)
-with open("syntactic_tree_ex1b.html", "w", encoding="utf-8") as file:
+with open("./output/syntactic_tree_ex4.html", "w", encoding="utf-8") as file:
     file.write(html)
 
 # Generate the dependency tree in html
@@ -352,3 +374,9 @@ with open("syntactic_tree_ex1b.html", "w", encoding="utf-8") as file:
 
 
 s1 = "The plant dry weight was improved with the application of Bradyrhizobium by 59.3, 13.5, and 34.8%; and with the application of AMF by 63.2, 21.8, and 41.0% and with their combination by 61.7, 18.7, 38.7% in both growing seasons as compare with control, 100% NPK and 50% NPK respectively(Table 2)."
+s2 = "The applications of fertilizer and AMF increased the dry weight by 100 and 300%, respecticely."
+s3 = "The application of fertilizer increased the dry weight by 100%, while the application of AMF increased the dry weight by 300%."
+s4 = "The highest dry biomass shoot found was 10.39 g  and root 9.59 g/plant in T3 inoculated with AMF in  T. arjuna, which was 29.71% and 19.72% higher  compared to non-inoculated control plants grown in  the same ratio of soil (Table 2)."
+
+
+
