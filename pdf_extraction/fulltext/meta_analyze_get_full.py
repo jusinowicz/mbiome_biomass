@@ -4,9 +4,10 @@
 # Using the retrieved citations based on keyword search via PubMed, try to pull
 # full texts from open access sources. 
 # 
-# Automate creation (if needed) and uploading of abstracts to the labeling 
-# project in Label Studio (currently mbb_abstracts). This is done to help train
-# the custom NER.
+# Automate creation (if needed) and uploading of Methods and Results sections 
+# from the full text to the labeling project in Label Studio (currently mbb_abstracts). 
+# Although I am not currently pursuing this, this could be used to train a  
+# second custom NER for the full text.
 # 
 # Use the current version of the NER to streamline labeling by generating 
 # predictions. The labeling process is iterative! Label, predict, correct, 
