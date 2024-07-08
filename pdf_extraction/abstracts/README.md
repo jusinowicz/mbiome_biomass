@@ -2,9 +2,7 @@
 ## This is the abstract parsing and NER training arm
 1. **meta_analyze_get.py**: This is STEP 1 and STEP1C in the pipeline.
 
-- STEP1: Automate identification and retrieval of citations, abstracts for potentially relevant papers based on keyword search via PubMed. 
-
-- Automate creation (if needed) and uploading of abstracts to the labeling project in Label Studio (currently mbb_abstracts). This is done to help train the custom NER.
+- STEP1: Automate identification and retrieval of citations, abstracts for potentially relevant papers based on keyword search via PubMed. Automate creation (if needed) and uploading of abstracts to the labeling project in Label Studio (currently mbb_abstracts). This is done to help train the custom NER.
 
 - STEP1C: Use the current version of the NER to streamline labeling by generating predictions. The labeling process is iterative! Label, predict, correct, generate a new version of the NER (via meta_analyze_model_update.py), use it to label, predict...
 
