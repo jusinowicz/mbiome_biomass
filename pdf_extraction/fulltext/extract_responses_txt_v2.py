@@ -49,12 +49,18 @@ from nltk.tokenize import sent_tokenize
 
 #NER and NLP
 import spacy
-#Current NER to use: 
-output_dir = "custom_web_ner_abs_v382"
 
 #Post-NER processing
 from collections import defaultdict
 
+#==============================================================================
+#Set paths: 
+#==============================================================================
+#Current NER to use: 
+output_dir = "./../models/custom_web_ner_abs_v382"
+
+#Where the papers live 
+pdf_dir = "./../papers/" 
 #==============================================================================
 # This section loads the PDFs from a folder and gets the right sections: 
 # if new papers are added:
@@ -302,7 +308,7 @@ def create_table(doc, entities, study_id):
 #pdf_path = "./papers/35410135.pdf"
 
 # Get the list of current PDFs in the directory
-pdf_dir = "./papers/" #Where the papers live
+
 new_pdfs = {f for f in os.listdir(pdf_dir) if f.endswith('.pdf')}
 
 # Process the PDFs
