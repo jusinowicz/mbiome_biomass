@@ -74,6 +74,7 @@ output_dir = "./../models/custom_web_ner_abs_v382"
 
 # Set the option to display all columns
 pd.set_option('display.max_columns', None)
+pd.set_option('display.max_rows', None)
 #==============================================================================
 # Custom functions: 
 #==============================================================================
@@ -371,7 +372,6 @@ for pdf in new_pdfs:
                     #Fill NaN with previous cell in row
                     row = row.fillna(method='ffill')
                     t2.iloc[index,:] = row
-                    
             # Apply the classification function to each cell in the DataFrame
             classified_t2 =classify_cells(t2)  
             #Check whether a row is the same type as previous row
