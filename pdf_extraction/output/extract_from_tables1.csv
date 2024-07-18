@@ -1,0 +1,181 @@
+STUDY,TREATMENT,RESPONSE,CARDINAL,PERCENTAGE,SENTENCE,ISTABLE
+35410135,albizia odoratissima benth,mass,0.15,,initial mass g,99
+35410135,cajanus cajan mill sp,mass,0.56,,initial mass g,99
+38948452,171.0,dry biomass,3.71,,shoot dry biomass gplant nan amf,99
+38948452,t2,dry biomass,7.95,,shoot dry biomass gplant nan amf,99
+38948452,t3,dry biomass,9.01,,shoot dry biomass gplant nan amf,99
+38948452,171.0,dry biomass,2.27,,root dry biomass gplant nan amf,99
+38948452,t2,dry biomass,5.3,,root dry biomass gplant nan amf,99
+38948452,t3,dry biomass,9.01,,root dry biomass gplant nan amf,99
+38948452,17.0,dry biomass,3.74,,shoot dry biomass gplant nan 6.21 4.54 5.09,99
+38948452,significance significance,dry biomass,05 .001 .001,,shoot dry biomass gplant nan 6.21 4.54 5.09,99
+38948452,17.0,dry biomass,75.0,,root dry biomass gplant nan 9.10 8.34 8.18,99
+38948452,significance significance,dry biomass,0.001 .001,,root dry biomass gplant nan 9.10 8.34 8.18,99
+21222096,allium cepa,dry weight,1.24,,total dry weight g nm experiment 2006,99
+21222096,allium fistulosum,dry weight,0.7,,total dry weight g nm experiment 2006,99
+21222096,allium roylei,dry weight,0.54,,total dry weight g nm experiment 2006,99
+21222096,rfhybrid,dry weight,1.2,,total dry weight g nm experiment 2006,99
+21222096,allium cepa,dry weight,2.79,,total dry weight g am experiment 2006,99
+21222096,allium fistulosum,dry weight,1.95,,total dry weight g am experiment 2006,99
+21222096,allium roylei,dry weight,1.58,,total dry weight g am experiment 2006,99
+21222096,rfhybrid,dry weight,2.88,,total dry weight g am experiment 2006,99
+21222096,allium cepa,dry weight,1.55,,total dry weight g r experiment 2006,99
+21222096,allium fistulosum,dry weight,1.25,,total dry weight g r experiment 2006,99
+21222096,allium roylei,dry weight,1.04,,total dry weight g r experiment 2006,99
+21222096,rfhybrid,dry weight,1.68,,total dry weight g r experiment 2006,99
+21222096,allium cepa,dry weight,2.01,,total dry weight g ap experiment 2006,99
+21222096,allium fistulosum,dry weight,1.33,,total dry weight g ap experiment 2006,99
+21222096,allium roylei,dry weight,1.06,,total dry weight g ap experiment 2006,99
+21222096,rfhybrid,dry weight,2.04,,total dry weight g ap experiment 2006,99
+21222096,mean,dry weight,1.29,,total dry weight g nm trihybrid genotypes n  77,99
+21222096,minimum,dry weight,0.45,,total dry weight g nm trihybrid genotypes n  77,99
+21222096,maximum,dry weight,2.58,,total dry weight g nm trihybrid genotypes n  77,99
+21222096,mean,dry weight,3.17,,total dry weight g am trihybrid genotypes n  77,99
+21222096,minimum,dry weight,1.3,,total dry weight g am trihybrid genotypes n  77,99
+21222096,maximum,dry weight,5.67,,total dry weight g am trihybrid genotypes n  77,99
+21222096,mean,dry weight,1.88,,total dry weight g r trihybrid genotypes n  77,99
+21222096,minimum,dry weight,0.23,,total dry weight g r trihybrid genotypes n  77,99
+21222096,maximum,dry weight,3.89,,total dry weight g r trihybrid genotypes n  77,99
+21222096,mean,dry weight,2.23,,total dry weight g ap trihybrid genotypes n  77,99
+21222096,minimum,dry weight,1.19,,total dry weight g ap trihybrid genotypes n  77,99
+21222096,maximum,dry weight,3.73,,total dry weight g ap trihybrid genotypes n  77,99
+21222096,allium cepa,dry weight,2.0,,total dry weight g nm experiment 2007,99
+21222096,allium fistulosum,dry weight,1.49,,total dry weight g nm experiment 2007,99
+21222096,allium roylei,dry weight,0.68,,total dry weight g nm experiment 2007,99
+21222096,rfhybrid,dry weight,1.53,,total dry weight g nm experiment 2007,99
+21222096,allium cepa,dry weight,6.164,,total dry weight g am experiment 2007,99
+21222096,allium fistulosum,dry weight,6.22,,total dry weight g am experiment 2007,99
+21222096,allium roylei,dry weight,3.45,,total dry weight g am experiment 2007,99
+21222096,rfhybrid,dry weight,5.63,,total dry weight g am experiment 2007,99
+21222096,allium cepa,dry weight,4.15,,total dry weight g r experiment 2007,99
+21222096,allium fistulosum,dry weight,4.73,,total dry weight g r experiment 2007,99
+21222096,allium roylei,dry weight,2.77,,total dry weight g r experiment 2007,99
+21222096,rfhybrid,dry weight,4.1,,total dry weight g r experiment 2007,99
+21222096,allium cepa,dry weight,4.09,,total dry weight g ap experiment 2007,99
+21222096,allium fistulosum,dry weight,3.85,,total dry weight g ap experiment 2007,99
+21222096,allium roylei,dry weight,2.06,,total dry weight g ap experiment 2007,99
+21222096,rfhybrid,dry weight,3.58,,total dry weight g ap experiment 2007,99
+21222096,mean,dry weight,1.97,,total dry weight g nm trihybrid genotypes n  83,99
+21222096,minimum,dry weight,0.37,,total dry weight g nm trihybrid genotypes n  83,99
+21222096,maximum,dry weight,5.34,,total dry weight g nm trihybrid genotypes n  83,99
+21222096,mean,dry weight,7.71,,total dry weight g am trihybrid genotypes n  83,99
+21222096,minimum,dry weight,1.18,,total dry weight g am trihybrid genotypes n  83,99
+21222096,maximum,dry weight,11.44,,total dry weight g am trihybrid genotypes n  83,99
+21222096,mean,dry weight,5.81,,total dry weight g r trihybrid genotypes n  83,99
+21222096,minimum,dry weight,0.68,,total dry weight g r trihybrid genotypes n  83,99
+21222096,maximum,dry weight,8.89,,total dry weight g r trihybrid genotypes n  83,99
+21222096,mean,dry weight,4.88,,total dry weight g ap trihybrid genotypes n  83,99
+21222096,minimum,dry weight,1.01,,total dry weight g ap trihybrid genotypes n  83,99
+21222096,maximum,dry weight,7.83,,total dry weight g ap trihybrid genotypes n  83,99
+21222096,am leaf dry,poor weight,1.82,,levels of bulbing poor weight g,99
+21222096,am leaf dry,poor weight,1.38,,nan medium weight g,99
+21222096,am bulb dry,poor weight,1.65,,levels of bulbing poor weight g,99
+21222096,weight g,poor weight,weight g,,levels of bulbing poor weight g,99
+21222096,nr of leaves,poor weight,7.3,,levels of bulbing poor weight g,99
+21222096,nr of roots,poor weight,24.4,,levels of bulbing poor weight g,99
+21222096,am bulb dry,poor weight,1.76,,nan medium weight g,99
+21222096,weight g,weight,weight g,,nan medium weight g,99
+21222096,nr of leaves,weight,7.2,,nan medium weight g,99
+21222096,nr of roots,weight,25.6,,nan medium weight g,99
+21222096,am leaf dry weight g,poor weight,5.38,,levels of bulbing poor weight g,99
+21222096,am bulb dry weight g,poor weight,2.55,,levels of bulbing poor weight g,99
+21222096,nr of leaves,poor weight,10.6,,levels of bulbing poor weight g,99
+21222096,nr of roots,poor weight,38.5,,levels of bulbing poor weight g,99
+21222096,r g,poor weight,6.0,,levels of bulbing poor weight g,99
+21222096,ap g,poor weight,49.0,,levels of bulbing poor weight g,99
+21222096,am leaf dry weight g,poor weight,4.78,,nan medium weight g,99
+21222096,am bulb dry weight g,weight,3.28,,nan medium weight g,99
+21222096,nr of leaves,weight,10.0,,nan medium weight g,99
+21222096,nr of roots,weight,40.4,,nan medium weight g,99
+21222096,r g,weight,6.2,,nan medium weight g,99
+21222096,ap g,weight,5.0,,nan medium weight g,99
+30285730,intercept,biomass,,,aboveground biomass numdf,99
+30285730,height.0,biomass,,,aboveground biomass numdf,99
+30285730,drought,biomass,,,aboveground biomass numdf,99
+30285730,soil.origin,biomass,,,aboveground biomass numdf,99
+30285730,plant.origin,biomass,,,aboveground biomass numdf,99
+30285730,drought  plant.origin,biomass,,,aboveground biomass numdf,99
+30285730,soil.origin  plant.origin,biomass,,,aboveground biomass numdf,99
+30285730,noculum,biomass,,,aboveground biomass numdf,99
+30285730,soil.origin  inoculum,biomass,,,aboveground biomass numdf,99
+30285730,drough  soil.origin,biomass,,,aboveground biomass numdf,99
+30285730,drough inoculum,biomass,,,aboveground biomass numdf,99
+30285730,drough  soil.origin  inoculum,biomass,,,aboveground biomass numdf,99
+30285730,drough  soil.origin  plant.origin,biomass,,,aboveground biomass numdf,99
+30285730,plant.origin  inoculum,biomass,,,aboveground biomass numdf,99
+30285730,drought  plant.origin  inoculum,biomass,,,aboveground biomass numdf,99
+30285730,soil.origin  plant.origin  inoculum,biomass,4.0,,aboveground biomass numdf,99
+30285730,drought soil.origin  plant.origin  inoculum,biomass,4.0,,aboveground biomass numdf,99
+30285730,intercept,biomass,1668.74,,aboveground biomass fvalue,99
+30285730,height.0,biomass,165.2,,aboveground biomass fvalue,99
+30285730,drought,biomass,3.44,,aboveground biomass fvalue,99
+30285730,soil.origin,biomass,2.84,,aboveground biomass fvalue,99
+30285730,plant.origin,biomass,254.28,,aboveground biomass fvalue,99
+30285730,drought  plant.origin,biomass,3.78,,aboveground biomass fvalue,99
+30285730,soil.origin  plant.origin,biomass,48.0,,aboveground biomass fvalue,99
+30285730,noculum,biomass,,,aboveground biomass fvalue,99
+30285730,soil.origin  inoculum,biomass,,,aboveground biomass fvalue,99
+30285730,drough  soil.origin,biomass,,,aboveground biomass fvalue,99
+30285730,drough inoculum,biomass,,,aboveground biomass fvalue,99
+30285730,drough  soil.origin  inoculum,biomass,,,aboveground biomass fvalue,99
+30285730,drough  soil.origin  plant.origin,biomass,,,aboveground biomass fvalue,99
+30285730,plant.origin  inoculum,biomass,,,aboveground biomass fvalue,99
+30285730,drought  plant.origin  inoculum,biomass,,,aboveground biomass fvalue,99
+30285730,soil.origin  plant.origin  inoculum,biomass,,,aboveground biomass fvalue,99
+30285730,drought soil.origin  plant.origin  inoculum,biomass,,,aboveground biomass fvalue,99
+30285730,intercept,biomass,0.0001,,aboveground biomass pvalue,99
+30285730,height.0,biomass,0.0001,,aboveground biomass pvalue,99
+30285730,drought,biomass,0.08,,aboveground biomass pvalue,99
+30285730,soil.origin,biomass,0.06,,aboveground biomass pvalue,99
+30285730,plant.origin,biomass,0.0001,,aboveground biomass pvalue,99
+30285730,drought  plant.origin,biomass,0.02,,aboveground biomass pvalue,99
+30285730,soil.origin  plant.origin,biomass,0.0009,,aboveground biomass pvalue,99
+30285730,noculum,biomass,0.24,,aboveground biomass pvalue,99
+30285730,soil.origin  inoculum,biomass,0.1,,aboveground biomass pvalue,99
+30285730,drough  soil.origin,biomass,0.36,,aboveground biomass pvalue,99
+30285730,drough inoculum,biomass,0.65,,aboveground biomass pvalue,99
+30285730,drough  soil.origin  inoculum,biomass,0.45,,aboveground biomass pvalue,99
+30285730,drough  soil.origin  plant.origin,biomass,0.8,,aboveground biomass pvalue,99
+30285730,plant.origin  inoculum,biomass,0.91,,aboveground biomass pvalue,99
+30285730,drought  plant.origin  inoculum,biomass,0.8,,aboveground biomass pvalue,99
+30285730,soil.origin  plant.origin  inoculum,biomass,0.8,,aboveground biomass pvalue,99
+30285730,drought soil.origin  plant.origin  inoculum,biomass,0.86,,aboveground biomass pvalue,99
+30285730,intercept,biomass,kek,,aboveground biomass nan,99
+30285730,height.0,biomass,kek,,aboveground biomass nan,99
+30285730,drought,biomass,ns.,,aboveground biomass nan,99
+30285730,soil.origin,biomass,ns.,,aboveground biomass nan,99
+30285730,plant.origin,biomass,kek,,aboveground biomass nan,99
+30285730,drought  plant.origin,biomass,,,aboveground biomass nan,99
+30285730,soil.origin  plant.origin,biomass,ee,,aboveground biomass nan,99
+30285730,noculum,biomass,ns.,,aboveground biomass nan,99
+30285730,soil.origin  inoculum,biomass,ns.,,aboveground biomass nan,99
+30285730,drough  soil.origin,biomass,ns.,,aboveground biomass nan,99
+30285730,drough inoculum,biomass,ns.,,aboveground biomass nan,99
+30285730,drough  soil.origin  inoculum,biomass,ns.,,aboveground biomass nan,99
+30285730,drough  soil.origin  plant.origin,biomass,ns.,,aboveground biomass nan,99
+30285730,plant.origin  inoculum,biomass,ns.,,aboveground biomass nan,99
+30285730,drought  plant.origin  inoculum,biomass,ns.,,aboveground biomass nan,99
+30285730,soil.origin  plant.origin  inoculum,biomass,ns.,,aboveground biomass nan,99
+30285730,drought soil.origin  plant.origin  inoculum,biomass,ns.,,aboveground biomass nan,99
+30285730,intercept,biomass,,,aboveground biomass aaic,99
+30285730,height.0,biomass,,,aboveground biomass aaic,99
+30285730,drought,biomass,,,aboveground biomass aaic,99
+30285730,soil.origin,biomass,,,aboveground biomass aaic,99
+30285730,plant.origin,biomass,,,aboveground biomass aaic,99
+30285730,drought  plant.origin,biomass,,,aboveground biomass aaic,99
+30285730,soil.origin  plant.origin,biomass,,,aboveground biomass aaic,99
+30285730,noculum,biomass,0.61,,aboveground biomass aaic,99
+30285730,soil.origin  inoculum,biomass,0.6,,aboveground biomass aaic,99
+30285730,drough  soil.origin,biomass,1.96,,aboveground biomass aaic,99
+30285730,drough inoculum,biomass,1.79,,aboveground biomass aaic,99
+30285730,drough  soil.origin  inoculum,biomass,242.0,,aboveground biomass aaic,99
+30285730,drough  soil.origin  plant.origin,biomass,6.35,,aboveground biomass aaic,99
+30285730,plant.origin  inoculum,biomass,3.81,,aboveground biomass aaic,99
+30285730,drought  plant.origin  inoculum,biomass,3.54,,aboveground biomass aaic,99
+30285730,soil.origin  plant.origin  inoculum,biomass,6.38,,aboveground biomass aaic,99
+30285730,drought soil.origin  plant.origin  inoculum,biomass,6.69,,aboveground biomass aaic,99
+38762648,emf water deficit,biomass,emf water deficit,,total biomass gr,99
+38762648,emf x water deficit,biomass,10.33 1 153.4 0.002,,total biomass gr,99
+38762648,emf x competition,biomass,19.57 1 153.40.001,,total biomass gr,99
+38762648,water deficit x competition,biomass,0.04 1 31.5 0.842,,total biomass gr,99
+38762648,emf x water deficitx competition,biomass,6.31 1 153.90.013,,total biomass gr,99
