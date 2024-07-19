@@ -27,6 +27,7 @@ import lxml.etree as ET
 from metapub import PubMedFetcher 
 import os
 os.environ['NCBI_API_KEY'] = NCBI_API_KEY
+import csv
 
 #For label studio
 import requests
@@ -51,6 +52,28 @@ articles = []
 for pmid in pmids:
     article = fetcher.article_by_pmid(pmid)
     articles.append(article)
+
+
+#==============================================================================
+# If you need to export DOIs, run the following: 
+#==============================================================================
+# Create an empty list to store DOIs and PMIDs
+doi_pmid_pairs = []
+
+# Loop through the articles and extract DOIs and PMIDs
+for article in articles:
+    doi = article.doi
+    pmid = article.pmid
+    if doi and pmid:
+        doi_pmid_pairs.append((doi, pmid))
+
+# Save the DOIs and PMIDs to a CSV file
+with open("./../fulltext/all_DOIs.csv", 'w', newline='') as csvfile:
+    csvwriter = csv.writer(csvfile)
+    csvwriter.writerow(['DOI', 'PMID'])  # Write header
+    for doi, pmid in doi_pmid_pairs:
+        csvwriter.writerow([doi, pmid])
+
 
 #==============================================================================
 # Create project to fine-tune an NER to pull useful info from abstracts
