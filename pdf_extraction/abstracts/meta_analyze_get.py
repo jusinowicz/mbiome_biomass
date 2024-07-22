@@ -24,14 +24,18 @@ NCBI_API_KEY = "f2857b2abca3fe365c756aeb647e06417b08"
 import pandas as pd
 import dill
 import lxml.etree as ET
+import csv
+
+#To get references from NCBI:
 from metapub import PubMedFetcher 
 import os
 os.environ['NCBI_API_KEY'] = NCBI_API_KEY
-import csv
 
 #For label studio
-import requests
 from label_studio_sdk import Client
+
+#The shared custom definitions 
+import common
 #==============================================================================
 #Fetch records from PubMed
 #==============================================================================
@@ -117,32 +121,6 @@ response = requests.patch(
 print("Status Code:", response.status_code)
 print("Response Text:", response.text)
 
-#==============================================================================
-# Upload text data to Label Studio
-#==============================================================================
-# Function to upload text data to Label Studio
-
-def upload_task(text, project_id):
-	import_url = f'{LABEL_STUDIO_URL}/api/projects/{project_id}/import'
-	print("Import URL:", import_url)
-	response = requests.post(
-		import_url,
-		headers={'Authorization': f'Token {API_KEY}'},
-		json=[{
-			'data': {
-				'text': text
-			}
-		}]
-	)
-	print("Status Code:", response.status_code)
-	print("Response Text:", response.text)
-	try:
-		response_json = response.json()
-		print(response_json)
-		return response_json
-	except requests.exceptions.JSONDecodeError as e:
-		print("Failed to decode JSON:", e)
-		return None
 
 #==============================================================================
 #Run code on directory 
@@ -152,7 +130,7 @@ for a in articles:
 	# Upload abstracts
 	abstract = a.abstract
 	if abstract: # Check if the article has an abstract
-		upload_task(abstract, PROJECT_ID)
+		common.utilities.upload_task(abstract, PROJECT_ID)
 	else:
 		print(f"No abstract found for article with PMID: {article.pmid}")
 
@@ -160,9 +138,6 @@ for a in articles:
 #Link a custom NER model to Label Studio and generate suggested labels. 
 #Turn this into a loop to get better predictions as more annotations are added. 
 #==============================================================================
-#For label studio
-import requests
-from label_studio_sdk import Client
 
 LABEL_STUDIO_URL = 'http://localhost:8080' #Run with model_abstract_app.py
 API_KEY = '45d69e3e9c859f4583dd42e5246f346e509a0a8e'
@@ -214,13 +189,3 @@ for task in incomplete_tasks[:50]:
 
 # Create predictions in bulk
 project.create_predictions(predictions)
-
-# #saving
-# with open('predictions_v381','wb') as f:
-#     pickle.dump(predictions,f)
-
-# # Loading a variable
-# with open('predictions_v2', 'rb') as f:
-#     loaded_variable = pickle.load(f)
-
-# print(loaded_variable)
