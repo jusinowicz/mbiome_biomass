@@ -15,7 +15,7 @@ import spacy
 from spacy.training.example import Example
 
 #Make sure to load the latest version of text from Label Studio
-latest_labels = './label_studio_projects/project-2-at-2024-07-05-09-38-ae09d2bf.json'
+latest_labels = './../label_studio_projects/project-2-at-2024-07-18-10-26-167602b7.json'
 
 #==============================================================================
 #==============================================================================
@@ -70,7 +70,7 @@ cleaned_data = clean_annotations(labeled_data)
 #nlp =spacy.load("en_core_sci_scibert")
 
 #OR retrain a model on new data
-output_dir = "custom_web_ner_abs_v382"
+output_dir = "./../models/custom_web_ner_abs_v382"
 nlp = spacy.load(output_dir)
 # nlp_1 = spacy.load("custom_web_ner_abs_v1")
 # print(nlp.get_pipe("ner").labels)
@@ -103,6 +103,6 @@ with nlp.disable_pipes(*unaffected_pipes):
         print(losses) 
 
 # Save the model
-output_dir = "custom_web_ner_abs_v382"
+output_dir = "./../models/custom_web_ner_abs_v382"
 nlp.to_disk(output_dir)
 print(f"Model saved to {output_dir}")
