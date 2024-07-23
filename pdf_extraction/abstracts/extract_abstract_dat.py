@@ -76,7 +76,13 @@ from nltk.tokenize import sent_tokenize
 #NER and NLP
 import spacy
 
-#The shared custom definitions 
+#The shared custom definitions
+#NOTE: This line might have to be modified as structure changes and 
+#we move towards deployment
+## Add the project root directory to sys.path
+#sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+import sys
+sys.path.append(os.path.abspath('./../'))   
 import common
 #==============================================================================
 # Main code

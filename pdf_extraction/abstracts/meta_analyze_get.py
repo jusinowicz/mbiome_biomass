@@ -26,6 +26,7 @@ import dill
 import lxml.etree as ET
 import csv
 
+
 #To get references from NCBI:
 from metapub import PubMedFetcher 
 import os
@@ -34,8 +35,14 @@ os.environ['NCBI_API_KEY'] = NCBI_API_KEY
 #For label studio
 from label_studio_sdk import Client
 
-#The shared custom definitions 
-import common
+#The shared custom definitions
+#NOTE: This line might have to be modified as structure changes and 
+#we move towards deployment
+## Add the project root directory to sys.path
+#sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+import sys
+sys.path.append(os.path.abspath('./../'))  
+import common.utilities
 #==============================================================================
 #Fetch records from PubMed
 #==============================================================================
@@ -71,7 +78,7 @@ for article in articles:
     if doi and pmid:
         doi_pmid_pairs.append((doi, pmid))
 
-# Save the DOIs and PMIDs to a CSV file
+# # Save the DOIs and PMIDs to a CSV file
 with open("./../fulltext/all_DOIs.csv", 'w', newline='') as csvfile:
     csvwriter = csv.writer(csvfile)
     csvwriter.writerow(['DOI', 'PMID'])  # Write header

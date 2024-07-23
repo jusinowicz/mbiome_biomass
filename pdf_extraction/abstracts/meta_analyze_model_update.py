@@ -14,7 +14,13 @@ import json
 import spacy
 from spacy.training.example import Example
 
-#The shared custom definitions 
+#The shared custom definitions
+#NOTE: This line might have to be modified as structure changes and 
+#we move towards deployment
+## Add the project root directory to sys.path
+#sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+import sys
+sys.path.append(os.path.abspath('./../'))  
 import common
 
 #Make sure to load the latest version of text from Label Studio
