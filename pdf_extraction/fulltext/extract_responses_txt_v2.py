@@ -38,6 +38,7 @@
 
 #Libraries
 import pandas as pd
+import re
 
 #NER and NLP
 import spacy
@@ -111,11 +112,11 @@ for pdf in new_pdfs:
 	#1.
 	pdf_path = pdf_dir + pdf
 	study_id = pdf.rstrip(".pdf")
-	pdf_text = extract_text_from_pdf(pdf_path)
+	pdf_text = common.utilities.extract_text_from_pdf(pdf_path)
 	#2. 
-	sentences = preprocess_text(pdf_text)
+	sentences = common.utilities.preprocess_text(pdf_text)
 	#3.
-	sections = identify_sections(sentences)
+	sections = common.utilities.identify_sections(sentences, section_mapping)
 	#4.
 	# #Get the methods
 	# methods_text = " ".join(sections.get('methods', []))
@@ -123,13 +124,13 @@ for pdf in new_pdfs:
 	# data_methods=parse_entities(methods_entities) 
 	#Filter sentences in the "Results" section
 	keywords = ["biomass", "dry weight", "yield"]
-	results_text = filter_sentences(sections["results"], keywords) 
+	results_text = common.utilities.filter_sentences(sections["results"], keywords) 
 	#Extract entities from filtered text
 	results_text = " ".join(results_text)
 	# Remove remaining newline characters
 	results_text = re.sub(r'\n', ' ', results_text)
-	results_doc, results_entities = extract_entities(results_text)
-	table = create_table(results_doc, results_entities, study_id)
+	results_doc, results_entities = common.utilities.extract_entities(results_text, nlp)
+	table = common.utilities.create_table(results_doc, results_entities, study_id)
 	data.append(table)
 
 
@@ -142,41 +143,3 @@ df.to_csv('./output/extract_from_text2.csv', index=False)
 # Export DataFrame to a CSV file
 new_df = df[df["ISTABLE"] == 0] 
 new_df.to_csv('extract_correct_text1.csv', index=False)
-
-
-#==============================================================================
-# This section contains miscellaneous tools for parsing and visualizing the 
-# sentence dependency structures. This might be temporary
-#==============================================================================
-# Generate the dependency tree in a textual format
-# Access the specific sentence using doc.sents
-sentence_index = 6
-sentence = list(results_doc.sents)[sentence_index]
-
-# Function to recursively print the tree structure
-def print_tree(token, indent=''):
-	print(f"{indent}{token.text} <-- {token.dep_} <-- {token.head.text}")
-	for child in token.children:
-		print_tree(child, indent + '  ')
-
-for token in sentence:
-    print_tree(token)
-
-# Save the syntacticdependency visualization to an HTML file
-from spacy import displacy
-html = displacy.render(sentence, style="dep", page=True)
-with open("./output/syntactic_tree_ex4.html", "w", encoding="utf-8") as file:
-    file.write(html)
-
-# Generate the dependency tree in html
-# displacy.render(doc, style="dep", options={"compact": True, "color": "blue"})
-# tree = displacy.render(sentence, style="dep", options={"compact": True, "color": "blue"})
-
-
-s1 = "The plant dry weight was improved with the application of Bradyrhizobium by 59.3, 13.5, and 34.8%; and with the application of AMF by 63.2, 21.8, and 41.0% and with their combination by 61.7, 18.7, 38.7% in both growing seasons as compare with control, 100% NPK and 50% NPK respectively(Table 2)."
-s2 = "The applications of fertilizer and AMF increased the dry weight by 100 and 300%, respecticely."
-s3 = "The application of fertilizer increased the dry weight by 100%, while the application of AMF increased the dry weight by 300%."
-s4 = "The highest dry biomass shoot found was 10.39 g  and root 9.59 g/plant in T3 inoculated with AMF in  T. arjuna, which was 29.71% and 19.72% higher  compared to non-inoculated control plants grown in  the same ratio of soil (Table 2)."
-
-
-

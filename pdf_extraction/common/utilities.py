@@ -142,7 +142,7 @@ def filter_sentences(sentences, keywords):
     return filtered_sentences
 
 #==============================================================================
-# Functions related to spacy  
+# Functions related to training, loading, and applying the NER based on spacy
 #==============================================================================
 #Clean Annotations Function
 #This handy function converts the JSON format to the correct format
@@ -175,7 +175,7 @@ def clean_annotations(data):
 
 
 #This function will return the text and the entities for processing
-def extract_entities(text):
+def extract_entities(text, nlp):
 	doc = nlp(text)
 	#This line is for extracting entities with dependencies. 
 	entities = [(ent.text, ent.label_, ent.start, ent.end) for ent in doc.ents]
