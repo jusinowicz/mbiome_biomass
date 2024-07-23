@@ -59,6 +59,15 @@ import re
 #NER and NLP
 import spacy
 
+#The shared custom definitions
+#NOTE: This line might have to be modified as structure changes and 
+#we move towards deployment
+## Add the project root directory to sys.path
+#sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+import sys
+sys.path.append(os.path.abspath('./../'))  
+import common.utilities
+
 #==============================================================================
 #Set paths: 
 #==============================================================================
@@ -71,6 +80,8 @@ pdf_dir = "./../papers/"
 
 #Current NER to use: 
 output_dir = "./../models/custom_web_ner_abs_v382"
+#Load the model
+nlp = spacy.load(output_dir)
 
 # Set the option to display all columns
 pd.set_option('display.max_columns', None)
@@ -78,15 +89,6 @@ pd.set_option('display.max_rows', None)
 #==============================================================================
 # Custom functions: 
 #==============================================================================
-#To run NER to extract entities
-#Load the model
-nlp = spacy.load(output_dir)
-def extract_entities(text):
-    doc = nlp(text)
-    #This line is for extracting entities with dependencies. 
-    entities = [(ent.text, ent.label_, ent.start, ent.end) for ent in doc.ents]
-    return doc,entities
-
 # Remove letters and special symbols from numbers
 # Remove leading/trailing whitespace from all cells and make all 
 # lowercase
@@ -270,7 +272,7 @@ def find_response_cols(table):
     #into sentences and passing through the NER
     header_sentence = headers_to_sentences(table)
     header_sentence = " ".join(header_sentence)                                                      
-    doc,entities = extract_entities(header_sentence)
+    doc,entities = common.utilities.extract_entities(header_sentence, nlp)
     for sent in doc.sents:
         # Check each entity in the doc
         for ent in doc.ents:
