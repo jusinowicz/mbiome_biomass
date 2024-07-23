@@ -14,6 +14,15 @@ import json
 import spacy
 from spacy.training.example import Example
 
+#The shared custom definitions
+#NOTE: This line might have to be modified as structure changes and 
+#we move towards deployment
+## Add the project root directory to sys.path
+#sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+import sys
+sys.path.append(os.path.abspath('./../'))  
+import common
+
 #Make sure to load the latest version of text from Label Studio
 latest_labels = './../label_studio_projects/project-2-at-2024-07-18-10-26-167602b7.json'
 
@@ -29,35 +38,7 @@ with open(latest_labels, 'r', encoding='utf-8') as file:
 labeled_data = [task for task in labeled_data if 'annotations' in task and task['annotations']]
 
 #Step 2: Clean Annotations Function
-#This handy function converts the JSON format to the correct format
-#for spacy, deals with misaligned spans, and removes white space and 
-#punctuation in the spans. 
-
-def clean_annotations(data):
-    cleaned_data = []
-    for item in data:
-        text = item['data']['text']
-        entities = []
-        for annotation in item['annotations']:
-            for result in annotation['result']:
-                value = result['value']
-                start, end, label = value['start'], value['end'], value['labels'][0]
-                entity_text = text[start:end]
-                # Remove leading/trailing whitespace from entity spans
-                while entity_text and entity_text[0].isspace():
-                    start += 1
-                    entity_text = text[start:end]
-                while entity_text and entity_text[-1].isspace():
-                    end -= 1
-                    entity_text = text[start:end]
-                # Check for misaligned entries and skip if misaligned
-                if entity_text == text[start:end]:
-                    entities.append((start, end, label))
-        if entities:
-            cleaned_data.append((text, {"entities": entities}))
-    return cleaned_data
-
-cleaned_data = clean_annotations(labeled_data)
+cleaned_data = common.utilities.clean_annotations(labeled_data)
 
 #==============================================================================
 #Load and fit the model

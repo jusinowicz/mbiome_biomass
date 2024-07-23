@@ -60,18 +60,33 @@
 # py -3.8 -m pip install https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.0/en_ner_craft_md-0.5.0.tar.gz
 
 #==============================================================================
-py -3.8
+#py -3.8
 
 import pandas as pd
 import dill #To load saved MetaPubObject list of papers/abstracts
+
 #PDF extraction
 import fitz  # PyMuPDF
+
 #Text preprocessing
 import re
 import nltk
 from nltk.tokenize import sent_tokenize
+
 #NER and NLP
 import spacy
+
+#The shared custom definitions
+#NOTE: This line might have to be modified as structure changes and 
+#we move towards deployment
+## Add the project root directory to sys.path
+#sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+import sys
+sys.path.append(os.path.abspath('./../'))   
+import common
+#==============================================================================
+# Main code
+#==============================================================================
 
 #Step 1: Open the abstracts. See meta_analyze_get.py if you need to 
 #do a search and download abstracts and create this file
@@ -89,45 +104,6 @@ nlp = spacy.load("custom_web_ner_abs_v381")
 #Specify the labels to extract
 label_list = ["TREATMENT", "INOCTYPE", "RESPONSE","SOILTYPE", "FIELDGREENHOUSE", "LANDUSE", "ECOTYPE", "ECOREGION","LOCATION"]
 
-#This function will return the text and the entities for processing
-def extract_entities(text):
-	doc = nlp(text)
-	#This line is for extracting entities only
-	#entities = [(ent.text, ent.label_) for ent in doc.ents]
-	#This line is for extracting entities with dependencies. 
-	entities = [(ent.text, ent.label_, ent.start, ent.end) for ent in doc.ents]
-	return doc,entities
-
-
-#This function is to group and refine within each entity group
-def find_entity_groups(doc, entities, label_type):
-	# Create a dictionary mapping token indices to entities of the given label type
-	entity_dict = {ent[2]: (ent[0], ent[1]) for ent in entities if ent[1] == label_type}
-	entity_groups = []
-	for sent in doc.sents:
-		sent_entities = {token.i: entity_dict[token.i] for token in sent if token.i in entity_dict}
-		sent_entity_groups = []
-		for token in sent:
-			if token.i in sent_entities and sent_entities[token.i][1] == label_type:
-				entity_group = [sent_entities[token.i][0]]
-				# Find modifiers or compound parts of the entity using dependency parsing
-				for child in token.children:
-					if child.dep_ in ['amod', 'compound', 'appos', 'conj', 'advmod', 'acl', 'prep', 'pobj', 'det']:
-						if child.i in sent_entities:
-							entity_group.append(sent_entities[child.i][0])
-						else:
-							entity_group.append(child.text)
-				# Also check if the token itself has a head that is an entity of the same type
-				if token.head.i in sent_entities and sent_entities[token.head.i][1] == label_type and token.head != token:
-					entity_group.append(token.head.text)
-				# Sort and join entity parts to maintain a consistent order
-				entity_group = sorted(entity_group, key=lambda x: doc.text.find(x))
-				sent_entity_groups.append(" ".join(entity_group))
-		if sent_entity_groups:
-			entity_groups.extend(sent_entity_groups)
-	# Removing duplicates and returning the result
-	return list(set(entity_groups))
-
 # Create a DataFrame with columns for each label category, plus the DOI
 columns = ["DOI"]+ label_list
 
@@ -137,13 +113,13 @@ rows = []
 for article in articles_loaded:
 	# Apply NER to the Abstract to identify treatments and covariates
 	abstract_text = article.abstract
-	doc, entities = extract_entities(abstract_text)
+	doc, entities = common.utilities.extract_entities(abstract_text)
 	#print(entities)
 	row = {"DOI": article.doi}
 	#Cycle through the labels
 	for label in label_list:
 		#Find the groups
-		entity_matches = find_entity_groups(doc, entities, label)
+		entity_matches = common.utilities.find_entity_groups(doc, entities, label)
 		row[label] = "; ".join(entity_matches)  # Join matches with a separator, e.g., '; '
 	# Collect the row
 	rows.append(row)
