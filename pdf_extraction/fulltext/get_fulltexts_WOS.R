@@ -1,5 +1,8 @@
 #=============================================================================
-# Installation of packages for metagear: 
+# Installing metagear: 
+# https://cran.r-project.org/web/packages/metagear/readme/README.html
+# 
+# Installation of external packages for metagear: 
 #	install.packages("BiocManager");
 #	BiocManager::install("EBImage")
 #	devtools::install_github("daniel1noble/metaDigitise")

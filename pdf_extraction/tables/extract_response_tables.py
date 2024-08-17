@@ -51,6 +51,7 @@ from itertools import zip_longest
 import pandas as pd
 import numpy as np 
 import os
+import sys
 
 #Deepdoctection 
 import deepdoctection as dd
@@ -77,6 +78,8 @@ pdf_dir = "./../papers/"
 #pdf_path = "./../papers/21222096.pdf"
 #pdf_path = "./../papers/38948452.pdf"
 #pdf_path = "./../papers/30285730.pdf"
+#pdf_path = "./../papers/37505548.3.pdf"
+pdf_path = "./../papers/29376899.3.pdf"
 
 #Current NER to use: 
 output_dir = "./../models/custom_web_ner_abs_v382"
@@ -193,7 +196,10 @@ def organize_tables(table, same_type):
     #Number of (sub)header rows:
     nheaders = len(same_type)-same_type.sum()
     whichrow = same_type.shape[1]-same_type.sum(axis=1)
-    nheaders = nheaders.iloc[1]
+    if len(nheaders) > 1:
+        nheaders = nheaders.iloc[1]
+    else:
+        nheaders = nheaders.iloc[0]
     #Case 0: First row is headers, single row. Could be two 
     #ways this appears, with either no FALSE row or FALSE row is 
     #in row[1].
@@ -229,22 +235,23 @@ def organize_tables(table, same_type):
         new_headers = header_rows.apply(lambda x: ' '.join(filter(pd.notna, x.astype(str))), axis=0) 
         # Iterate through the table to find additional sub-headers and divide the table into sub-sections
         current_index = header_index-1
-        while current_index < len(table):
-            next_index = same_type.iloc[current_index+2:, 1:].eq(False).idxmax().max()
-            if (next_index+2)>=len(table):
-                next_index = len(table)
-            #Create sub-headers
-            sub_headers = table.iloc[current_index,:]
-            # Combine main headers with sub headers
-            combined_headers = [f"{nh} {sh}" for nh, sh in zip_longest(new_headers, sub_headers, fillvalue="")]
-            # Extract the sub-table
-            sub_table = table.iloc[current_index+1:next_index]
-            # Create the final DataFrame for this section
-            ft = pd.DataFrame(sub_table.values, columns=combined_headers)
-            # Add to the list of final DataFrames
-            final_tables.append(ft)
-            # Move to the next section
-            current_index = next_index
+        if current_index+2 < len(table):
+            while current_index < len(table):
+                next_index = same_type.iloc[current_index+2:, 1:].eq(False).idxmax().max()
+                if (next_index+2)>=len(table):
+                    next_index = len(table)
+                #Create sub-headers
+                sub_headers = table.iloc[current_index,:]
+                # Combine main headers with sub headers
+                combined_headers = [f"{nh} {sh}" for nh, sh in zip_longest(new_headers, sub_headers, fillvalue="")]
+                # Extract the sub-table
+                sub_table = table.iloc[current_index+1:next_index]
+                # Create the final DataFrame for this section
+                ft = pd.DataFrame(sub_table.values, columns=combined_headers)
+                # Add to the list of final DataFrames
+                final_tables.append(ft)
+                # Move to the next section
+                current_index = next_index
     return final_tables
 
 #Approach 2: This seems to be cleaner and simpler. Just take each header as its own 
@@ -341,57 +348,58 @@ for pdf in new_pdfs:
     print(f"Current PDF: {pdf_path}")
     study_id = pdf_path.lstrip('./../papers/').rstrip('.pdf')
     #Initialize the dd analyzer
-    df = analyzer.analyze(path=pdf_path)
-    df.reset_state()  # This method must be called just before starting the iteration. It is part of the API.
-    pages =[] #Get the pages in the PDF
-    for doc in df: 
-        pages.append(doc)
-	#2. Cycle through tables in the pages, look for responses, extract them if they are 
-	#there:
-    table_num = 1
-    for pg in pages:
-        for tbls in pg.tables:
-            print(f"Table: {table_num}")
-            t2 = pd.DataFrame(tbls.csv)
-            #Replace blank space with NaN
-            t2.replace(r'^\s*$', np.nan, regex=True, inplace=True)
-            #Drop columns and rows of NaN created by spaces
-            t2.dropna(axis=1, how='all', inplace=True)
-            t2.dropna(axis=0, how='all', inplace=True)
-            t2 = t2.reset_index(drop=True)  
-            # Remove letters and special symbols from numbers
-            # Remove leading/trailing whitespace from all cells and make all 
-            # lowercase
-            t2= t2.applymap(clean_numbers)
-            # Check the case where there are just a few straggler entries  in 
-            # the middle or at the end of a row. Usually means a word connects to 
-            # the cell above it.
-            t2 = merge_danglers(t2)
-            #Check rows with NaN and handle accordingly. This step is designed
-            #to help identify headers/subheaders which might only fill a single cell
-            for index, row in t2.iterrows():
-                if (row.isna().sum() ) >= len(t2.columns)/2+1:
-                    #Fill NaN with previous cell in row
-                    row = row.fillna(method='ffill')
-                    t2.iloc[index,:] = row
-            # Apply the classification function to each cell in the DataFrame
-            classified_t2 =classify_cells(t2)  
-            #Check whether a row is the same type as previous row
-            same_type = is_same_type(classified_t2)
-            #Use this information to find column headers and parse the table
-            #Try to infer which rows are likely to contain headers based on 
-            #where the data type across a row changes. If there seem to be 
-            #multiple header rows then divide the table into multiple tables. 
-            final_tables = organize_tables(t2,same_type)
-            #Use the output to grab the correct info from each table and format it and
-            #convert it to the write format for output (to match the table format from 
-            #the main text, in extract_responses_txt_v2.py)
-            final_df = make_final_table(final_tables, study_id)
-            final_df = final_df.reset_index(drop=True)
-            print(f"final_df{final_df}")
-            data = pd.concat([data, final_df[column_list] ], axis=0 )
-            table_num +=1
- 
+df = analyzer.analyze(path=pdf_path)
+df.reset_state()  # This method must be called just before starting the iteration. It is part of the API.
+pages =[] #Get the pages in the PDF
+for doc in df: 
+    pages.append(doc)
+#2. Cycle through tables in the pages, look for responses, extract them if they are 
+#there:
+table_num = 1
+
+for pg in pages:
+    for tbls in pg.tables:
+        print(f"Table: {table_num}")
+        t2 = pd.DataFrame(tbls.csv)
+        #Replace blank space with NaN
+        t2.replace(r'^\s*$', np.nan, regex=True, inplace=True)
+        #Drop columns and rows of NaN created by spaces
+        t2.dropna(axis=1, how='all', inplace=True)
+        t2.dropna(axis=0, how='all', inplace=True)
+        t2 = t2.reset_index(drop=True)  
+        # Remove letters and special symbols from numbers
+        # Remove leading/trailing whitespace from all cells and make all 
+        # lowercase
+        t2= t2.applymap(clean_numbers)
+        # Check the case where there are just a few straggler entries  in 
+        # the middle or at the end of a row. Usually means a word connects to 
+        # the cell above it.
+        t2 = merge_danglers(t2)
+        #Check rows with NaN and handle accordingly. This step is designed
+        #to help identify headers/subheaders which might only fill a single cell
+        for index, row in t2.iterrows():
+            if (row.isna().sum() ) >= len(t2.columns)/2+1:
+                #Fill NaN with previous cell in row
+                row = row.fillna(method='ffill')
+                t2.iloc[index,:] = row
+        # Apply the classification function to each cell in the DataFrame
+        classified_t2 =classify_cells(t2)  
+        #Check whether a row is the same type as previous row
+        same_type = is_same_type(classified_t2)
+        #Use this information to find column headers and parse the table
+        #Try to infer which rows are likely to contain headers based on 
+        #where the data type across a row changes. If there seem to be 
+        #multiple header rows then divide the table into multiple tables. 
+        final_tables = organize_tables(t2,same_type)
+        #Use the output to grab the correct info from each table and format it and
+        #convert it to the write format for output (to match the table format from 
+        #the main text, in extract_responses_txt_v2.py)
+        final_df = make_final_table(final_tables, study_id)
+        final_df = final_df.reset_index(drop=True)
+        print(f"final_df{final_df}")
+        data = pd.concat([data, final_df[column_list] ], axis=0 )
+        table_num +=1
+
 # flattened_data = [item for sublist in data for item in sublist]
 # all_tables = pd.DataFrame(flattened_data)
 
